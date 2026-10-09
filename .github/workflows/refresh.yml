@@ -62,7 +62,8 @@ jobs:
           ATLAS_MAX_MINUTES: "300"
         run: |
           if [ "${{ github.event_name }}" = "push" ]; then nohup bash scripts/watchdog.sh >/dev/null 2>&1 & fi
-          python -m atlas.crawl
+          set -o pipefail
+          python -m atlas.crawl 2>&1 | tee /tmp/crawl.log
 
       - name: Report failure to the app
         if: failure()

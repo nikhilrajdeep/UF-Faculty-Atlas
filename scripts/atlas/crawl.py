@@ -125,6 +125,8 @@ def start_reporter(progress, stop):
     def loop():
         while not stop.is_set():
             try:
+                c = progress.state["counts"]
+                print(f"[{time.strftime('%H:%M:%S')}] {progress.state['stage']} {progress.state['percent']}% units={c['units_done']} profiles={c['profiles_done']}/{c['profiles_total']} requests={c['pages_fetched']}", flush=True)
                 progress.write(publish=True)
             except Exception as e:  # never let the reporter die silently
                 print(f"progress reporter error: {type(e).__name__}: {e}", flush=True)
