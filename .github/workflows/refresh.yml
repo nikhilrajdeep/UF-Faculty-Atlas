@@ -21,7 +21,7 @@ permissions:
   pages: write
 
 concurrency:
-  group: faculty-database
+  group: faculty-database${{ github.event_name == 'push' && '-dev' || '' }}
   cancel-in-progress: false
 
 jobs:
@@ -60,7 +60,9 @@ jobs:
           ATLAS_ONLY: ${{ steps.scope.outputs.only }}
           ATLAS_OUT: ${{ steps.scope.outputs.out }}
           ATLAS_MAX_MINUTES: "300"
-        run: python -m atlas.crawl
+        run: |
+          if [ "${{ github.event_name }}" = "push" ]; then nohup bash scripts/watchdog.sh >/dev/null 2>&1 & fi
+          python -m atlas.crawl
 
       - name: Report failure to the app
         if: failure()

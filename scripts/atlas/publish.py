@@ -41,8 +41,11 @@ def push_status(files):
         git("commit", "-q", "-m", "status")
         r = git("-c", f"http.https://github.com/.extraheader=AUTHORIZATION: basic {basic}", "push", "-q", "-f",
                 f"https://github.com/{repo}.git", f"{STATUS_BRANCH}:{STATUS_BRANCH}")
+        if r.returncode != 0:
+            print(f"status push failed: {r.stderr[-300:]}", flush=True)
         return r.returncode == 0
-    except Exception:
+    except Exception as e:
+        print(f"status push error: {type(e).__name__}: {e}", flush=True)
         return False
     finally:
         subprocess.run(["rm", "-rf", str(tmp)], check=False)

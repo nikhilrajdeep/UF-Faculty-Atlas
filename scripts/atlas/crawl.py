@@ -124,7 +124,10 @@ class Progress:
 def start_reporter(progress, stop):
     def loop():
         while not stop.is_set():
-            progress.write(publish=True)
+            try:
+                progress.write(publish=True)
+            except Exception as e:  # never let the reporter die silently
+                print(f"progress reporter error: {type(e).__name__}: {e}", flush=True)
             stop.wait(10)
     t = threading.Thread(target=loop, daemon=True)
     t.start()
