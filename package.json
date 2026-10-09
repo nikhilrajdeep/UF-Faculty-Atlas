@@ -1,15 +1,14 @@
 {
-  "name": "uf-faculty-explorer",
-  "version": "0.1.0",
+  "name": "uf-faculty-atlas",
+  "version": "2.0.0",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
-    "build": "vite build",
+    "build": "vite build && node scripts/publish-site.mjs",
     "preview": "vite preview"
   },
   "dependencies": {
-    "lucide-react": "^0.468.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },

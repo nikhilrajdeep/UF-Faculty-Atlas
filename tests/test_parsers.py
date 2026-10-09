@@ -152,3 +152,55 @@ def test_nicknames_and_entities():
         '<table><thead><tr><th>NAME</th><th>ADVISOR</th></tr></thead><tbody><tr><td>Bodrey, Clarence "Ray"</td><td>Lusk</td></tr>'
         '<tr><td>P.,A.</td><td>x</td></tr></tbody></table>'), "https://x.ufl.edu/s/")
     assert [r["name"] for r in rows] == ["Clarence Bodrey"]
+
+
+# --- MAE-style Connections directory: vcards, no profile-link list -----------------------------
+
+def _vcard(name, title, email, classes, link="/people/x/"):
+    return (f'<div class="cn-list-row cn-list-item vcard individual {classes}"><div class="cn-gridder-thumb"><span class="fn n">'
+            f'<span class="family-name">{name}</span></span></div><span class="title">{title}</span><a href="mailto:{email}">{email}</a>'
+            f'<a href="{link}">View Profile</a></div>')
+
+
+MAE = ('<html><body><main><nav><a href="/people/?cn-cat=5">Primary Faculty</a></nav><div id="cn-list-body">' + "".join([
+    _vcard("Dr. Youping Chen", "Professor", "ychen@ufl.edu", "faculty primary professor autonomy"),
+    _vcard("Dr. Jessica Allen", "Associate Professor", "jallen@ufl.edu", "faculty primary biosystems energy"),
+    _vcard("Dr. Nam-Ho Kim", "Professor", "nkim@ufl.edu", "faculty primary design-and-manufacturing"),
+    _vcard("Dr. Subrata Roy", "Professor", "roy@ufl.edu", "faculty primary fluid-dynamics-and-acoustics"),
+    _vcard("Dr. Yu Wang", "Assistant Professor", "ywang@ufl.edu", "faculty primary space-systems"),
+    _vcard("Sharla Alexander", "HR Generalist III", "sa@ufl.edu", "staff"),
+    _vcard("Tara Battle", "External Advisory Board Member", "tb@x.com", "external-advisory-board"),
+]) + "</div></main></body></html>")
+
+
+def test_vcard_directory():
+    people = P.extract_people(P.make_soup(MAE), "https://mae.ufl.edu/people/")
+    names = [p["name"] for p in people]
+    assert names == ["Youping Chen", "Jessica Allen", "Nam-Ho Kim", "Subrata Roy", "Yu Wang"], names
+    chen = people[0]
+    assert chen["title"] == "Professor" and chen["email"] == "ychen@ufl.edu"
+    assert "Autonomy" in chen["specialty"] and "Fluid Dynamics and Acoustics" in people[3]["specialty"]
+    assert chen["profile_url"] == "https://mae.ufl.edu/people/x/"
+
+
+def test_repeated_cards_without_links():
+    html = "<main><section>" + "".join(
+        f"<div class='item'><h4>{n}</h4><p>Associate Professor</p><p>Send Email</p><p>Ecology</p></div>"
+        for n in ["Ana Ruiz", "Ben Cole", "Cy Young", "Di Park", "Ed Ross", "Fay Wu"]) + "</section></main>"
+    people = P.extract_people(P.make_soup(html), "https://x.ufl.edu/people/")
+    assert len(people) == 6 and people[0]["title"] == "Associate Professor"
+    assert people[0]["specialty"] == ["Ecology"]  # "Send Email" filtered as UI text
+
+
+def test_noise_filters():
+    assert P.is_noise_text("Send Email") and P.is_noise_text("DNP, APRN, CPNP-PC") and P.is_noise_text("PhD, MSN, BSN, RN")
+    assert P.is_noise_text("Expand Faculty Research Areas Submenu")
+    assert not P.is_noise_text("Soil Physics") and not P.is_noise_text("Health Disparities and Diabetes")
+    assert P.STAFF_RE.search("STU AST- CLERICAL & ADMIN") and P.STAFF_RE.search("External Advisory Board Member")
+
+
+def test_query_kept_for_directory_categories():
+    assert P.canon_url("/people/?cn-cat=5&utm_source=x", "https://mae.ufl.edu/") == "https://mae.ufl.edu/people/?cn-cat=5"
+    assert P.canon_url("http://x.ufl.edu:abc/") == ""
+    rel = P.next_pages(P.make_soup('<a href="/people/?cn-pg=2">2</a>'), "https://mae.ufl.edu/people/")
+    assert rel == ["https://mae.ufl.edu/people/?cn-pg=2"]

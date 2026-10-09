@@ -44,9 +44,27 @@ TITLE_RE = re.compile(
 STAFF_RE = re.compile(
     r"\b(staff|administrative|secretary|assistant to|coordinator|technician|manager|analyst|programmer|"
     r"accountant|business|receptionist|specialist|student|postdoc\w*|post-doc\w*|intern|fiscal|"
-    r"communications|webmaster|it support|advisor)\b",
+    r"communications|webmaster|it support|advisor|clerical|stu ast|advisory board|board member|generalist|"
+    r"human resources|\bhr\b|marketing|accounting|administrator|fiscal|maintenance|warehouse|receptionist|"
+    r"business manager|office manager|immigration)\b",
     re.I,
 )
+JUNK_LINE = re.compile(
+    r"^(send (an? )?e-?mail|e-?mail( me)?|see bio|view bio|view (full )?profile|read more|learn more|more|bio|biography|overview|"
+    r"contact( info(rmation)?)?|website|cv|curriculum vitae|ssrn|publications?|research( profile)?|teaching( profile)?|"
+    r"expand .*|.*submenu|menu|home|back|top|next|previous|\W+|[a-z]{1,3})$",
+    re.I,
+)
+CREDENTIAL_TOKENS = set("phd ph.d. md m.d. ms m.s. msn bsn rn dnp aprn cpnp-pc np fnp-bc agacnp-bc cns mba mph dvm dds jd pe faan fnap dnsc edd ma ba bs msc ds crnp cnm cnl"
+                        " facs fasla leed ap rd lds cpa dpt otr/l cscs".split())
+
+
+def is_noise_text(t):
+    t = squash(t)
+    if not t or JUNK_LINE.match(t):
+        return True
+    toks = [w.strip(".,;()").lower() for w in re.split(r"[\s,;/]+", t) if w.strip(".,;()")]
+    return bool(toks) and all(w in CREDENTIAL_TOKENS for w in toks)
 LOCATION_RE = re.compile(
     r"\b(REC|R\.E\.C\.|research (and|&) education center|research center|station|campus|building|hall|"
     r"room|po box|gainesville|lab\b|laboratory|institute|center\b)",
@@ -141,7 +159,7 @@ def _is_chrome(el, mode="strict"):
     ident = " ".join(el.get("class", [])) + " " + (el.get("id") or "")
     if el.name == "header" and (el.find("nav") or re.search(r"site-header|masthead|global|top-?bar", ident, re.I)):
         return True
-    if re.search(r"\b(breadcrumbs?|skip-?link|cookie|mega-?menu|main-menu|site-footer|footer-links)\b", ident, re.I):
+    if re.search(r"\b(breadcrumbs?|skip-?link|cookie|mega-?menu|main-menu|site-footer|footer-links|side-?bar|sub-?nav|side-?nav|sub-?menu|secondary-(menu|nav)|widget-area)\b", ident, re.I):
         return True
     return False
 
@@ -307,22 +325,30 @@ def _inline_labels(tokens):
 # ---------------------------------------------------------------- links, emails
 
 
-def canon_url(url, base=None, keep_query_keys=("id", "uid", "netid", "user", "person", "profile", "pid", "faculty")):
+TRACKING_KEYS = re.compile(r"^(utm_.*|fbclid|gclid|mc_.*|ref|replytocom|share|print|amp|_ga|sessionid|phpsessid)$", re.I)
+
+
+def canon_url(url, base=None):
+    """Absolute https URL without fragment or tracking parameters. Keeps other query keys (directory categories,
+    page numbers and profile ids matter on many UF sites)."""
     if not url:
         return ""
     url = url.strip()
-    if url.startswith(("mailto:", "tel:", "javascript:", "#", "data:")):
+    if url.startswith(("mailto:", "tel:", "javascript:", "#", "data:", "sms:")):
         return ""
     full = urljoin(base or "", url)
     full, _ = urldefrag(full)
     p = urlparse(full)
     if p.scheme not in ("http", "https") or not p.hostname:
         return ""
-    qs = parse_qs(p.query)
-    keep = {k: v for k, v in qs.items() if k.lower() in keep_query_keys}
-    query = "&".join(f"{k}={v[0]}" for k, v in keep.items())
+    try:
+        port = p.port
+    except ValueError:
+        return ""
+    keep = [(k, v) for k, v in sorted(parse_qs(p.query, keep_blank_values=False).items()) if not TRACKING_KEYS.match(k)]
+    query = "&".join(f"{k}={vals[0]}" for k, vals in keep)
     host = p.hostname.lower()
-    netloc = host + (f":{p.port}" if p.port and p.port not in (80, 443) else "")
+    netloc = host + (f":{port}" if port and port not in (80, 443) else "")
     return f"https://{netloc}{p.path or '/'}" + (f"?{query}" if query else "")
 
 
@@ -448,10 +474,7 @@ def _parse_profile(soup, url, hint_name, mode):
     lines = [_item_text(t) for t in toks if t[0] in ("p", "li", "h")]
     name_idx = next((i for i, l in enumerate(lines) if fold(name.split()[-1]) in fold(l) and len(l) < 80), 0)
     for l in lines[name_idx: name_idx + 8]:
-        if len(l) < 140 and TITLE_RE.search(l) and not looks_like_name(l):
-            title = l
-            break
-        if len(l) < 140 and TITLE_RE.search(l) and looks_like_name(l) is False:
+        if len(l) < 140 and TITLE_RE.search(l) and not looks_like_name(l) and not is_noise_text(l):
             title = l
             break
 
@@ -603,6 +626,30 @@ def _nearest_name_for_link(a, text):
 
 
 def extract_people(soup, base_url, accept_hosts=None):
+    """People on a listing page: profile-link lists, microformat (vcard) directories, or repeated cards.
+
+    Whichever method finds clearly the most people wins; profile links are carried over by name when available."""
+    linked = _extract_linked(soup, base_url, accept_hosts)
+    found = {}
+    for key, fn in (("vcards", extract_vcards), ("cards", extract_repeated_cards)):
+        try:
+            found[key] = [p for p in fn(soup, base_url) if _plausible_faculty(p)]
+        except Exception:
+            found[key] = []
+    # vcards carry the most structure (categories, research-area classes): prefer them when comparable
+    best = found["vcards"] if len(found["vcards"]) >= 5 and len(found["vcards"]) >= 0.8 * len(found["cards"]) else \
+        max(found.values(), key=len)
+    if len(best) >= 5 and len(best) >= 1.4 * len(linked):
+        by_name = {name_key(p["name"]): p for p in linked}
+        for c in best:
+            hit = by_name.get(name_key(c["name"]))
+            if hit and not c["profile_url"]:
+                c["profile_url"] = hit["profile_url"]
+        return best
+    return linked
+
+
+def _extract_linked(soup, base_url, accept_hosts=None):
     """People on a listing page that link to individual profile pages.
 
     Returns a list of dicts: name, profile_url, lines (card text), email, title, specialty, location, roles.
@@ -667,11 +714,12 @@ def _extract_people(root, base_url, accept_hosts, mode):
         c = cands[url]
         card = _card_for(c["anchor"], c["name"], cands)
         lines = [l for l in card["lines"] if fold(c["name"]) not in fold(l) and fold(clean_name(c["name"])) != fold(l)]
-        title = next((l for l in lines if TITLE_RE.search(l) and len(l) < 120), "")
+        title = next((l for l in lines if TITLE_RE.search(l) and len(l) < 120 and not is_noise_text(l)), "")
         rest = [l for l in lines if l != title]
         loc = next((l for l in rest if LOCATION_RE.search(l) and len(l) < 100), "")
         roles = [l for l in rest if ROLE_RE.search(l) and len(l) < 100]
-        specialty = [l for l in rest if l != loc and l not in roles and len(l) < 120 and "@" not in l and not re.search(r"\d{3}[-.)\s]\d{3,4}", l)]
+        specialty = [l for l in rest if l != loc and l not in roles and len(l) < 120 and "@" not in l
+                     and not re.search(r"\d{3}[-.)\s]\d{3,4}", l) and not is_noise_text(l)]
         rec = {
             "name": c["name"], "profile_url": url, "lines": lines[:6], "email": pick_email(card["emails"], c["name"]),
             "title": title, "specialty": specialty[:3], "location": loc, "roles": roles[:2],
@@ -800,7 +848,7 @@ def next_pages(soup, url):
         text = squash(a.get_text(" ", strip=True)).lower()
         rel = " ".join(a.get("rel", [])) if a.get("rel") else ""
         aria = (a.get("aria-label") or "").lower()
-        paged = re.search(r"([?&](page|pg|paged|p)=\d+)|(/page/\d+/?$)", full)
+        paged = re.search(r"([?&](page|pg|paged|p|cn-pg|pagenum|pageno|pagenumber)=\d+)|(/page/\d+/?$)", full)
         if ("next" in rel or text in ("next", "next page", "›", "»", "next ›", "next »") or "next" in aria or
                 (paged and fp.path.rstrip("/").split("/page/")[0] == p.path.rstrip("/").split("/page/")[0] and text.isdigit())):
             full = urldefrag(full)[0]
@@ -974,3 +1022,116 @@ def parse_unit_website(html, page_url):
         return ""
     cands.sort(key=lambda c: -c[0])
     return cands[0][1]
+
+
+# ---------------------------------------------------------------- directories without profile-link lists
+
+ROLE_CLASSES = {"primary", "adjunct", "courtesy", "affiliate", "emeritus", "professor", "lecturer", "instructor", "visiting", "research",
+                "associate", "assistant", "joint"}
+STATUS_CLASSES = {"individual", "vcard", "entry", "odd", "even", "alt", "first", "last", "faculty", "organization", "family", "connections"}
+STAFF_CLASSES = {"staff", "external-advisory-board", "advisory-board", "student", "students", "administration", "admin", "support"}
+SMALL_WORDS = {"and", "of", "in", "for", "the", "to", "on", "a"}
+
+
+def slug_to_phrase(slug):
+    words = slug.replace("_", "-").split("-")
+    return " ".join(w if (i and w in SMALL_WORDS) else w.capitalize() for i, w in enumerate(words) if w)
+
+
+def _first_internal_link(el, base_url):
+    base_path = urlparse(base_url).path.rstrip("/")
+    prefer = None
+    for a in el.find_all("a", href=True):
+        url = canon_url(a["href"], base_url)
+        if not url or not is_uf_host(urlparse(url).hostname) or SKIP_EXT.search(urlparse(url).path):
+            continue
+        if urlparse(url).path.rstrip("/") == base_path and not urlparse(url).query:
+            continue
+        if re.search(r"profile|bio|more|read|view", squash(a.get_text(" ", strip=True)), re.I):
+            return url
+        prefer = prefer or url
+    return prefer or ""
+
+
+def _name_in(el):
+    """First name-like text in a card: .fn/.name/heading/strong/link text, then leading text lines."""
+    for sel in (".fn", ".n", "[itemprop=name]", ".name", "h1", "h2", "h3", "h4", "h5", "strong", "b", "a"):
+        for node in el.select(sel)[:3]:
+            t = squash(node.get_text(" ", strip=True))
+            if looks_like_name(t):
+                return display_name(t)
+    for line in (squash(x) for x in el.get_text("\n", strip=True).split("\n")[:4]):
+        if looks_like_name(line):
+            return display_name(line)
+    return ""
+
+
+def _card_record(el, name, base_url, extra_roles=()):
+    lines = [l for l in (squash(x) for x in el.get_text("\n", strip=True).split("\n")) if l]
+    lines = [l for l in lines if fold(name.split()[-1]) not in fold(l) or len(l) > 60]
+    title = next((l for l in lines if TITLE_RE.search(l) and len(l) < 140 and not is_noise_text(l)), "")
+    rest = [l for l in lines if l != title and not is_noise_text(l)]
+    loc = next((l for l in rest if LOCATION_RE.search(l) and len(l) < 100), "")
+    emails = find_emails(el)
+    return {
+        "name": name, "profile_url": _first_internal_link(el, base_url), "lines": lines[:6], "email": pick_email(emails, name),
+        "title": title, "specialty": [l for l in rest if l != loc and len(l) < 100 and "@" not in l and not re.search(r"\d{3}[-.)\s]\d{3,4}", l)][:2],
+        "location": loc, "roles": list(extra_roles)[:3],
+    }
+
+
+def extract_vcards(soup, base_url):
+    """hCard / Connections-plugin directories: <div class="vcard ..."> with category classes (faculty, staff, research areas)."""
+    out, seen = [], set()
+    for el in soup.select(".vcard"):
+        if el.find_parent(class_="vcard") or _inside_chrome(el, soup, "strict"):
+            continue
+        classes = [c for c in el.get("class", []) if c]
+        if STAFF_CLASSES & set(classes) and "faculty" not in classes:
+            continue
+        name = ""
+        for sel in (".fn", ".n", "h2", "h3", "h4", "strong"):
+            node = el.select_one(sel)
+            if node and looks_like_name(squash(node.get_text(" ", strip=True))):
+                name = display_name(squash(node.get_text(" ", strip=True)))
+                break
+        if not name or name_key(name) in seen:
+            continue
+        seen.add(name_key(name))
+        roles = [c.replace("-", " ").title() for c in classes if c in ROLE_CLASSES]
+        rec = _card_record(el, name, base_url, roles)
+        areas = [slug_to_phrase(c) for c in classes
+                 if c not in ROLE_CLASSES | STATUS_CLASSES | STAFF_CLASSES and not c.startswith(("cn-", "cn_", "is-", "has-", "js-")) and len(c) > 3 and not re.fullmatch(r"[a-f0-9\-]{20,}|\d+", c)]
+        rec["specialty"] = areas[:6] or rec["specialty"]
+        out.append(rec)
+    return out
+
+
+def extract_repeated_cards(soup, base_url):
+    """Generic fallback: many sibling elements that each start with a person's name (grids, tables of cards)."""
+    root = soup.body or soup
+    best = []
+    for parent in root.find_all(True):
+        if parent.name in ("script", "style", "select", "nav", "footer", "head", "table", "thead", "tr"):
+            continue
+        kids = [c for c in parent.children if isinstance(c, Tag) and c.name not in ("script", "style")]
+        if len(kids) < 5:
+            continue
+        if parent.name in ("ul", "ol") or parent.find_parent(["nav", "footer"]):
+            if parent.find_parent(["nav", "footer"]):
+                continue
+        tag = max({k.name for k in kids}, key=lambda t: sum(k.name == t for k in kids))
+        group = [k for k in kids if k.name == tag]
+        if len(group) < 5:
+            continue
+        cards, seen = [], set()
+        for k in group:
+            if len(k.get_text(" ", strip=True)) > 1500:
+                break
+            name = _name_in(k)
+            if name and name_key(name) not in seen:
+                seen.add(name_key(name))
+                cards.append((k, name))
+        if len(cards) >= 5 and len(cards) >= 0.6 * len(group) and len(cards) > len(best):
+            best = [_card_record(k, n, base_url) for k, n in cards]
+    return [c for c in best if not is_noise_text(c["name"])]

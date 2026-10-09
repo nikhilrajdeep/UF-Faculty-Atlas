@@ -377,10 +377,12 @@ def build_records(results, baseline, units):
             if purl:
                 by_profile[purl] = rec
                 rec["profile_url"] = rec["profile_url"] or purl
-            for src, dst in (("title", "title"), ("email", "email"), ("location", "location")):
-                v = prof.get(src) or p.get(src) or ""
-                if v and not rec[dst]:
-                    rec[dst] = v
+            card_title = p.get("title") or ""
+            for src, dst, val in (("title", "title", card_title if P.TITLE_RE.search(card_title) else (prof.get("title") or card_title)),
+                                  ("email", "email", prof.get("email") or p.get("email") or ""),
+                                  ("location", "location", prof.get("location") or p.get("location") or "")):
+                if val and not rec[dst]:
+                    rec[dst] = val
             for k in ("google_scholar", "orcid", "lab_name", "lab_url", "website", "edis_url", "research_summary"):
                 if prof.get(k) and not rec[k]:
                     rec[k] = prof[k]

@@ -51,7 +51,8 @@ jobs:
             ONLY=$(python -c "import json;print(json.load(open('data/refresh-request.json')).get('only',''))")
           fi
           echo "only=$ONLY" >> "$GITHUB_OUTPUT"
-          if [ -n "$ONLY" ]; then echo "out=data/dev-run" >> "$GITHUB_OUTPUT"; else echo "out=docs/data" >> "$GITHUB_OUTPUT"; fi
+          # test runs (word filter, or the dev push trigger) write to a scratch folder and never touch the real database
+          if [ -n "$ONLY" ] || [ "$EVENT" = "push" ]; then echo "out=data/dev-run" >> "$GITHUB_OUTPUT"; else echo "out=docs/data" >> "$GITHUB_OUTPUT"; fi
 
       - name: Crawl UF departments
         env:
@@ -69,11 +70,11 @@ jobs:
         run: python scripts/publish_status.py failed "The refresh failed. See the run log for the reason."
 
       - name: Validate full run
-        if: steps.scope.outputs.only == ''
+        if: steps.scope.outputs.out == 'docs/data'
         run: python scripts/validate.py docs/data
 
       - name: Commit database
-        if: steps.scope.outputs.only == ''
+        if: steps.scope.outputs.out == 'docs/data'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -85,7 +86,7 @@ jobs:
           fi
 
       - name: Ask GitHub Pages to publish the new data
-        if: steps.scope.outputs.only == '' && github.ref_name == 'main'
+        if: steps.scope.outputs.out == 'docs/data' && github.ref_name == 'main'
         continue-on-error: true
         run: |
           curl -sS -X POST -H "Authorization: Bearer ${{ github.token }}" -H "Accept: application/vnd.github+json" \
