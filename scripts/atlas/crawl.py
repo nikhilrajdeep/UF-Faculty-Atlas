@@ -127,6 +127,9 @@ def start_reporter(progress, stop):
             try:
                 c = progress.state["counts"]
                 print(f"[{time.strftime('%H:%M:%S')}] {progress.state['stage']} {progress.state['percent']}% units={c['units_done']} profiles={c['profiles_done']}/{c['profiles_total']} requests={c['pages_fetched']}", flush=True)
+                old = [(round(time.time() - t), n, u) for u, (t, n) in list(INFLIGHT.items()) if time.time() - t > 8]
+                if old:
+                    print(f"  parsing for a long time: {old[:5]}", flush=True)
                 progress.write(publish=True)
             except Exception as e:  # never let the reporter die silently
                 print(f"progress reporter error: {type(e).__name__}: {e}", flush=True)
@@ -327,6 +330,9 @@ def discover_unit(F, unit):
 # ---------------------------------------------------------------- profiles
 
 
+INFLIGHT = {}
+
+
 def fetch_profile(F, task):
     """Fetch and parse one faculty profile; returns merged record fields."""
     person, unit = task["person"], task["unit"]
@@ -335,7 +341,14 @@ def fetch_profile(F, task):
     if url and urlparse(url).hostname:
         page = F.get(url)
         if page:
-            prof = P.parse_profile(P.make_soup(page[1]), page[0], hint_name=person["name"])
+            t_parse = time.time()
+            INFLIGHT[url] = (t_parse, len(page[1]))
+            try:
+                prof = P.parse_profile(P.make_soup(page[1]), page[0], hint_name=person["name"])
+            finally:
+                INFLIGHT.pop(url, None)
+            if time.time() - t_parse > 3:
+                print(f"slow parse {time.time() - t_parse:.1f}s size={len(page[1])} {url}", flush=True)
             if prof and last_name(prof["name"]) != last_name(person["name"]):
                 # wrong heading picked (e.g. department name): trust the listing card for identity fields
                 prof["name"] = person["name"]
@@ -483,6 +496,12 @@ def resolve_students(results, records):
 
 
 def run():
+    try:  # a runaway parse must raise MemoryError (and be logged), not freeze the whole machine
+        import resource
+        limit = int(float(os.getenv("ATLAS_MAX_GB", "6")) * 1024 ** 3)
+        resource.setrlimit(resource.RLIMIT_AS, (limit, limit))
+    except Exception:
+        pass
     only = [x.strip().lower() for x in os.getenv("ATLAS_ONLY", "").split(",") if x.strip()]
     budget = float(os.getenv("ATLAS_MAX_MINUTES", "300")) * 60
     OUT.mkdir(parents=True, exist_ok=True)
