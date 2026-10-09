@@ -76,9 +76,11 @@ GENERIC_EMAIL_LOCALS = {
     "communications", "news", "events", "advising", "undergrad", "grad", "gradinfo", "chair", "dean",
     "admissions", "hr", "it", "marketing", "ufit", "helpdesk", "feedback", "noreply", "no-reply",
 }
-EMAIL_RE = re.compile(r"[A-Za-z0-9._%+\-]+@(?:[A-Za-z0-9\-]+\.)+[A-Za-z]{2,}")
+_LOCAL = r"(?<![A-Za-z0-9._%+\-])[A-Za-z0-9._%+\-]{1,64}"
+# every repeat is bounded and anchored so a long run of word characters (base64, link lists) cannot cause quadratic scans
+EMAIL_RE = re.compile(_LOCAL + r"@(?:[A-Za-z0-9\-]{1,63}\.){1,6}[A-Za-z]{2,24}")
 OBFUSCATED_EMAIL_RE = re.compile(
-    r"([A-Za-z0-9._%+\-]+)\s*(?:\[at\]|\(at\)|\{at\}|\bat\b)\s*((?:[A-Za-z0-9\-]+\s*(?:\[dot\]|\(dot\)|\.)\s*)+[A-Za-z]{2,})",
+    r"(" + _LOCAL + r")\s{0,3}(?:\[at\]|\(at\)|\{at\}|\bat\b)\s{0,3}((?:[A-Za-z0-9\-]{1,63}\s{0,3}(?:\[dot\]|\(dot\)|\.)\s{0,3}){1,6}[A-Za-z]{2,24})",
     re.I,
 )
 SKIP_EXT = re.compile(r"\.(pdf|docx?|xlsx?|pptx?|zip|jpe?g|png|gif|svg|mp4|mp3|css|js|ico)$", re.I)

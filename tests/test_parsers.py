@@ -204,3 +204,14 @@ def test_query_kept_for_directory_categories():
     assert P.canon_url("http://x.ufl.edu:abc/") == ""
     rel = P.next_pages(P.make_soup('<a href="/people/?cn-pg=2">2</a>'), "https://mae.ufl.edu/people/")
     assert rel == ["https://mae.ufl.edu/people/?cn-pg=2"]
+
+
+def test_long_unbroken_runs_do_not_stall_the_parser():
+    """Regression: a 278 KB faculty page froze the crawler (quadratic e-mail regex on long dotted runs)."""
+    import time
+    run = "a.b.c.d." * 20000 + " at x"
+    html = f"<html><body><main><h1>Jeffrey Carney</h1><p>{run}</p><a href='mailto:jc@ufl.edu'>mail</a></main></body></html>"
+    t = time.time()
+    prof = P.parse_profile(P.make_soup(html), "https://x.ufl.edu/p/", hint_name="Jeffrey Carney")
+    assert time.time() - t < 3
+    assert prof["email"] == "jc@ufl.edu"
