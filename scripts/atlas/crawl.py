@@ -240,19 +240,36 @@ def discover_unit(F, unit):
     guesses = [urljoin(r, p) for p in P.PEOPLE_PATHS for r in roots]
     candidates = list(dict.fromkeys(unit.get("hints", []) + fac[:5] + hubs[:2] + guesses))
 
-    best, tried = ([], 0), 0
+    # Union of every faculty page the site itself links to (faculty, emeritus, affiliates, extension, ...);
+    # guessed paths are only tried when the navigation did not yield a usable list.
+    nav = set(fac[:6] + unit.get("hints", []))
+    by_url, tried = {}, 0
+
+    def unique_people(urls):
+        seen = {}
+        for u in urls:
+            for p in by_url.get(u, []):
+                seen.setdefault(p["profile_url"] or "name:" + name_key(p["name"]), p)
+        return list(seen.values())
+
     for cand in candidates:
-        if tried >= 7:
+        if tried >= 8:
+            break
+        if cand not in nav and len(unique_people([c for c in by_url if c in nav])) >= 3:
             break
         people, pages = evaluate_listing(F, cand)
         tried += 1
+        by_url[cand] = people
         info["faculty_pages"].append({"url": cand, "people": len(people)})
-        if len(people) > len(best[0]):
-            best = (people, cand)
-        if len(people) >= 10 and cand in fac + unit.get("hints", []):
-            break
+    used = [u for u in by_url if u in nav and by_url[u]]
+    if not used:
+        used = [max(by_url, key=lambda u: len(by_url[u]))] if any(by_url.values()) else []
+    best = (unique_people(used), used[0] if used else "")
+    if used:
+        best = (best[0], max(used, key=lambda u: len(by_url[u])))
     res["people"] = best[0]
-    info["chosen_faculty_page"] = best[1] if best[0] else ""
+    info["chosen_faculty_page"] = best[1]
+    info["faculty_pages_used"] = used
 
     # a 'People' hub may split faculty over category pages (Professors, Lecturers, ...): look one level deeper
     if len(best[0]) < 3 and best[1]:
@@ -513,7 +530,11 @@ def run():
                 task["person"]["profile"] = fetch_profile(F, task) or {}
             except Exception as e:
                 task["person"]["profile"] = {}
-                F.errors.append((task["person"].get("profile_url", ""), f"parse: {type(e).__name__}"))
+                tb = e.__traceback__
+                while tb and tb.tb_next:
+                    tb = tb.tb_next
+                where = f"{Path(tb.tb_frame.f_code.co_filename).name}:{tb.tb_lineno}" if tb else "?"
+                F.errors.append((task["person"].get("profile_url", ""), f"parse error {type(e).__name__} at {where}: {str(e)[:80]}"))
             finally:
                 progress.bump("profiles_done")
                 progress.state["counts"]["pages_fetched"] = F.requests_made

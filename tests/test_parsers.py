@@ -116,3 +116,39 @@ def test_catalog_units_and_site():
         ("College of Agricultural and Life Sciences", "Agronomy"), ("College of Dentistry", "Dentistry")]
     site = P.parse_unit_website('<main><a href="https://agronomy.ifas.ufl.edu/">https://agronomy.ifas.ufl.edu/</a><a href="https://campusmap.ufl.edu/">Map</a></main>', "https://gradcatalog.ufl.edu/x/")
     assert site == "https://agronomy.ifas.ufl.edu/"
+
+
+# --- regressions found on the live SWES site ---------------------------------------------------
+
+QUIRKY_LIST = """<html><body><nav id="main-navbar"><a href="/people/">People</a></nav><main></main>
+<div id="top-nav-wrapper" role="navigation"><div class="row"><div class="complex-layout">
+<div class="complex-content"><p><a href="/people/faculty/ebrahim-babaeian/">Ebrahim Babaeian</a></p><p>Assistant Professor</p><p>Soil Physics</p></div>
+<div class="complex-content"><p><a href="/people/faculty/susan-crow/">Susan Crow</a></p><p>Professor</p></div>
+<div class="complex-content"><p><a href="/people/faculty/james-bonczek/">James Bonczek</a></p><p>Senior Lecturer</p></div>
+<a href="http://[broken">bad link</a>
+</div></div></div><footer><a href="mailto:swes-webmaster@ufl.edu">Webmaster</a></footer></body></html>"""
+
+
+def test_listing_outside_main_and_mislabelled_navigation():
+    people = P.extract_people(P.make_soup(QUIRKY_LIST), "https://soils.ifas.ufl.edu/people/swes-faculty/")
+    assert [p["name"] for p in people] == ["Ebrahim Babaeian", "Susan Crow", "James Bonczek"]
+
+
+def test_malformed_urls_do_not_crash():
+    assert P.canon_url("http://[broken", "https://x.ufl.edu/") == ""
+    P.next_pages(P.make_soup('<a href="http://[broken" rel="next">next</a>'), "https://x.ufl.edu/people/")
+    r = P.parse_profile(P.make_soup(
+        '<body><div role="navigation"><h1>Jane Smith</h1><p>Professor</p><a href="http://[x">x</a>'
+        '<a href="mailto:jsmith@ufl.edu">e</a></div><footer><a href="mailto:swes-webmaster@ufl.edu">w</a></footer></body>'),
+        "https://x.ufl.edu/faculty/jane-smith/")
+    assert r["email"] == "jsmith@ufl.edu"
+
+
+def test_nicknames_and_entities():
+    assert looks_like_name('Xu, Yiran "Ryan"')
+    assert display_name('Xu, Yiran "Ryan"') == "Yiran Xu"
+    assert looks_like_name("Teixeira Jr, Glauco Mariano nbsp;")
+    rows = P.parse_students(P.make_soup(
+        '<table><thead><tr><th>NAME</th><th>ADVISOR</th></tr></thead><tbody><tr><td>Bodrey, Clarence "Ray"</td><td>Lusk</td></tr>'
+        '<tr><td>P.,A.</td><td>x</td></tr></tbody></table>'), "https://x.ufl.edu/s/")
+    assert [r["name"] for r in rows] == ["Clarence Bodrey"]

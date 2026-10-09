@@ -43,7 +43,10 @@ def squash(text):
 
 
 def clean_name(text):
-    t = squash(text).strip(" ,;|-–—:")
+    t = squash(text)
+    t = re.sub(r"\b(?:nbsp|amp);?", " ", t)  # broken HTML entities left in some CMS output
+    t = re.sub(r"[\"“”][^\"“”]*[\"“”]", " ", t)  # quoted nicknames: Yiran "Ryan"
+    t = squash(t).strip(" ,;|-–—:")
     t = HONORIFIC.sub("", t)
     t = re.sub(r"\s*\([^)]*\)\s*", " ", t)  # nicknames and parentheticals
     t = squash(t)
@@ -65,6 +68,9 @@ def looks_like_name(text):
         toks = t.split()
     if not 2 <= len(toks) <= 5:
         return False
+    if sum(len(re.sub(r"[^A-Za-zÀ-ÿ]", "", w)) >= 2 for w in toks) < 1 or \
+            len(re.sub(r"[^A-Za-zÀ-ÿ]", "", toks[-1] if "," not in t else toks[0])) < 2 and len(toks) < 3:
+        return False  # initials only ("P., A.") is a placeholder, not a name
     for w in toks:
         base = w.strip(".,")
         low = base.lower()

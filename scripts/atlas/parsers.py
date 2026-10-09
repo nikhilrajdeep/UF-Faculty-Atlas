@@ -1,12 +1,37 @@
 """HTML parsers for UF department websites. Pure functions: no network access, easy to test."""
 import re
-from urllib.parse import urljoin, urlparse, urldefrag, parse_qs
+from urllib.parse import parse_qs
+from urllib.parse import urldefrag as _urldefrag
+from urllib.parse import urljoin as _urljoin
+from urllib.parse import urlparse as _urlparse
 
 from bs4 import BeautifulSoup, Tag, NavigableString
 
 from .names import (
     GENERIC_LINK_TEXT, clean_name, display_name, fold, last_name, looks_like_name, name_key, squash,
 )
+
+# Real pages contain malformed links (e.g. "http://[bad"); the stdlib raises ValueError on those.
+def urlparse(u):
+    try:
+        return _urlparse(u)
+    except ValueError:
+        return _urlparse("")
+
+
+def urljoin(base, u):
+    try:
+        return _urljoin(base, u)
+    except ValueError:
+        return ""
+
+
+def urldefrag(u):
+    try:
+        return _urldefrag(u)
+    except ValueError:
+        return (u, "")
+
 
 # ---------------------------------------------------------------- constants
 
@@ -97,10 +122,19 @@ def make_soup(html):
     return BeautifulSoup(html or "", "lxml")
 
 
-def _is_chrome(el):
-    """True for site chrome that never contains profile content."""
-    if el.name in ("script", "style", "noscript", "nav", "footer", "form", "svg", "iframe", "select", "option", "template"):
+def _is_chrome(el, mode="strict"):
+    """True for site chrome that never contains profile content.
+
+    Some UF sites mislabel their whole page body with role="navigation" or leave <main> empty, so 'loose' mode
+    only trusts real <nav>/<footer> tags.
+    """
+    if el.name in ("script", "style", "noscript", "svg", "iframe", "select", "option", "template", "nav", "footer"):
         return True
+    if mode == "loose":
+        return False
+    if el.name == "form":
+        ident = " ".join(el.get("class", [])) + " " + (el.get("id") or "") + " " + (el.get("role") or "")
+        return bool(el.find("input", attrs={"type": "search"})) or "search" in ident.lower()
     role = (el.get("role") or "").lower()
     if role in ("navigation", "banner", "contentinfo", "search"):
         return True
@@ -136,7 +170,7 @@ BLOCK_TAGS = {"p", "div", "ul", "ol", "table", "section", "article", "h1", "h2",
 ACCORDION_CLS = re.compile(r"(accordion|collaps|panel|tab|toggle|expand)[-_ ]?(title|header|heading|toggle|trigger|button|link)|accordion-?title|js-toggle", re.I)
 
 
-def blocks(root):
+def blocks(root, mode="strict"):
     """Flatten content into a token stream: ('h', level, text) | ('li', text) | ('p', text) | ('row', [cells])."""
     out = []
 
@@ -147,7 +181,7 @@ def blocks(root):
         for ch in el.children:
             if not isinstance(ch, Tag):
                 continue
-            if _is_chrome(ch):
+            if _is_chrome(ch, mode):
                 continue
             name = ch.name
             cls = " ".join(ch.get("class", []))
@@ -305,16 +339,35 @@ def canon_scholar(href):
     return f"https://{p.hostname}{p.path}" + (f"?{p.query}" if p.query else "")
 
 
+def _text_outside_chrome(el):
+    parts = []
+    for node in el.descendants:
+        if isinstance(node, NavigableString):
+            if any(p.name in ("footer", "nav", "script", "style", "noscript", "template") for p in node.parents):
+                continue
+            if str(node).strip():
+                parts.append(str(node).strip())
+    return " ".join(parts)
+
+
+GENERIC_LOCAL_RE = re.compile(
+    r"^(?:.*[-_.])?(webmaster|info|admin|office|contact|noreply|no-reply|helpdesk|support|dept|department|news|events|"
+    r"advising|admissions|communications|frontdesk|reception|registrar|feedback|marketing)(?:[-_.0-9].*)?$"
+)
+
+
 def find_emails(el):
-    """Unique e-mail addresses in an element: mailto links first, then plain and obfuscated text."""
+    """Unique e-mail addresses in an element: mailto links first, then plain and obfuscated text. Ignores footer/nav."""
     if el is None:
         return []
     found = []
     for a in el.select('a[href^="mailto:"]'):
+        if a.find_parent(["footer", "nav"]):
+            continue
         addr = a["href"][7:].split("?")[0].strip().replace("%20", "")
         if EMAIL_RE.fullmatch(addr):
             found.append(addr.lower())
-    text = el.get_text(" ", strip=True)
+    text = _text_outside_chrome(el)
     found += [m.group(0).lower() for m in EMAIL_RE.finditer(text)]
     for m in OBFUSCATED_EMAIL_RE.finditer(text):
         dom = re.sub(r"\s*(\[dot\]|\(dot\))\s*", ".", m.group(2), flags=re.I).replace(" ", "")
@@ -331,7 +384,7 @@ def pick_email(emails, person_name=""):
     best, best_score = "", -1
     for e in emails:
         local, _, domain = e.partition("@")
-        if local in GENERIC_EMAIL_LOCALS:
+        if local in GENERIC_EMAIL_LOCALS or GENERIC_LOCAL_RE.match(local):
             continue
         score = 0
         l = fold(local)
@@ -349,10 +402,29 @@ def pick_email(emails, person_name=""):
 # ---------------------------------------------------------------- profile page
 
 
+def _profile_score(r):
+    if not r:
+        return -1
+    return sum(bool(r[k]) for k in ("email", "research_areas", "teaching", "google_scholar", "title", "extension", "lab_url", "orcid"))
+
+
 def parse_profile(soup, url, hint_name=""):
-    """Extract one faculty member's details from their individual page."""
-    root = content_root(soup)
-    toks = blocks(root)
+    """Extract one faculty member's details from their individual page.
+
+    Tries the page's main content first; if that finds little (some sites leave <main> empty or mislabel their
+    whole body as navigation) it retries on the whole body and keeps the richer result.
+    """
+    best = _parse_profile(soup, url, hint_name, "strict")
+    if _profile_score(best) < 3:
+        loose = _parse_profile(soup, url, hint_name, "loose")
+        if _profile_score(loose) > _profile_score(best):
+            best = loose
+    return best
+
+
+def _parse_profile(soup, url, hint_name, mode):
+    root = content_root(soup) if mode == "strict" else (soup.body or soup)
+    toks = blocks(root, mode)
     secs = sections(toks)
 
     # --- name
@@ -424,11 +496,11 @@ def parse_profile(soup, url, hint_name=""):
     # --- contact + links
     emails = find_emails(root)
     for extra in soup.select("aside, .sidebar, [class*=contact], [class*=sidebar]"):
-        if not _is_chrome(extra):
+        if not _is_chrome(extra, mode):
             emails += [e for e in find_emails(extra) if e not in emails]
     email = pick_email(emails, name)
-    if not email and len(emails) == 1 and emails[0].split("@")[0] not in GENERIC_EMAIL_LOCALS:
-        email = emails[0]
+    if not email and len([e for e in emails if not GENERIC_LOCAL_RE.match(e.split("@")[0])]) == 1:
+        email = next(e for e in emails if not GENERIC_LOCAL_RE.match(e.split("@")[0]))
 
     scholar = orcid = lab_url = lab_name = website = edis = ""
     for a in soup.select("a[href]"):
@@ -534,13 +606,25 @@ def extract_people(soup, base_url, accept_hosts=None):
     """People on a listing page that link to individual profile pages.
 
     Returns a list of dicts: name, profile_url, lines (card text), email, title, specialty, location, roles.
+    Tries the main content first, then the whole body (some UF pages put the list outside <main>).
     """
-    root = content_root(soup)
+    best = []
+    for mode in ("strict", "loose"):
+        root = content_root(soup) if mode == "strict" else (soup.body or soup)
+        people = _extract_people(root, base_url, accept_hosts, mode)
+        if len(people) >= 3:
+            return people
+        if len(people) > len(best):
+            best = people
+    return best
+
+
+def _extract_people(root, base_url, accept_hosts, mode):
     base_host = urlparse(base_url).hostname or ""
     base_path = urlparse(base_url).path.rstrip("/")
     cands = {}
     for a in root.select("a[href]"):
-        if _inside_chrome(a, root):
+        if _inside_chrome(a, root, mode):
             continue
         url = canon_url(a["href"], base_url)
         if not url:
@@ -609,11 +693,13 @@ def _plausible_faculty(p):
     return not STAFF_RE.search(t)
 
 
-def _inside_chrome(a, root):
+def _inside_chrome(a, root, mode="strict"):
     for parent in a.parents:
         if parent is root:
             return False
-        if parent.name in ("nav", "footer") or (parent.get("role") or "") in ("navigation", "contentinfo", "banner"):
+        if parent.name in ("nav", "footer"):
+            return True
+        if mode == "strict" and (parent.get("role") or "") in ("navigation", "contentinfo", "banner"):
             return True
     return False
 
