@@ -27,8 +27,37 @@ EXTRA_UNITS = [
     {"college": "Levin College of Law", "name": "Levin College of Law", "site": "https://www.law.ufl.edu/",
      "hints": ["https://www.law.ufl.edu/faculty"]},
 ]
+# Departments whose catalog link is missing, stale (404) or points at an admissions page.
+# Each value is a list of candidate sites; the crawler tries them in order and keeps the first that yields a faculty list.
 SITE_OVERRIDES = {
-    "Soil, Water, and Ecosystem Sciences": "https://soils.ifas.ufl.edu/",
+    "Soil, Water, and Ecosystem Sciences": ["https://soils.ifas.ufl.edu/"],
+    "Anthropology Department": ["https://anthro.ufl.edu/", "https://www.anthro.ufl.edu/"],
+    "Classics Department": ["https://classics.ufl.edu/", "https://www.classics.ufl.edu/"],
+    "Religion Department": ["https://religion.ufl.edu/", "https://www.religion.ufl.edu/"],
+    "Physics Department": ["https://www.phys.ufl.edu/", "https://phys.ufl.edu/"],
+    "Spanish and Portuguese Studies Department": ["https://www.spanishandportuguese.ufl.edu/", "https://spanishandportuguese.ufl.edu/"],
+    "Computer and Information Science and Engineering Department": ["https://www.cise.ufl.edu/", "https://cise.ufl.edu/"],
+    "Electrical and Computer Engineering Department": ["https://www.ece.ufl.edu/", "https://ece.ufl.edu/"],
+    "Industrial and Systems Engineering Department": ["https://www.ise.ufl.edu/", "https://ise.ufl.edu/"],
+    "Materials Science and Engineering Department": ["https://mse.ufl.edu/", "https://www.mse.ufl.edu/"],
+    "Nuclear and Radiological Engineering Department": ["https://www.nre.ufl.edu/", "https://nre.ufl.edu/"],
+    "Engineering Education Department": ["https://www.eng.ufl.edu/engineering-education/", "https://engineeringeducation.ufl.edu/"],
+    "Civil and Coastal Engineering Department": ["https://www.essie.ufl.edu/", "https://www.ce.ufl.edu/"],
+    "Food and Resource Economics": ["https://fred.ifas.ufl.edu/", "https://www.fred.ifas.ufl.edu/"],
+    "Horticultural Sciences": ["https://hos.ifas.ufl.edu/", "https://hos.ufl.edu/"],
+    "Wildlife Ecology and Conservation": ["https://wec.ifas.ufl.edu/", "https://www.wec.ufl.edu/"],
+    "Family, Youth and Community Sciences": ["https://fycs.ifas.ufl.edu/people/", "https://fycs.ifas.ufl.edu/"],
+    "Health Education & Behavior": ["https://hhp.ufl.edu/", "https://www.heb.hhp.ufl.edu/"],
+    "Health and Human Performance": ["https://hhp.ufl.edu/"],
+    "Tourism, Hospitality, and Event Management": ["https://hhp.ufl.edu/"],
+    "Speech, Language, and Hearing Sciences": ["https://slhs.phhp.ufl.edu/", "https://phhp.ufl.edu/about/departments/speech-language-and-hearing-sciences/"],
+    "Pharmaceutics Department": ["https://pharmacy.ufl.edu/departments/pharmaceutics/", "https://pharmacy.ufl.edu/"],
+    "Finance, Insurance, and Real Estate": ["https://warrington.ufl.edu/"],
+    "Management": ["https://warrington.ufl.edu/"],
+    "Marketing": ["https://warrington.ufl.edu/"],
+    "Dental Sciences": ["https://dental.ufl.edu/"],
+    "Comparative Biomedical Sciences": ["https://cbs.vetmed.ufl.edu/", "https://vetmed.ufl.edu/"],
+    "Preventive Veterinary Medicine": ["https://vetmed.ufl.edu/"],
 }
 
 WORKERS_UNITS = int(os.getenv("ATLAS_UNIT_WORKERS", "10"))
@@ -151,7 +180,8 @@ def discover_units(F, progress, only):
         raise RuntimeError(f"Only {len(units)} units parsed from the catalog; the page layout may have changed")
     for u in units:
         u["id"] = uid(u["college"], u["name"])
-        u["site"] = SITE_OVERRIDES.get(u["name"], "")
+        u["site_candidates"] = list(SITE_OVERRIDES.get(u["name"], []))
+        u["site"] = ""
         u["hints"] = []
     units += [{**e, "id": uid(e["college"], e["name"]), "catalog_url": ""} for e in EXTRA_UNITS]
     if only:
@@ -160,10 +190,25 @@ def discover_units(F, progress, only):
 
     def find_site(u):
         try:
-            if not u["site"] and u.get("catalog_url"):
+            if u.get("catalog_url"):
                 res = F.get(u["catalog_url"])
                 if res:
-                    u["site"] = P.parse_unit_website(res[1], res[0])
+                    found = P.parse_unit_website(res[1], res[0])
+                    if found:
+                        u.setdefault("site_candidates", []).append(found)
+            u.setdefault("site_candidates", [])
+            if u.get("site") and u["site"] not in u["site_candidates"]:
+                u["site_candidates"].append(u["site"])
+            # also try the site root and the www / non-www twin of every candidate
+            extra = []
+            for c in u["site_candidates"]:
+                pu = urlparse(c)
+                if pu.hostname:
+                    host = pu.hostname
+                    twin = host[4:] if host.startswith("www.") else "www." + host
+                    extra += [f"{pu.scheme}://{host}/", f"{pu.scheme}://{twin}/"]
+            u["site_candidates"] = list(dict.fromkeys(u["site_candidates"] + extra))
+            u["site"] = u["site_candidates"][0] if u["site_candidates"] else ""
         finally:
             progress.bump("units_done")
 
@@ -211,7 +256,23 @@ def evaluate_listing(F, url, max_pages=30):
 
 
 def discover_unit(F, unit):
-    """Find the unit's faculty list and student list. Returns a result dict."""
+    """Try each candidate site (override, catalog link, site root, www twin); keep the first with a real faculty list."""
+    best, tried = None, []
+    for site in (unit.get("site_candidates") or [unit.get("site", "")])[:6]:
+        res = _discover_site(F, {**unit, "site": site})
+        tried.append(site)
+        if best is None or len(res["people"]) > len(best["people"]) or (not best["people"] and res["info"]["status"] != "unreachable" and best["info"]["status"] == "unreachable"):
+            best = res
+        if len(best["people"]) >= 3 or not site:
+            break
+    best["info"]["sites_tried"] = tried
+    unit["site"] = best["info"]["site"]
+    best["unit"] = unit
+    return best
+
+
+def _discover_site(F, unit):
+    """Find the unit's faculty list and student list on one site. Returns a result dict."""
     info = {"site": unit["site"], "faculty_pages": [], "student_pages": [], "notes": []}
     res = {"unit": unit, "people": [], "students": [], "info": info}
     if not unit["site"]:
@@ -628,7 +689,12 @@ def write_outputs(records, students, results, units, F, progress, skipped, t0):
     (OUT / "meta.json").write_text(json.dumps({"updated_at": stamp, "faculty": len(records), "students": len(students),
                                                "colleges": len(colleges), "departments": len(cov_units)}), encoding="utf-8")
     sample = random.Random(1).sample([r for r in records if r["profile_url"]], min(60, len([r for r in records if r["profile_url"]])))
+    full = {}
+    if os.getenv("ATLAS_PUBLISH_DATA"):  # dev runs: let the developer inspect the whole result on the status branch
+        full = {"faculty.json": (OUT / "faculty.json").read_text(encoding="utf-8"),
+                "students.json": (OUT / "students.json").read_text(encoding="utf-8")}
     progress.extra_files = {
+        **full,
         "coverage.json": json.dumps(coverage, indent=1, ensure_ascii=False),
         "sample.json": json.dumps({"faculty": sample, "students": students[:40]}, indent=1, ensure_ascii=False),
     }

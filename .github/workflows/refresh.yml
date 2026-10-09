@@ -60,6 +60,7 @@ jobs:
           ATLAS_ONLY: ${{ steps.scope.outputs.only }}
           ATLAS_OUT: ${{ steps.scope.outputs.out }}
           ATLAS_MAX_MINUTES: "300"
+          ATLAS_PUBLISH_DATA: ${{ github.event_name == 'push' && '1' || '' }}
         run: |
           if [ "${{ github.event_name }}" = "push" ]; then nohup bash scripts/watchdog.sh >/dev/null 2>&1 & fi
           set -o pipefail

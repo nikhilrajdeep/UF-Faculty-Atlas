@@ -13,7 +13,7 @@ MAX_BYTES = 4_000_000
 
 
 class Fetcher:
-    def __init__(self, delay=1.0, timeout=25, retries=2):
+    def __init__(self, delay=1.0, timeout=25, retries=3):
         self.delay, self.timeout, self.retries = delay, timeout, retries
         self.session = requests.Session()
         self.session.headers.update({"User-Agent": UA, "Accept": "text/html,application/xhtml+xml"})
@@ -112,7 +112,7 @@ class Fetcher:
                 return res
             except requests.RequestException as e:
                 last_err = type(e).__name__
-                time.sleep(2 * (attempt + 1))
+                time.sleep(3 * (attempt + 1))
         self.errors.append((url, last_err or "failed"))
         self.cache[url] = None
         return None
