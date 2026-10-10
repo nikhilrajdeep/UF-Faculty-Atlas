@@ -19,7 +19,6 @@ const fetchJson = async (path, version) => {
   return r.json();
 };
 
-export const loadConfig = () => fetchJson('config.json').catch(() => ({}));
 export const loadMeta = () => fetch(`data/meta.json?t=${Date.now()}`, { cache: 'no-store' }).then((r) => (r.ok ? r.json() : null)).catch(() => null);
 export const loadCoverage = (v) => fetchJson('data/coverage.json', v);
 
@@ -46,15 +45,6 @@ export async function loadFaculty(version) {
   }
   const collegeList = [...colleges.keys()].sort();
   return { items, meta: j.metadata || {}, colleges: collegeList, deptsOf: (c) => [...(c ? colleges.get(c) || [] : new Set([...colleges.values()].flatMap((s) => [...s])))].sort() };
-}
-
-export async function loadStudents(version) {
-  const j = await fetchJson('data/students.json', version);
-  const items = j.students || [];
-  for (const s of items) {
-    s._q = [s.name, s.department, s.college, s.program, ...(s.advisor_names || []), s.research, s.lab].filter(Boolean).join(' ').toLowerCase();
-  }
-  return { items, meta: j.metadata || {} };
 }
 
 export function matchesQuery(blob, query) {

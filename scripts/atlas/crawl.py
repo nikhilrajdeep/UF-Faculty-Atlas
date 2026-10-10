@@ -16,7 +16,6 @@ from . import parsers as P
 from .clean import finalize, strip_dept, student_name_ok
 from .fetch import Fetcher
 from .names import display_name, fold, last_name, name_key, squash
-from .publish import push_status, read_json
 
 ROOT = Path(__file__).resolve().parents[2]
 OUT = Path(os.getenv("ATLAS_OUT", ROOT / "docs" / "data"))
@@ -98,8 +97,6 @@ class Progress:
             "counts": {"units_total": 0, "units_done": 0, "profiles_total": 0, "profiles_done": 0,
                        "faculty": 0, "students": 0, "pages_fetched": 0},
         }
-        self.last_publish = 0
-        self.extra_files = {}
 
     def set(self, **kw):
         with self.lock:
@@ -133,22 +130,18 @@ class Progress:
             self.state["percent"] = round(min(pct, 99.5), 1) if self.state["state"] == "running" else self.state["percent"]
             self.state["eta_seconds"] = eta
 
-    def write(self, publish=False, force=False):
+    def write(self):
         self.compute()
         with self.lock:
             text = json.dumps(self.state, indent=1)
         self.local_dir.mkdir(parents=True, exist_ok=True)
         (self.local_dir / "progress.json").write_text(text, encoding="utf-8")
-        if publish and (force or time.time() - self.last_publish > 25):
-            self.last_publish = time.time()
-            files = {"progress.json": text, **self.extra_files}
-            push_status(files)
 
     def finish(self, ok, message):
         with self.lock:
             self.state.update(state="success" if ok else "failed", stage="done", message=message,
                               percent=100 if ok else self.state["percent"], eta_seconds=0)
-        self.write(publish=True, force=True)
+        self.write()
 
 
 def start_reporter(progress, stop):
@@ -160,7 +153,7 @@ def start_reporter(progress, stop):
                 old = [(round(time.time() - t), n, u) for u, (t, n) in list(INFLIGHT.items()) if time.time() - t > 8]
                 if old:
                     print(f"  parsing for a long time: {old[:5]}", flush=True)
-                progress.write(publish=True)
+                progress.write()
             except Exception as e:  # never let the reporter die silently
                 print(f"progress reporter error: {type(e).__name__}: {e}", flush=True)
             stop.wait(10)
@@ -227,7 +220,10 @@ def load_baseline(F):
         rows = P.parse_catalog_roster(page[1])
         if len(rows) >= 100:
             return rows
-    old = read_json(OUT / "faculty.json") or read_json(ROOT / "public" / "data" / "faculty.json") or {}
+    try:  # catalog unavailable: fall back on the names already in the database
+        old = json.loads((OUT / "faculty.json").read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        old = {}
     return [{"name": display_name(f["name"]), "title": f.get("title", ""), "department": f.get("department", "")}
             for f in old.get("faculty", [])]
 
@@ -583,7 +579,7 @@ def run():
     only = [x.strip().lower() for x in os.getenv("ATLAS_ONLY", "").split(",") if x.strip()]
     budget = float(os.getenv("ATLAS_MAX_MINUTES", "300")) * 60
     OUT.mkdir(parents=True, exist_ok=True)
-    progress = Progress(OUT)
+    progress = Progress(Path(os.getenv("RUNNER_TEMP", "/tmp")) / "atlas-progress")
     stop = threading.Event()
     F = Fetcher(delay=float(os.getenv("ATLAS_DELAY", "1.0")))
     t0 = time.time()
@@ -681,7 +677,6 @@ def write_outputs(records, students, results, units, F, progress, skipped, t0):
         "sources": ["https://gradcatalog.ufl.edu/graduate/faculty/", "UF department websites"],
         "note": "Compiled from public UF pages. Not an official UF product; verify details on the linked UF pages."},
         "faculty": records}, **compact), encoding="utf-8")
-    (OUT / "students.json").write_text(json.dumps({"metadata": {"updated_at": stamp, "total": len(students)}, "students": students}, **compact), encoding="utf-8")
 
     cov_units, stat = [], {}
     for res in results:
@@ -714,19 +709,8 @@ def write_outputs(records, students, results, units, F, progress, skipped, t0):
         "errors": [{"url": u, "error": e} for u, e in F.errors[:300]],
     }
     (OUT / "coverage.json").write_text(json.dumps(coverage, indent=1, ensure_ascii=False), encoding="utf-8")
-    (OUT / "meta.json").write_text(json.dumps({"updated_at": stamp, "revision": hashlib.sha1((OUT / "faculty.json").read_bytes() + (OUT / "students.json").read_bytes()).hexdigest()[:10], "faculty": len(records), "students": len(students),
+    (OUT / "meta.json").write_text(json.dumps({"updated_at": stamp, "revision": hashlib.sha1((OUT / "faculty.json").read_bytes()).hexdigest()[:10], "faculty": len(records), "students": len(students),
                                                "colleges": len(colleges), "departments": len(cov_units)}), encoding="utf-8")
-    sample = random.Random(1).sample([r for r in records if r["profile_url"]], min(60, len([r for r in records if r["profile_url"]])))
-    full = {}
-    if os.getenv("ATLAS_PUBLISH_DATA"):  # dev runs: let the developer inspect the whole result on the status branch
-        full = {"meta.json": (OUT / "meta.json").read_text(encoding="utf-8"),
-                "faculty.json": (OUT / "faculty.json").read_text(encoding="utf-8"),
-                "students.json": (OUT / "students.json").read_text(encoding="utf-8")}
-    progress.extra_files = {
-        **full,
-        "coverage.json": json.dumps(coverage, indent=1, ensure_ascii=False),
-        "sample.json": json.dumps({"faculty": sample, "students": students[:40]}, indent=1, ensure_ascii=False),
-    }
 
 
 if __name__ == "__main__":

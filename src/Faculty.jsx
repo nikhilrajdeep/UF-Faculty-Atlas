@@ -3,7 +3,7 @@ import { TOPICS, download, fmt, fmtDate, matchesQuery, toCsv } from './data.js';
 
 const PAGE = 48;
 
-export default function Faculty({ db, meta, openId, setOpenId, goStudents }) {
+export default function Faculty({ db, meta, openId, setOpenId }) {
   const [q, setQ] = useState('');
   const [college, setCollege] = useState('');
   const [dept, setDept] = useState('');
@@ -109,7 +109,7 @@ export default function Faculty({ db, meta, openId, setOpenId, goStudents }) {
       )}
       {db && shown.length > limit && <div ref={sentinel} className="more"><button onClick={() => setLimit((n) => n + PAGE)}>Show more</button></div>}
       {db && !shown.length && <div className="empty"><h3>No matching faculty found</h3><p>Try fewer filters or a different search.</p></div>}
-      {chosen && <FacultyModal f={chosen} onClose={() => setOpenId(null)} goStudents={goStudents} />}
+      {chosen && <FacultyModal f={chosen} onClose={() => setOpenId(null)} />}
     </>
   );
 }

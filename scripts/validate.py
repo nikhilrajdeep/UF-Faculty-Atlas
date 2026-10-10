@@ -6,7 +6,6 @@ from pathlib import Path
 out = Path(sys.argv[1] if len(sys.argv) > 1 else "docs/data")
 fac = json.loads((out / "faculty.json").read_text(encoding="utf-8"))
 cov = json.loads((out / "coverage.json").read_text(encoding="utf-8"))
-stu = json.loads((out / "students.json").read_text(encoding="utf-8"))
 f = fac["faculty"]
 problems = []
 if fac["metadata"]["total"] != len(f):
@@ -25,7 +24,7 @@ if enriched < 300:
 ids = [r["id"] for r in f]
 if len(set(ids)) != len(ids):
     problems.append("duplicate faculty ids")
-print(f"faculty={len(f)} students={len(stu['students'])} departments_ok={len(ok)}/{len(cov['departments'])} enriched_profiles={enriched}")
+print(f"faculty={len(f)} departments_ok={len(ok)}/{len(cov['departments'])} enriched_profiles={enriched}")
 if problems:
     print("VALIDATION FAILED:\n - " + "\n - ".join(problems))
     sys.exit(1)
