@@ -714,7 +714,7 @@ def write_outputs(records, students, results, units, F, progress, skipped, t0):
         "errors": [{"url": u, "error": e} for u, e in F.errors[:300]],
     }
     (OUT / "coverage.json").write_text(json.dumps(coverage, indent=1, ensure_ascii=False), encoding="utf-8")
-    (OUT / "meta.json").write_text(json.dumps({"updated_at": stamp, "faculty": len(records), "students": len(students),
+    (OUT / "meta.json").write_text(json.dumps({"updated_at": stamp, "revision": hashlib.sha1((OUT / "faculty.json").read_bytes() + (OUT / "students.json").read_bytes()).hexdigest()[:10], "faculty": len(records), "students": len(students),
                                                "colleges": len(colleges), "departments": len(cov_units)}), encoding="utf-8")
     sample = random.Random(1).sample([r for r in records if r["profile_url"]], min(60, len([r for r in records if r["profile_url"]])))
     full = {}

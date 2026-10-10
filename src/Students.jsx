@@ -13,7 +13,7 @@ export default function Students({ db, meta, openFaculty }) {
   const [limit, setLimit] = useState(PAGE);
   const dq = useDeferredValue(q);
 
-  useEffect(() => { loadStudents(meta?.updated_at).then(setData).catch(() => setErr('Student data could not be loaded.')); }, [meta?.updated_at]);
+  useEffect(() => { loadStudents((meta?.revision || meta?.updated_at)).then(setData).catch(() => setErr('Student data could not be loaded.')); }, [meta?.revision || meta?.updated_at]);
 
   const colleges = useMemo(() => [...new Set((data?.items || []).map((s) => s.college))].filter(Boolean).sort(), [data]);
   const depts = useMemo(() => [...new Set((data?.items || []).filter((s) => !college || s.college === college).map((s) => s.department))].sort(), [data, college]);

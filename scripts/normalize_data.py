@@ -2,6 +2,7 @@
 
 usage: python scripts/normalize_data.py docs/data
 """
+import hashlib
 import json
 import sys
 from pathlib import Path
@@ -35,6 +36,10 @@ def main(folder):
         s["department"] = canon(s["department"])
     for name, doc in (("faculty.json", fac_doc), ("students.json", stu_doc), ("coverage.json", cov)):
         (d / name).write_text(json.dumps(doc, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    meta_path = d / "meta.json"
+    meta = json.loads(meta_path.read_text(encoding="utf-8"))
+    meta["revision"] = hashlib.sha1((d / "faculty.json").read_bytes() + (d / "students.json").read_bytes()).hexdigest()[:10]
+    meta_path.write_text(json.dumps(meta), encoding="utf-8")
     depts = {a["department"] for r in fac_doc["faculty"] for a in r["affiliations"] if a.get("department")}
     print(f"{len(fac_doc['faculty'])} faculty, {len(depts)} distinct departments; sample: {sorted(depts)[:5]}")
 

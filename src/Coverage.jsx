@@ -14,7 +14,7 @@ const STATUS = {
 export default function Coverage({ meta }) {
   const [cov, setCov] = useState(null);
   const [err, setErr] = useState('');
-  useEffect(() => { loadCoverage(meta?.updated_at).then(setCov).catch(() => setErr('Coverage report is not available yet.')); }, [meta?.updated_at]);
+  useEffect(() => { loadCoverage((meta?.revision || meta?.updated_at)).then(setCov).catch(() => setErr('Coverage report is not available yet.')); }, [meta?.revision || meta?.updated_at]);
   if (err) return <div className="banner">{err}</div>;
   if (!cov) return <p className="count">Loading coverage report{'…'}</p>;
   const t = cov.totals;

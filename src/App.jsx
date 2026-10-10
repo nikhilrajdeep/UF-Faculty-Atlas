@@ -26,7 +26,7 @@ export default function App() {
     try {
       const m = await loadMeta();
       setMeta(m);
-      setDb(await loadFaculty(m?.updated_at));
+      setDb(await loadFaculty(m?.revision || m?.updated_at));
       setError('');
     } catch (e) {
       setError('The faculty database could not be loaded. Open Database updates to refresh it.');
