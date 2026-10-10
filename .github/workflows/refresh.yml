@@ -13,7 +13,7 @@ on:
   schedule:
     - cron: "17 8 * * 0"
   push:
-    branches: [claude/crawler-setup]
+    branches: [claude/crawler-setup, main]
     paths: ["data/refresh-request.json"]
 
 permissions:
@@ -21,7 +21,7 @@ permissions:
   pages: write
 
 concurrency:
-  group: faculty-database${{ github.event_name == 'push' && format('-dev-{0}', github.run_id) || '' }}
+  group: faculty-database${{ github.event_name == 'push' && github.ref_name != 'main' && format('-dev-{0}', github.run_id) || '' }}
   cancel-in-progress: false
 
 jobs:
@@ -45,14 +45,17 @@ jobs:
         env:
           INPUT_ONLY: ${{ github.event.inputs.only }}
           EVENT: ${{ github.event_name }}
+          BRANCH: ${{ github.ref_name }}
         run: |
           ONLY="$INPUT_ONLY"
+          DEV=""
           if [ "$EVENT" = "push" ]; then
             ONLY=$(python -c "import json;print(json.load(open('data/refresh-request.json')).get('only',''))")
+            if [ "$BRANCH" != "main" ]; then DEV=1; fi   # pushes to main run the real refresh
           fi
           echo "only=$ONLY" >> "$GITHUB_OUTPUT"
           # test runs (word filter, or the dev push trigger) write to a scratch folder and never touch the real database
-          if [ -n "$ONLY" ] || [ "$EVENT" = "push" ]; then echo "out=data/dev-run" >> "$GITHUB_OUTPUT"; else echo "out=docs/data" >> "$GITHUB_OUTPUT"; fi
+          if [ -n "$ONLY" ] || [ -n "$DEV" ]; then echo "out=data/dev-run" >> "$GITHUB_OUTPUT"; else echo "out=docs/data" >> "$GITHUB_OUTPUT"; fi
 
       - name: Crawl UF departments
         env:
@@ -60,9 +63,9 @@ jobs:
           ATLAS_ONLY: ${{ steps.scope.outputs.only }}
           ATLAS_OUT: ${{ steps.scope.outputs.out }}
           ATLAS_MAX_MINUTES: "300"
-          ATLAS_PUBLISH_DATA: ${{ github.event_name == 'push' && '1' || '' }}
+          ATLAS_PUBLISH_DATA: ${{ github.event_name == 'push' && github.ref_name != 'main' && '1' || '' }}
         run: |
-          if [ "${{ github.event_name }}" = "push" ]; then nohup bash scripts/watchdog.sh >/dev/null 2>&1 & fi
+          if [ "${{ github.event_name }}" = "push" ] && [ "${{ github.ref_name }}" != "main" ]; then nohup bash scripts/watchdog.sh >/dev/null 2>&1 & fi
           set -o pipefail
           python -m atlas.crawl 2>&1 | tee /tmp/crawl.log
 
