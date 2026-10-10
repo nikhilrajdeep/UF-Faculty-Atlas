@@ -606,6 +606,17 @@ def run():
         with ThreadPoolExecutor(WORKERS_UNITS) as ex:
             results = list(ex.map(do_unit, units))
 
+        # second chance for sites that failed to connect (servers sometimes refuse a burst of requests)
+        failed = [i for i, r in enumerate(results) if r["info"].get("status") in ("unreachable", "error")]
+        if failed:
+            progress.set(message=f"Retrying {len(failed)} departments whose sites did not answer")
+            time.sleep(45)
+            F.forget_failures()
+            with ThreadPoolExecutor(3) as ex:
+                for i, again in zip(failed, ex.map(lambda i: discover_unit(F, results[i]["unit"]), failed)):
+                    if again["info"].get("status") not in ("unreachable", "error") or len(again["people"]) > len(results[i]["people"]):
+                        results[i] = again
+
         # profile tasks, interleaved across hosts so slow sites do not block the rest
         queues = {}
         for res in results:

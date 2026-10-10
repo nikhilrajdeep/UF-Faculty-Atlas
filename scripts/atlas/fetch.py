@@ -67,6 +67,11 @@ class Fetcher:
             d = None
         return max(self.delay, float(d)) if d else self.delay
 
+    def forget_failures(self):
+        """Drop remembered failures so a later pass can try those URLs again."""
+        for k in [k for k, v in self.cache.items() if v is None]:
+            self.cache.pop(k, None)
+
     # -- fetching
     def get(self, url, keep=False):
         """Returns (final_url, html) or None. Never raises. Page bodies are cached only when keep=True."""

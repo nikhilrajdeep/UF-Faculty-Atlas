@@ -77,3 +77,11 @@ def test_student_junk_rejected():
                 "Beekeeping Certificate- Unique Credit Form"):
         assert not student_name_ok(bad), bad
     assert student_name_ok("Jayani Melanika Madhuhansi Wilegoda Mudalige") and student_name_ok("Arielle Marshall")
+
+
+def test_bare_catalog_row_merges_into_the_crawled_profile():
+    full = rec("Monika Ardelt", email="ardelt@ufl.edu", research_areas=["Aging"], profile_url="https://x.ufl.edu/ardelt/",
+               department="Sociology", affiliations=[{"college": "CLAS", "department": "Sociology"}])
+    row = rec("Monika Ardelt", department="Sociology and Criminology & Law", affiliations=[])
+    out = finalize([row, full], UNITS)
+    assert len(out) == 1 and out[0]["email"] == "ardelt@ufl.edu" and out[0]["research_areas"] == ["Aging"]

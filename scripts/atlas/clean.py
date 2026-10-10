@@ -231,7 +231,14 @@ def _richness(r):
     return (bool(r.get("profile_url")), len(r.get("research_areas", [])) + len(r.get("teaching", [])), bool(r.get("email")))
 
 
+def _poor(r):
+    """A bare listing card or catalog row: no e-mail, no research, nothing to contradict another record of the same name."""
+    return not (r.get("email") or r.get("research_areas") or r.get("teaching") or r.get("google_scholar"))
+
+
 def _same_person(a, b):
+    if _poor(a) or _poor(b):
+        return True
     ea, eb = (a.get("email") or "").lower(), (b.get("email") or "").lower()
     if ea and eb:
         return ea == eb
