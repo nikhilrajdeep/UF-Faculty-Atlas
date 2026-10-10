@@ -21,7 +21,7 @@ permissions:
   pages: write
 
 concurrency:
-  group: faculty-database${{ github.event_name == 'push' && github.ref_name != 'main' && format('-dev-{0}', github.run_id) || '' }}
+  group: faculty-database-prod${{ github.event_name == 'push' && github.ref_name != 'main' && format('-dev-{0}', github.run_id) || '' }}
   cancel-in-progress: false
 
 jobs:
