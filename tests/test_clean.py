@@ -97,3 +97,12 @@ def test_more_noise_rules():
     a = rec("Jessica Allen", email="jessal@ufl.edu", research_areas=["Biomechanics"])
     b = rec("Jessica Allen", research_areas=["Biomechanics", "Rehabilitation"], profile_url="https://x.ufl.edu/a")
     assert len(finalize([a, b], UNITS)) == 1
+
+
+def test_courses_in_research_move_to_teaching_and_titles_trimmed():
+    r = rec("Ebrahim Babaeian", research_areas=["Teaching SWS 4602C/5605C Environmental Soil Physics", "Soil physics"],
+            title="Associate Professor, Soil, Water & Nutrient Management Everglades Research and Education Center Jehangir Bhadha's EREC Profile Page")
+    out = finalize([r], UNITS)[0]
+    assert out["research_areas"] == ["Soil physics"]
+    assert out["teaching"] == ["SWS 4602C/5605C Environmental Soil Physics"]
+    assert out["title"].endswith("Education Center")

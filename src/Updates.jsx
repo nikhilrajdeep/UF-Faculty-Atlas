@@ -1,6 +1,8 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { fmt, fmtDate, fmtEta, loadMeta } from './data.js';
 
+const STAGES = { starting: 'starting', discover: 'finding departments', departments: 'reading department lists', profiles: 'reading faculty profiles', merge: 'merging records' };
+
 // Refresh is started and watched entirely from this page. The browser talks to a small relay (config.refreshApi)
 // that holds the GitHub credential, so visitors never go to GitHub and no secret is ever shipped in the page.
 
@@ -72,7 +74,7 @@ export default function Updates({ config, meta, onNewData }) {
       <p>Faculty come from UF department websites and the graduate catalog. A refresh re-reads about a hundred department sites, so it takes a while; the bar below is based on pages actually read, not a timer.</p>
 
       <section className="update">
-        <h2>{label}{running && p?.stage ? ` — ${p.stage}` : ''}</h2>
+        <h2>{label}{running && p?.stage ? ` — ${STAGES[p.stage] || p.stage}` : ''}</h2>
         <div className="bar" role="progressbar" aria-valuenow={Math.round(pct)} aria-valuemin={0} aria-valuemax={100}><div className={running ? 'live' : ''} style={{ width: `${pct}%` }} /></div>
         <div className="bar-meta"><h3>{Math.round(pct)}%</h3><span>{running ? [p?.message, fmtEta(p?.eta_seconds)].filter(Boolean).join(' · ') : p?.message || 'No refresh in progress.'}</span></div>
         {(running || p?.state === 'success') && c.units_total > 0 && (

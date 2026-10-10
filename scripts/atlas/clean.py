@@ -122,9 +122,9 @@ def clean_areas(rec):
     return out
 
 
-def clean_teaching(rec):
+def clean_teaching(rec, extra=()):
     out, seen = [], set()
-    for raw in rec.get("teaching", []):
+    for raw in list(rec.get("teaching", [])) + list(extra):
         t = unescape(raw).strip(" -–—•·|;,")
         f = fold(t)
         if not t or len(t) < 4 or len(t) > 160 or f in seen or TEACH_JUNK.search(t):
@@ -139,6 +139,7 @@ def clean_teaching(rec):
 def clean_title(rec):
     t = unescape(rec.get("title", ""))
     t = re.sub(r"^(affiliations?)\s+", "", t, flags=re.I).strip(" ,;:|-–—")
+    t = re.sub(r"\s+\S+(?:\s\S+)?['’]s\s+[\w&]+\s+(?:profile|page|website)(?:\s+page)?\s*$", "", t, flags=re.I).strip(" ,;:|-–—")
     if len(t) > 140 or "collection of websites" in t.lower() or t.startswith(":"):
         t = ""
     if re.search(r"graduate faculty status|dean'?s office$", t, re.I):
@@ -212,6 +213,7 @@ def finalize(records, units):
         for k in ("department", "college", "location", "lab_name", "research_summary"):
             r[k] = unescape(r.get(k, ""))
         r["title"] = clean_title(r)
+        r["research_summary"] = re.sub(r"^Research Departmental Program Areas:.*?Research focus:\s*", "", r.get("research_summary", ""), flags=re.I)
         r["roles"] = [unescape(x) for x in r.get("roles", []) if unescape(x)]
         for a in r.get("affiliations", []):
             a["department"], a["college"] = unescape(a.get("department", "")), unescape(a.get("college", ""))
@@ -230,8 +232,9 @@ def finalize(records, units):
                             a["college"] = col
         if len(r["department"]) <= 2:  # truncated label such as "L"
             r["department"] = ""
-        r["research_areas"] = clean_areas(r)
-        r["teaching"] = clean_teaching(r)
+        courses = [re.sub(r"^teaching[:\s]+", "", a, flags=re.I) for a in r.get("research_areas", []) if COURSE_CODE.search(a)]
+        r["research_areas"] = clean_areas({**r, "research_areas": [a for a in r.get("research_areas", []) if not COURSE_CODE.search(a)]})
+        r["teaching"] = clean_teaching(r, courses)
         r["extension"] = [e for e in (unescape(x) for x in r.get("extension", [])) if e and not TEACH_JUNK.search(e) and len(e) < 200]
         if is_not_a_person(r):
             continue
