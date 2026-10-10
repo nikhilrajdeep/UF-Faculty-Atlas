@@ -13,7 +13,7 @@ from pathlib import Path
 from urllib.parse import urljoin, urlparse
 
 from . import parsers as P
-from .clean import finalize
+from .clean import finalize, student_name_ok
 from .fetch import Fetcher
 from .names import display_name, fold, last_name, name_key, squash
 from .publish import push_status, read_json
@@ -524,7 +524,8 @@ def resolve_students(results, records):
     """Attach students to advisors by last name within the department; return student rows."""
     by_unit = {}
     for r in records:
-        by_unit.setdefault(r["department"], []).append(r)
+        for d in {r["department"], *(a.get("department", "") for a in r.get("affiliations", []))} - {""}:
+            by_unit.setdefault(d, []).append(r)
     students = []
     for res in results:
         unit = res["unit"]
@@ -533,9 +534,13 @@ def resolve_students(results, records):
         for f in dept_faculty:
             by_last.setdefault(last_name(f["name"]), []).append(f)
         for row in res["students"]:
+            if not student_name_ok(row["name"]):
+                continue
             advisors, unresolved = [], []
             for tok in P.split_advisors(row.get("advisor_raw", "")):
                 toks = fold(tok).split()
+                if not tok[:1].isupper() or not student_name_ok(tok):
+                    continue
                 cands = by_last.get(last_name(tok), []) if toks else []
                 if len(cands) > 1 and len(toks) > 1:
                     cands = [c for c in cands if fold(c["name"]).startswith(toks[0][:1])] or cands
@@ -701,7 +706,8 @@ def write_outputs(records, students, results, units, F, progress, skipped, t0):
     sample = random.Random(1).sample([r for r in records if r["profile_url"]], min(60, len([r for r in records if r["profile_url"]])))
     full = {}
     if os.getenv("ATLAS_PUBLISH_DATA"):  # dev runs: let the developer inspect the whole result on the status branch
-        full = {"faculty.json": (OUT / "faculty.json").read_text(encoding="utf-8"),
+        full = {"meta.json": (OUT / "meta.json").read_text(encoding="utf-8"),
+                "faculty.json": (OUT / "faculty.json").read_text(encoding="utf-8"),
                 "students.json": (OUT / "students.json").read_text(encoding="utf-8")}
     progress.extra_files = {
         **full,

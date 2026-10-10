@@ -69,3 +69,11 @@ def test_unit_names_are_not_research_areas_and_namesakes_stay_separate():
     assert finalize([r], UNITS)[0]["research_areas"] == ["Wetland ecology"]
     a, b = rec("Wei Zhang", email="wz1@ufl.edu", profile_url="https://a.ufl.edu/1"), rec("Wei Zhang", email="wz2@ufl.edu", profile_url="https://b.ufl.edu/2")
     assert len(finalize([a, b], UNITS)) == 2
+
+
+def test_student_junk_rejected():
+    from atlas.clean import student_name_ok
+    for bad in ("TRM Professional Paper Syllabus", "Financial Assistance", "Dickinson Hall", "SPM Special Course Registration Form",
+                "Beekeeping Certificate- Unique Credit Form"):
+        assert not student_name_ok(bad), bad
+    assert student_name_ok("Jayani Melanika Madhuhansi Wilegoda Mudalige") and student_name_ok("Arielle Marshall")

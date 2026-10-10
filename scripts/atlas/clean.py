@@ -297,3 +297,27 @@ def merge_duplicates(records):
                 clusters.append([r])
         out.extend(_combine(cl) for cl in clusters)
     return out
+
+
+STUDENT_JUNK = re.compile(
+    r"\b(forms?|syllabus|paper|registration|certificates?|handbook|polic(?:y|ies)|assistance|financial|committee|requirements?|"
+    r"applications?|deadlines?|checklist|guidelines?|templates?|orientation|tuition|scholarships?|fellowships?|curriculum|courses?|"
+    r"schedule|calendar|resources?|information|credit|unique|degrees?|thesis|dissertation|exams?|defense|advising|seminar|"
+    r"travel|funding|opportunit\w+|study|professional|graduate|undergraduate|students?|faculty|staff|program|department)\b", re.I)
+BUILDING = re.compile(r"\b(hall|building|bldg|center|centre|library|room)\b\s*\d*$", re.I)
+
+
+def student_name_ok(name):
+    n = squash(name)
+    return bool(n) and not STUDENT_JUNK.search(n) and not BUILDING.search(n)
+
+
+def clean_students(students):
+    out = []
+    for s in students:
+        if not student_name_ok(s.get("name", "")):
+            continue
+        s["advisor_names"] = [a for a in (squash(x) for x in s.get("advisor_names", []))
+                              if a and a[0].isupper() and len(a) > 2 and not STUDENT_JUNK.search(a)]
+        out.append(s)
+    return out
