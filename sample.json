@@ -1,0 +1,2926 @@
+{
+ "faculty": [
+  {
+   "id": "1e0c90827986",
+   "name": "Braham Dhillon",
+   "title": "Assistant Professor",
+   "college": "College of Agricultural and Life Sciences",
+   "department": "Plant Pathology",
+   "affiliations": [
+    {
+     "college": "College of Agricultural and Life Sciences",
+     "department": "Plant Pathology"
+    }
+   ],
+   "email": "dhillonb@ufl.edu",
+   "research_areas": [
+    "Molecular biology, genomics & diagnostics of palm pathogens",
+    "Faculty Profile"
+   ],
+   "research_summary": "",
+   "teaching": [],
+   "extension": [
+    "Palm Pathology Sample Submission Form",
+    "Plant Pathology Workshop",
+    "Education Ph.D. Plant Pathology Purdue University 2010 M.S. Plant Breeding Punjab Agricultural University 2001 B.S. (Hons.) Agriculture Punjab Agricultural University 1999"
+   ],
+   "google_scholar": "https://scholar.google.com/citations?user=YiK0shgAAAAJ",
+   "orcid": "",
+   "lab_name": "",
+   "lab_url": "",
+   "website": "",
+   "edis_url": "https://edis.ifas.ufl.edu/",
+   "profile_url": "https://flrec.ifas.ufl.edu/faculty/dr-braham-dhillon/",
+   "location": "Fort Lauderdale Research and Education Center",
+   "roles": [],
+   "current_students": [
+    {
+     "name": "Sushmita Sapkota",
+     "program": ""
+    },
+    {
+     "name": "Jessica Velte",
+     "program": ""
+    }
+   ],
+   "sources": [
+    "https://flrec.ifas.ufl.edu/faculty/dr-braham-dhillon/",
+    "https://plantpath.ifas.ufl.edu/people/faculty/",
+    "https://gradcatalog.ufl.edu/graduate/faculty/"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "a9afea685218",
+   "name": "Michael Deagler Creative Writing",
+   "title": "",
+   "college": "College of Liberal Arts and Sciences",
+   "department": "English Department",
+   "affiliations": [
+    {
+     "college": "College of Liberal Arts and Sciences",
+     "department": "English Department"
+    }
+   ],
+   "email": "m.deagler@ufl.edu",
+   "research_areas": [
+    "Apply Filters",
+    "Michael Deagler",
+    "Creative Writing (Fiction)"
+   ],
+   "research_summary": "",
+   "teaching": [],
+   "extension": [],
+   "google_scholar": "",
+   "orcid": "",
+   "lab_name": "",
+   "lab_url": "",
+   "website": "",
+   "edis_url": "",
+   "profile_url": "https://english.ufl.edu/michael-deagler/",
+   "location": "",
+   "roles": [],
+   "current_students": [],
+   "sources": [
+    "https://english.ufl.edu/michael-deagler/",
+    "https://english.ufl.edu/faculty-listing/emeritus-emerita-and-retired-faculty/"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "3941e3c1295b",
+   "name": "Erika Brooke",
+   "title": "Associate Instructional Professor in Criminology",
+   "college": "College of Liberal Arts and Sciences",
+   "department": "Sociology and Criminology & Law Department",
+   "affiliations": [
+    {
+     "college": "College of Liberal Arts and Sciences",
+     "department": "Sociology and Criminology & Law Department"
+    }
+   ],
+   "email": "ejbrooke@ufl.edu",
+   "research_areas": [
+    "Military Service and Crime/CJ Contact",
+    "Correctional Policy and Programming",
+    "Problem Solving Courts",
+    "Program Evaluation",
+    "Gender and Crime"
+   ],
+   "research_summary": "",
+   "teaching": [
+    "CCJ 3024 Advanced Principles of Criminal Justice",
+    "CCJ 3701 Research Methods in Criminology",
+    "CJE 3011 Careers in Criminal Justice",
+    "CCJ 4014 Criminological Theory",
+    "CCJ 4934 Prisons and Jails",
+    "CCJ 4934 Women and Crime",
+    "CCJ 4940/SYA 4941 Internship in Criminology/Sociology"
+   ],
+   "extension": [],
+   "google_scholar": "",
+   "orcid": "",
+   "lab_name": "",
+   "lab_url": "",
+   "website": "",
+   "edis_url": "",
+   "profile_url": "https://soccrim.clas.ufl.edu/erika-brooke/",
+   "location": "",
+   "roles": [],
+   "current_students": [],
+   "sources": [
+    "https://soccrim.clas.ufl.edu/erika-brooke/",
+    "https://soccrim.clas.ufl.edu/directory/"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "9d1892662a25",
+   "name": "Julie A Johnson",
+   "title": "Dean Emeritus",
+   "college": "College of Pharmacy",
+   "department": "Pharmacotherapy and Translational Research Department",
+   "affiliations": [
+    {
+     "college": "College of Pharmacy",
+     "department": "Pharmacotherapy and Translational Research Department"
+    }
+   ],
+   "email": "julie.johnson@ufl.edu",
+   "research_areas": [
+    "Department:",
+    "Pharmacotherapy & Translational Research",
+    "Pharm.D."
+   ],
+   "research_summary": "",
+   "teaching": [],
+   "extension": [],
+   "google_scholar": "",
+   "orcid": "",
+   "lab_name": "",
+   "lab_url": "",
+   "website": "",
+   "edis_url": "",
+   "profile_url": "https://ptr.pharmacy.ufl.edu/profile/johnson-julie",
+   "location": "",
+   "roles": [],
+   "current_students": [],
+   "sources": [
+    "https://ptr.pharmacy.ufl.edu/profile/johnson-julie",
+    "https://ptr.pharmacy.ufl.edu/about/faculty/"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "b508be22b7d9",
+   "name": "David Cuillier",
+   "title": "Director – The Freedom of Information Project, Brechner Center for the Advancement of the First Amendment",
+   "college": "College of Journalism and Communications",
+   "department": "Mass Communication",
+   "affiliations": [
+    {
+     "college": "College of Journalism and Communications",
+     "department": "Mass Communication"
+    }
+   ],
+   "email": "cuillierd@ufl.edu",
+   "research_areas": [
+    "2116 Weimer"
+   ],
+   "research_summary": "",
+   "teaching": [],
+   "extension": [],
+   "google_scholar": "",
+   "orcid": "",
+   "lab_name": "",
+   "lab_url": "",
+   "website": "",
+   "edis_url": "",
+   "profile_url": "https://www.jou.ufl.edu/staff/david-cuillier/",
+   "location": "",
+   "roles": [],
+   "current_students": [],
+   "sources": [
+    "https://www.jou.ufl.edu/staff/david-cuillier/",
+    "https://www.jou.ufl.edu/research-masters/research-and-theory-masters-faculty/",
+    "https://gradcatalog.ufl.edu/graduate/faculty/"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "1e96fa9b0ca4",
+   "name": "Nina Stark",
+   "title": "Professor and Director, Center for Coastal Solutions",
+   "college": "Herbert Wertheim College of Engineering",
+   "department": "Environmental Engineering Sciences Department",
+   "affiliations": [
+    {
+     "college": "Herbert Wertheim College of Engineering",
+     "department": "Environmental Engineering Sciences Department"
+    }
+   ],
+   "email": "",
+   "research_areas": [
+    "Coastal Oceanographic Engineering",
+    "Coastal Ecosystem Dynamics",
+    "Department of Civil Coastal Engineering"
+   ],
+   "research_summary": "",
+   "teaching": [],
+   "extension": [],
+   "google_scholar": "",
+   "orcid": "",
+   "lab_name": "",
+   "lab_url": "",
+   "website": "",
+   "edis_url": "",
+   "profile_url": "https://essie.ufl.edu/people/name/nina-stark/",
+   "location": "",
+   "roles": [],
+   "current_students": [],
+   "sources": [
+    "https://essie.ufl.edu/people/name/nina-stark/",
+    "https://essie.ufl.edu/people/cat/faculty/",
+    "https://essie.ufl.edu/cce/faculty/name/nina-stark/"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "4a0c1bcb6e56",
+   "name": "Domenico Santoro",
+   "title": "Purina Endowed Chair, Service Chief, Dermatology",
+   "college": "College of Veterinary Medicine",
+   "department": "Veterinary Medical Sciences",
+   "affiliations": [
+    {
+     "college": "College of Veterinary Medicine",
+     "department": "Veterinary Medical Sciences"
+    }
+   ],
+   "email": "dsantoro@ufl.edu",
+   "research_areas": [
+    "Phone:",
+    "Email:",
+    "ORCID:"
+   ],
+   "research_summary": "",
+   "teaching": [],
+   "extension": [],
+   "google_scholar": "",
+   "orcid": "",
+   "lab_name": "",
+   "lab_url": "",
+   "website": "",
+   "edis_url": "",
+   "profile_url": "https://www.vetmed.ufl.edu/profile/santoro-domenico",
+   "location": "",
+   "roles": [],
+   "current_students": [],
+   "sources": [
+    "https://www.vetmed.ufl.edu/profile/santoro-domenico",
+    "https://www.vetmed.ufl.edu/about-the-college/directory/"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "0ee1791be2b7",
+   "name": "Jingjing Shi",
+   "title": "Assistant Professor",
+   "college": "Herbert Wertheim College of Engineering",
+   "department": "Mechanical and Aerospace Engineering Department",
+   "affiliations": [
+    {
+     "college": "Herbert Wertheim College of Engineering",
+     "department": "Mechanical and Aerospace Engineering Department"
+    }
+   ],
+   "email": "shi.j@ufl.edu",
+   "research_areas": [
+    "Assistant Professor",
+    "Energy",
+    "Thermal Transport Thermodynamics and Power"
+   ],
+   "research_summary": "",
+   "teaching": [],
+   "extension": [],
+   "google_scholar": "",
+   "orcid": "",
+   "lab_name": "",
+   "lab_url": "",
+   "website": "",
+   "edis_url": "",
+   "profile_url": "https://mae.ufl.edu/people/name/jingjing-shi/",
+   "location": "",
+   "roles": [
+    "Primary"
+   ],
+   "current_students": [],
+   "sources": [
+    "https://mae.ufl.edu/people/name/jingjing-shi/",
+    "https://mae.ufl.edu/people/?cn-cat=3",
+    "https://gradcatalog.ufl.edu/graduate/faculty/"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "d1c8c668a06e",
+   "name": "Lars Noah",
+   "title": "Chesterfield Smith Eminent Scholar Chair",
+   "college": "Levin College of Law",
+   "department": "Levin College of Law",
+   "affiliations": [
+    {
+     "college": "Levin College of Law",
+     "department": "Levin College of Law"
+    }
+   ],
+   "email": "noah@law.ufl.edu",
+   "research_areas": [
+    "Professor of Law"
+   ],
+   "research_summary": "",
+   "teaching": [],
+   "extension": [],
+   "google_scholar": "",
+   "orcid": "",
+   "lab_name": "",
+   "lab_url": "",
+   "website": "",
+   "edis_url": "",
+   "profile_url": "https://law.ufl.edu/faculty/lars-noah/",
+   "location": "",
+   "roles": [],
+   "current_students": [],
+   "sources": [
+    "https://law.ufl.edu/faculty/lars-noah/",
+    "https://www.law.ufl.edu/faculty"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "46178f577620",
+   "name": "Christopher Hampson",
+   "title": "Associate Professor of Law",
+   "college": "Levin College of Law",
+   "department": "Levin College of Law",
+   "affiliations": [
+    {
+     "college": "Levin College of Law",
+     "department": "Levin College of Law"
+    }
+   ],
+   "email": "hampson@law.ufl.edu",
+   "research_areas": [
+    "Christopher D. Hampson"
+   ],
+   "research_summary": "",
+   "teaching": [],
+   "extension": [],
+   "google_scholar": "",
+   "orcid": "",
+   "lab_name": "",
+   "lab_url": "",
+   "website": "",
+   "edis_url": "",
+   "profile_url": "https://law.ufl.edu/faculty/christopher-d-hampson/",
+   "location": "",
+   "roles": [],
+   "current_students": [],
+   "sources": [
+    "https://law.ufl.edu/faculty/christopher-d-hampson/",
+    "https://www.law.ufl.edu/faculty"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "528a29ebeb22",
+   "name": "Raymond A Chobaz",
+   "title": "Professor Emeritus | Orchestra",
+   "college": "College of the Arts",
+   "department": "Digital Worlds Institute",
+   "affiliations": [
+    {
+     "college": "College of the Arts",
+     "department": "Digital Worlds Institute"
+    },
+    {
+     "college": "College of the Arts",
+     "department": "School of Art and Art History"
+    },
+    {
+     "college": "College of the Arts",
+     "department": "School of Music"
+    },
+    {
+     "college": "College of the Arts",
+     "department": "School of Theatre and Dance"
+    }
+   ],
+   "email": "",
+   "research_areas": [
+    "School of Music",
+    "UF Symphony Orchestra"
+   ],
+   "research_summary": "",
+   "teaching": [],
+   "extension": [],
+   "google_scholar": "",
+   "orcid": "",
+   "lab_name": "",
+   "lab_url": "",
+   "website": "",
+   "edis_url": "",
+   "profile_url": "https://arts.ufl.edu/people/profiles/raymond-a-chobaz/",
+   "location": "",
+   "roles": [],
+   "current_students": [],
+   "sources": [
+    "https://arts.ufl.edu/people/profiles/raymond-a-chobaz/",
+    "https://arts.ufl.edu/about/directory/emeritus-faculty/"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "42a770dd37b0",
+   "name": "Leslie A Sombers",
+   "title": "Professor",
+   "college": "College of Pharmacy",
+   "department": "Cellular and Systems Pharmacology Department",
+   "affiliations": [
+    {
+     "college": "College of Pharmacy",
+     "department": "Cellular and Systems Pharmacology Department"
+    }
+   ],
+   "email": "leslie.sombers@ufl.edu",
+   "research_areas": [
+    "Department:",
+    "Cellular and Systems Pharmacology",
+    "Ph.D., M.A."
+   ],
+   "research_summary": "",
+   "teaching": [],
+   "extension": [],
+   "google_scholar": "",
+   "orcid": "",
+   "lab_name": "Sombers Lab https://www.somberslab.org/",
+   "lab_url": "https://www.somberslab.org/",
+   "website": "",
+   "edis_url": "",
+   "profile_url": "https://csp.pharmacy.ufl.edu/profile/sombers-leslie/",
+   "location": "",
+   "roles": [],
+   "current_students": [],
+   "sources": [
+    "https://csp.pharmacy.ufl.edu/profile/sombers-leslie/",
+    "https://csp.pharmacy.ufl.edu/people/faculty/"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "6b42448d9b2b",
+   "name": "Shirley Baker",
+   "title": "Professor, Molluscan Biology and Aquaculture Florida SeaGrant Affiliate Faculty",
+   "college": "College of Agricultural and Life Sciences",
+   "department": "School of Natural Resources and Environment",
+   "affiliations": [
+    {
+     "college": "College of Agricultural and Life Sciences",
+     "department": "School of Natural Resources and Environment"
+    }
+   ],
+   "email": "sbaker25@ufl.edu",
+   "research_areas": [
+    "Forest, Fisheries, and Geomatic Sciences",
+    "Other"
+   ],
+   "research_summary": "",
+   "teaching": [
+    "Identifier | Course Name",
+    "FAS 4932/6154 | Marine Adaptations/Aquatic Invertebrate Ecological Physiology",
+    "FNR 6668 | Natural Resources in a Changing Climate",
+    "Education PhD, Virginia Institute of Marine Science, The College of William and Mary, 1994 MS, Oregon Institute of Marine Biology, University of Oregon, 1988 BS, Seattle Pacific University, 1986",
+    "PhD, Virginia Institute of Marine Science, The College of William and Mary, 1994",
+    "MS, Oregon Institute of Marine Biology, University of Oregon, 1988",
+    "BS, Seattle Pacific University, 1986"
+   ],
+   "extension": [],
+   "google_scholar": "",
+   "orcid": "",
+   "lab_name": "",
+   "lab_url": "",
+   "website": "",
+   "edis_url": "",
+   "profile_url": "https://ffgs.ifas.ufl.edu/faculty/baker-shirley/",
+   "location": "",
+   "roles": [],
+   "current_students": [],
+   "sources": [
+    "https://ffgs.ifas.ufl.edu/faculty/baker-shirley/",
+    "https://snre.ifas.ufl.edu/people/affiliate-faculty/"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "a20041c04d55",
+   "name": "Ge Ou",
+   "title": "Associate Professor",
+   "college": "Herbert Wertheim College of Engineering",
+   "department": "Environmental Engineering Sciences Department",
+   "affiliations": [
+    {
+     "college": "Herbert Wertheim College of Engineering",
+     "department": "Environmental Engineering Sciences Department"
+    }
+   ],
+   "email": "",
+   "research_areas": [
+    "Department of Civil Coastal Engineering",
+    "Structural Engineering",
+    "Sustainable Construction Engineering"
+   ],
+   "research_summary": "",
+   "teaching": [],
+   "extension": [],
+   "google_scholar": "",
+   "orcid": "",
+   "lab_name": "",
+   "lab_url": "",
+   "website": "",
+   "edis_url": "",
+   "profile_url": "https://essie.ufl.edu/people/name/ge-gaby-ou/",
+   "location": "",
+   "roles": [],
+   "current_students": [],
+   "sources": [
+    "https://essie.ufl.edu/people/name/ge-gaby-ou/",
+    "https://essie.ufl.edu/people/cat/faculty/",
+    "https://essie.ufl.edu/cce/faculty/name/ge-gaby-ou/"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "6bb633e9bc1a",
+   "name": "Jan Maximilian Robitzsch",
+   "title": "Assistant Professor",
+   "college": "College of Liberal Arts and Sciences",
+   "department": "Philosophy Department",
+   "affiliations": [
+    {
+     "college": "College of Liberal Arts and Sciences",
+     "department": "Philosophy Department"
+    }
+   ],
+   "email": "jm.robitzsch@ufl.edu",
+   "research_areas": [
+    "Ancient Greek and Roman Philosophy",
+    "Social and Political Philosophy"
+   ],
+   "research_summary": "",
+   "teaching": [],
+   "extension": [],
+   "google_scholar": "",
+   "orcid": "",
+   "lab_name": "",
+   "lab_url": "",
+   "website": "https://sites.google.com/view/janmaximilianrobitzsch/home?authuser=0",
+   "edis_url": "",
+   "profile_url": "https://phil.ufl.edu/directory/jan-maximilian-max-robitzsch/",
+   "location": "",
+   "roles": [],
+   "current_students": [],
+   "sources": [
+    "https://phil.ufl.edu/directory/jan-maximilian-max-robitzsch/",
+    "https://phil.ufl.edu/people/faculty/",
+    "https://gradcatalog.ufl.edu/graduate/faculty/"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "4f993ee26a3f",
+   "name": "Roberto L. Abreu",
+   "title": ", Assistant Professor, Department of Psychology, Counseling Psychology Area",
+   "college": "College of Liberal Arts and Sciences",
+   "department": "Center for Latin American Studies",
+   "affiliations": [
+    {
+     "college": "College of Liberal Arts and Sciences",
+     "department": "Center for Latin American Studies"
+    },
+    {
+     "college": "College of Liberal Arts and Sciences",
+     "department": "Gender, Sexuality, and Women's Studies Department"
+    }
+   ],
+   "email": "",
+   "research_areas": [],
+   "research_summary": "",
+   "teaching": [],
+   "extension": [],
+   "google_scholar": "",
+   "orcid": "",
+   "lab_name": "",
+   "lab_url": "",
+   "website": "",
+   "edis_url": "",
+   "profile_url": "https://people.clas.ufl.edu/rabreu26/",
+   "location": "",
+   "roles": [],
+   "current_students": [],
+   "sources": [
+    "https://people.clas.ufl.edu/rabreu26/",
+    "https://www.latam.ufl.edu/people/affiliate-faculty/",
+    "https://wst.ufl.edu/people/affiliate-faculty/"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "f9971b801f3e",
+   "name": "Shraddha Sagar",
+   "title": "Assistant Engineer Faculty",
+   "college": "Herbert Wertheim College of Engineering",
+   "department": "Environmental Engineering Sciences Department",
+   "affiliations": [
+    {
+     "college": "Herbert Wertheim College of Engineering",
+     "department": "Environmental Engineering Sciences Department"
+    }
+   ],
+   "email": "",
+   "research_areas": [
+    "Department of Civil Coastal Engineering",
+    "Florida Transportation Technology Transfer Center",
+    "Transportation Engineering",
+    "Uf Transportation Institute"
+   ],
+   "research_summary": "",
+   "teaching": [],
+   "extension": [],
+   "google_scholar": "",
+   "orcid": "",
+   "lab_name": "",
+   "lab_url": "",
+   "website": "",
+   "edis_url": "",
+   "profile_url": "https://essie.ufl.edu/people/name/shraddha-sagar/",
+   "location": "",
+   "roles": [],
+   "current_students": [],
+   "sources": [
+    "https://essie.ufl.edu/people/name/shraddha-sagar/",
+    "https://essie.ufl.edu/people/cat/faculty/",
+    "https://essie.ufl.edu/cce/faculty/name/shraddha-sagar/"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "1591c369ac7f",
+   "name": "Willard Scott Keeran",
+   "title": "Associate Instructional Professor",
+   "college": "College of Liberal Arts and Sciences",
+   "department": "Mathematics Department",
+   "affiliations": [
+    {
+     "college": "College of Liberal Arts and Sciences",
+     "department": "Mathematics Department"
+    }
+   ],
+   "email": "keeran@ufl.edu",
+   "research_areas": [
+    "Keeran, Willard Scott",
+    "(University of Florida, 2007)",
+    "LIT 309"
+   ],
+   "research_summary": "",
+   "teaching": [],
+   "extension": [],
+   "google_scholar": "",
+   "orcid": "",
+   "lab_name": "",
+   "lab_url": "",
+   "website": "",
+   "edis_url": "",
+   "profile_url": "https://people.clas.ufl.edu/keeran/",
+   "location": "",
+   "roles": [],
+   "current_students": [],
+   "sources": [
+    "https://people.clas.ufl.edu/keeran/",
+    "https://math.ufl.edu/people/faculty/"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "7f4890ead46b",
+   "name": "Aline Rodrigues Hoffmann",
+   "title": "Professor, Anatomic Pathology Service Chief",
+   "college": "College of Veterinary Medicine",
+   "department": "Veterinary Medical Sciences",
+   "affiliations": [
+    {
+     "college": "College of Veterinary Medicine",
+     "department": "Veterinary Medical Sciences"
+    }
+   ],
+   "email": "aline.hoffmann@ufl.edu",
+   "research_areas": [
+    "DVM, MS, PhD, DACVP",
+    "Email:",
+    "ORCID:"
+   ],
+   "research_summary": "",
+   "teaching": [],
+   "extension": [],
+   "google_scholar": "",
+   "orcid": "",
+   "lab_name": "",
+   "lab_url": "",
+   "website": "",
+   "edis_url": "",
+   "profile_url": "https://www.vetmed.ufl.edu/profile/rodrigues-hoffmann-aline",
+   "location": "",
+   "roles": [],
+   "current_students": [],
+   "sources": [
+    "https://www.vetmed.ufl.edu/profile/rodrigues-hoffmann-aline",
+    "https://www.vetmed.ufl.edu/about-the-college/directory/"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "d4d0540fe77d",
+   "name": "Judy Clausen",
+   "title": "Senior Lecturer and Senior Legal Skills Professor",
+   "college": "Levin College of Law",
+   "department": "Levin College of Law",
+   "affiliations": [
+    {
+     "college": "Levin College of Law",
+     "department": "Levin College of Law"
+    }
+   ],
+   "email": "jclausen@law.ufl.edu",
+   "research_areas": [],
+   "research_summary": "",
+   "teaching": [],
+   "extension": [],
+   "google_scholar": "",
+   "orcid": "",
+   "lab_name": "",
+   "lab_url": "",
+   "website": "",
+   "edis_url": "",
+   "profile_url": "https://law.ufl.edu/faculty/judy-clausen/",
+   "location": "",
+   "roles": [
+    "Director, Veterans and Servicemembers Legal Clinic"
+   ],
+   "current_students": [],
+   "sources": [
+    "https://law.ufl.edu/faculty/judy-clausen/",
+    "https://www.law.ufl.edu/faculty"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "211c56a278dc",
+   "name": "Yi Luo",
+   "title": "Associate Professor",
+   "college": "College of Agricultural and Life Sciences",
+   "department": "School of Natural Resources and Environment",
+   "affiliations": [
+    {
+     "college": "College of Agricultural and Life Sciences",
+     "department": "School of Natural Resources and Environment"
+    },
+    {
+     "college": "College of Design, Construction and Planning",
+     "department": "Landscape Architecture"
+    }
+   ],
+   "email": "yi.luo@ufl.edu",
+   "research_areas": [
+    "Landscape Architecture",
+    "Other"
+   ],
+   "research_summary": "",
+   "teaching": [],
+   "extension": [],
+   "google_scholar": "",
+   "orcid": "",
+   "lab_name": "",
+   "lab_url": "",
+   "website": "",
+   "edis_url": "",
+   "profile_url": "https://dcp.ufl.edu/faculties/luo-yi/",
+   "location": "",
+   "roles": [],
+   "current_students": [],
+   "sources": [
+    "https://dcp.ufl.edu/faculties/luo-yi/",
+    "https://snre.ifas.ufl.edu/people/affiliate-faculty/",
+    "https://dcp.ufl.edu/landscape/slap-faculty-florida-planning-published/",
+    "https://gradcatalog.ufl.edu/graduate/faculty/"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "8511287772cc",
+   "name": "Simon Barke",
+   "title": "Research Assistant Scientist",
+   "college": "Herbert Wertheim College of Engineering",
+   "department": "Mechanical and Aerospace Engineering Department",
+   "affiliations": [
+    {
+     "college": "Herbert Wertheim College of Engineering",
+     "department": "Mechanical and Aerospace Engineering Department"
+    }
+   ],
+   "email": "barke@ufl.edu",
+   "research_areas": [
+    "Research Scientist"
+   ],
+   "research_summary": "Ultra-low-frequency noise of custom and COTS devices (electronics, electro-optics, lasers), flight hardware development for space missions, mission concepts for future gravitational wave observatories",
+   "teaching": [
+    "Limiting fundamental and technical noise sources for ground and space-based gravitational wave observatories"
+   ],
+   "extension": [],
+   "google_scholar": "https://scholar.google.com/citations?user=OtX6Y64AAAAJ",
+   "orcid": "",
+   "lab_name": "",
+   "lab_url": "",
+   "website": "",
+   "edis_url": "",
+   "profile_url": "https://mae.ufl.edu/people/name/simon-barke/",
+   "location": "",
+   "roles": [
+    "Primary"
+   ],
+   "current_students": [],
+   "sources": [
+    "https://mae.ufl.edu/people/name/simon-barke/",
+    "https://mae.ufl.edu/people/?cn-cat=3"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "3ac05df5d8f5",
+   "name": "Frank Asche",
+   "title": "Distinguished Professor, Natural Resource Economics Florida Sea Grant Affiliate Faculty",
+   "college": "College of Agricultural and Life Sciences",
+   "department": "School of Natural Resources and Environment",
+   "affiliations": [
+    {
+     "college": "College of Agricultural and Life Sciences",
+     "department": "School of Natural Resources and Environment"
+    }
+   ],
+   "email": "frank.asche@ufl.edu",
+   "research_areas": [
+    "Forest, Fisheries, and Geomatics Sciences",
+    "Ecological Economics, Natural Resource Conservation and Management, Sustainable Food Systems"
+   ],
+   "research_summary": "",
+   "teaching": [],
+   "extension": [],
+   "google_scholar": "",
+   "orcid": "",
+   "lab_name": "",
+   "lab_url": "",
+   "website": "",
+   "edis_url": "",
+   "profile_url": "https://ffgs.ifas.ufl.edu/faculty/asche-frank/",
+   "location": "",
+   "roles": [],
+   "current_students": [],
+   "sources": [
+    "https://ffgs.ifas.ufl.edu/faculty/asche-frank/",
+    "https://snre.ifas.ufl.edu/people/affiliate-faculty/",
+    "https://gradcatalog.ufl.edu/graduate/faculty/"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "d75d83469413",
+   "name": "Ahmed Awad",
+   "title": "Research Assistant Professor",
+   "college": "College of Pharmacy",
+   "department": "Medicinal Chemistry Department",
+   "affiliations": [
+    {
+     "college": "College of Pharmacy",
+     "department": "Medicinal Chemistry Department"
+    }
+   ],
+   "email": "a.awad@ufl.edu",
+   "research_areas": [
+    "M.Sc.Pharm, Ph.D.",
+    "Email:"
+   ],
+   "research_summary": "",
+   "teaching": [],
+   "extension": [],
+   "google_scholar": "",
+   "orcid": "",
+   "lab_name": "",
+   "lab_url": "",
+   "website": "",
+   "edis_url": "",
+   "profile_url": "https://mc.pharmacy.ufl.edu/profile/awad-ahmed-1",
+   "location": "",
+   "roles": [],
+   "current_students": [],
+   "sources": [
+    "https://mc.pharmacy.ufl.edu/profile/awad-ahmed-1",
+    "https://mc.pharmacy.ufl.edu/people/faculty/"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "7369222c50b7",
+   "name": "Chaofeng Wang",
+   "title": "Assistant Professor",
+   "college": "College of Design, Construction and Planning",
+   "department": "M.E. Rinker, Sr. School of Construction Management",
+   "affiliations": [
+    {
+     "college": "College of Design, Construction and Planning",
+     "department": "M.E. Rinker, Sr. School of Construction Management"
+    }
+   ],
+   "email": "chaofeng.wang@ufl.edu",
+   "research_areas": [
+    "M.E. Rinker, Sr. School of Construction Management",
+    "RINKER 342"
+   ],
+   "research_summary": "",
+   "teaching": [],
+   "extension": [],
+   "google_scholar": "",
+   "orcid": "",
+   "lab_name": "",
+   "lab_url": "",
+   "website": "",
+   "edis_url": "",
+   "profile_url": "https://dcp.ufl.edu/faculties/chaofeng-charles-wang/",
+   "location": "",
+   "roles": [],
+   "current_students": [],
+   "sources": [
+    "https://dcp.ufl.edu/faculties/chaofeng-charles-wang/",
+    "https://dcp.ufl.edu/faculty/?department=constructionmanagement"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "ad60aca96856",
+   "name": "Robert Ainsworth",
+   "title": "Assistant Professor",
+   "college": "College of Liberal Arts and Sciences",
+   "department": "Economics Department",
+   "affiliations": [
+    {
+     "college": "College of Liberal Arts and Sciences",
+     "department": "Economics Department"
+    }
+   ],
+   "email": "robert.ainsworth@ufl.edu",
+   "research_areas": [],
+   "research_summary": "",
+   "teaching": [],
+   "extension": [],
+   "google_scholar": "",
+   "orcid": "",
+   "lab_name": "",
+   "lab_url": "",
+   "website": "",
+   "edis_url": "",
+   "profile_url": "https://people.clas.ufl.edu/robert-ainsworth/",
+   "location": "",
+   "roles": [],
+   "current_students": [],
+   "sources": [
+    "https://people.clas.ufl.edu/robert-ainsworth/",
+    "https://economics.clas.ufl.edu/people/faculty/",
+    "https://gradcatalog.ufl.edu/graduate/faculty/"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "e23a2a97f1eb",
+   "name": "Carmen Martínez Novo",
+   "title": "Professor",
+   "college": "College of Liberal Arts and Sciences",
+   "department": "Center for Latin American Studies",
+   "affiliations": [
+    {
+     "college": "College of Liberal Arts and Sciences",
+     "department": "Center for Latin American Studies"
+    }
+   ],
+   "email": "m.martineznovo@ufl.edu",
+   "research_areas": [
+    "382 Grinter Hall",
+    "Email:",
+    "Dr. Martínez Novo is on leave for the Fall 2026 semester."
+   ],
+   "research_summary": "Race and ethnicity, political anthropology, indigenous politics and rights, anthropology of the state and elites, “study up” and collaborative methodologies, politics and aesthetics of memory",
+   "teaching": [
+    "Latin American Elites",
+    "Ethnographies of the State",
+    "Indigenous Ontologies",
+    "Critical Indigenous Studies",
+    "Indigenismo and Inter-ethnic relations",
+    "Quest Course Human Rights in Latin America"
+   ],
+   "extension": [],
+   "google_scholar": "",
+   "orcid": "",
+   "lab_name": "International Ethnography Lab",
+   "lab_url": "https://soccrim.clas.ufl.edu/international-ethnography-lab-at-uf/",
+   "website": "",
+   "edis_url": "",
+   "profile_url": "https://www.latam.ufl.edu/people/center-based-faculty/carmen-martinez-novo/",
+   "location": "Center for Latin American Studies",
+   "roles": [],
+   "current_students": [],
+   "sources": [
+    "https://www.latam.ufl.edu/people/center-based-faculty/carmen-martinez-novo/",
+    "https://www.latam.ufl.edu/people/affiliate-faculty/"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "de008b66006e",
+   "name": "Robert Hatch",
+   "title": "",
+   "college": "College of Liberal Arts and Sciences",
+   "department": "History Department",
+   "affiliations": [
+    {
+     "college": "College of Liberal Arts and Sciences",
+     "department": "History Department"
+    }
+   ],
+   "email": "ufhatch@ufl.edu",
+   "research_areas": [
+    "Science and Europe, Early Modern Cultural History, France",
+    "History"
+   ],
+   "research_summary": "",
+   "teaching": [],
+   "extension": [],
+   "google_scholar": "",
+   "orcid": "",
+   "lab_name": "",
+   "lab_url": "",
+   "website": "",
+   "edis_url": "",
+   "profile_url": "https://people.clas.ufl.edu/ufhatch/",
+   "location": "25 Keene-Flint Hall",
+   "roles": [],
+   "current_students": [],
+   "sources": [
+    "https://people.clas.ufl.edu/ufhatch/",
+    "https://history.ufl.edu/people/current-faculty/"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "e010f1b97daf",
+   "name": "Teresa Reid",
+   "title": "Emeritus Master Legal Skills Professor",
+   "college": "Levin College of Law",
+   "department": "Levin College of Law",
+   "affiliations": [
+    {
+     "college": "Levin College of Law",
+     "department": "Levin College of Law"
+    }
+   ],
+   "email": "reid@law.ufl.edu",
+   "research_areas": [],
+   "research_summary": "",
+   "teaching": [],
+   "extension": [],
+   "google_scholar": "",
+   "orcid": "",
+   "lab_name": "",
+   "lab_url": "",
+   "website": "",
+   "edis_url": "",
+   "profile_url": "https://law.ufl.edu/faculty/teresa-reid/",
+   "location": "Emeritus Assistant Director, Criminal Justice Center",
+   "roles": [
+    "Emeritus Assistant Director, Criminal Justice Center"
+   ],
+   "current_students": [],
+   "sources": [
+    "https://law.ufl.edu/faculty/teresa-reid/",
+    "https://www.law.ufl.edu/faculty"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "b06afa5e0d1f",
+   "name": "S. Balachandar",
+   "title": "Newton C. Ebaugh Professor, Distinguished Professor",
+   "college": "Herbert Wertheim College of Engineering",
+   "department": "Mechanical and Aerospace Engineering Department",
+   "affiliations": [
+    {
+     "college": "Herbert Wertheim College of Engineering",
+     "department": "Mechanical and Aerospace Engineering Department"
+    }
+   ],
+   "email": "bala1s@ufl.edu",
+   "research_areas": [
+    "Distinguished Professors",
+    "Fluid Dynamics and Acoustics",
+    "Thermal Transport Thermodynamics and Power"
+   ],
+   "research_summary": "",
+   "teaching": [
+    "Computational fluid science (aka CFD), Large scale simulation of complex flows, transition and turbulence, multiphase flows, environmental flows"
+   ],
+   "extension": [],
+   "google_scholar": "",
+   "orcid": "",
+   "lab_name": "",
+   "lab_url": "",
+   "website": "",
+   "edis_url": "",
+   "profile_url": "https://mae.ufl.edu/people/name/s-bala-balachandar/",
+   "location": "American Institute of Aeronautics and Astronautics, Member",
+   "roles": [
+    "Primary",
+    "Professor"
+   ],
+   "current_students": [],
+   "sources": [
+    "https://mae.ufl.edu/people/name/s-bala-balachandar/",
+    "https://mae.ufl.edu/people/?cn-cat=3"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "86280762578c",
+   "name": "Nirma Khatri Vadlamudi",
+   "title": "Assistant Professor",
+   "college": "College of Pharmacy",
+   "department": "Pharmaceutical Outcomes and Policy Department",
+   "affiliations": [
+    {
+     "college": "College of Pharmacy",
+     "department": "Pharmaceutical Outcomes and Policy Department"
+    }
+   ],
+   "email": "nvadlamudi@ufl.edu",
+   "research_areas": [
+    "Department:",
+    "Pharmaceutical Outcomes & Policy",
+    "Ph.D., M.P.H."
+   ],
+   "research_summary": "",
+   "teaching": [
+    "PHA6265 – Introduction to Pharmaceutical Outcomes and Policy I 2026 College of Pharmacy",
+    "PHA6971 – Research for Master’s Thesis 2026 College of Pharmacy",
+    "PHA6910 – Supervised Research 2026 College of Pharmacy",
+    "PHA6805 – Applied Data Interpretation and Reporting of Findings in Pharmacy 2026 College of Pharmacy",
+    "PHA7979 – Advanced Research 2026 College of Pharmacy"
+   ],
+   "extension": [],
+   "google_scholar": "",
+   "orcid": "",
+   "lab_name": "Vadlamudi Research Group https://vadlamudi.pharmacy.ufl.edu/",
+   "lab_url": "https://vadlamudi.pharmacy.ufl.edu/",
+   "website": "",
+   "edis_url": "",
+   "profile_url": "https://pop.pharmacy.ufl.edu/profile/vadlamudi-nirma-khatri/",
+   "location": "",
+   "roles": [],
+   "current_students": [],
+   "sources": [
+    "https://pop.pharmacy.ufl.edu/profile/vadlamudi-nirma-khatri/",
+    "https://pop.pharmacy.ufl.edu/people/affiliate-professors/",
+    "https://gradcatalog.ufl.edu/graduate/faculty/"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "537af194f8e4",
+   "name": "Leslie Hendeles",
+   "title": "Professor Emeritus",
+   "college": "College of Pharmacy",
+   "department": "Pharmacotherapy and Translational Research Department",
+   "affiliations": [
+    {
+     "college": "College of Pharmacy",
+     "department": "Pharmacotherapy and Translational Research Department"
+    }
+   ],
+   "email": "hendeles@cop.ufl.edu",
+   "research_areas": [
+    "Department:",
+    "MD-PEDIATRICS",
+    "Pharm.D."
+   ],
+   "research_summary": "",
+   "teaching": [],
+   "extension": [],
+   "google_scholar": "",
+   "orcid": "",
+   "lab_name": "",
+   "lab_url": "",
+   "website": "",
+   "edis_url": "",
+   "profile_url": "https://ptr.pharmacy.ufl.edu/profile/hendeles-leslie",
+   "location": "",
+   "roles": [],
+   "current_students": [],
+   "sources": [
+    "https://ptr.pharmacy.ufl.edu/profile/hendeles-leslie",
+    "https://ptr.pharmacy.ufl.edu/about/faculty/"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "43b8c0912e4a",
+   "name": "Amber Ross",
+   "title": "Assistant Professor",
+   "college": "College of Liberal Arts and Sciences",
+   "department": "Philosophy Department",
+   "affiliations": [
+    {
+     "college": "College of Liberal Arts and Sciences",
+     "department": "Philosophy Department"
+    }
+   ],
+   "email": "amber.ross@ufl.edu",
+   "research_areas": [
+    "Ethics of AI",
+    "Philosophy of Mind",
+    "Metaphysics"
+   ],
+   "research_summary": "",
+   "teaching": [],
+   "extension": [],
+   "google_scholar": "",
+   "orcid": "",
+   "lab_name": "",
+   "lab_url": "",
+   "website": "https://philpeople.org/profiles/amber-ross-2",
+   "edis_url": "",
+   "profile_url": "https://phil.ufl.edu/directory/amber-ross/",
+   "location": "",
+   "roles": [],
+   "current_students": [],
+   "sources": [
+    "https://phil.ufl.edu/directory/amber-ross/",
+    "https://phil.ufl.edu/people/faculty/",
+    "https://gradcatalog.ufl.edu/graduate/faculty/"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "4ad2726be0a9",
+   "name": "Donald Stehouwer",
+   "title": "Professor",
+   "college": "College of Liberal Arts and Sciences",
+   "department": "Psychology Department",
+   "affiliations": [
+    {
+     "college": "College of Liberal Arts and Sciences",
+     "department": "Psychology Department"
+    }
+   ],
+   "email": "steh@ufl.edu",
+   "research_areas": [],
+   "research_summary": "",
+   "teaching": [],
+   "extension": [],
+   "google_scholar": "",
+   "orcid": "",
+   "lab_name": "",
+   "lab_url": "",
+   "website": "",
+   "edis_url": "",
+   "profile_url": "https://people.clas.ufl.edu/steh/",
+   "location": "",
+   "roles": [],
+   "current_students": [],
+   "sources": [
+    "https://people.clas.ufl.edu/steh/",
+    "https://psych.ufl.edu/people/faculty/"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "26181a463600",
+   "name": "Derek Wheeler",
+   "title": "Senior Lecturer",
+   "college": "Levin College of Law",
+   "department": "Levin College of Law",
+   "affiliations": [
+    {
+     "college": "Levin College of Law",
+     "department": "Levin College of Law"
+    }
+   ],
+   "email": "wheeler@law.ufl.edu",
+   "research_areas": [
+    "Senior Legal Skills Professor"
+   ],
+   "research_summary": "",
+   "teaching": [],
+   "extension": [],
+   "google_scholar": "",
+   "orcid": "",
+   "lab_name": "",
+   "lab_url": "",
+   "website": "",
+   "edis_url": "",
+   "profile_url": "https://law.ufl.edu/faculty/derek-wheeler/",
+   "location": "",
+   "roles": [
+    "Director, Low Income Taxpayer Clinic"
+   ],
+   "current_students": [],
+   "sources": [
+    "https://law.ufl.edu/faculty/derek-wheeler/",
+    "https://www.law.ufl.edu/faculty"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "5ae62e418888",
+   "name": "Jim Hoover",
+   "title": "Jack Faricy Professor",
+   "college": "Warrington College of Business",
+   "department": "Fisher School of Accounting",
+   "affiliations": [
+    {
+     "college": "Warrington College of Business",
+     "department": "Fisher School of Accounting"
+    },
+    {
+     "college": "Warrington College of Business",
+     "department": "Information Systems and Operations Management"
+    }
+   ],
+   "email": "jim.hoover@warrington.ufl.edu",
+   "research_areas": [
+    "Artificial Intelligence,",
+    "Big Data and Data Privacy,",
+    "Forecasting"
+   ],
+   "research_summary": "",
+   "teaching": [
+    "Advanced DBA Research (MAN7978)",
+    "Advanced DBA Research (MAR7978)",
+    "Advanced DBA Research (QMB7911)",
+    "Analytics Practicum 2 (QMB6943)",
+    "Analytics Practicum 3 (QMB6944)",
+    "Analytics Processes for Business âu001au001a Bootcamp (QMB6938)",
+    "Analytics Projects Practicum 1 (QMB6942)",
+    "Artificial Intelligence and Machine Learning (MAR7671)",
+    "DBA Doctoral Dissertation/Defense (MAN7985)",
+    "DBA Doctoral Dissertation/Defense (MAR7985)",
+    "DBA Doctoral Dissertation/Defense (QMB7981)",
+    "Individual Work in Information Systems and Operations Management (QMB6905)",
+    "Marketing Analytics 1 (MAR6668)",
+    "Problems and Methods in Marketing Management (MAR5805)",
+    "Problems and Methods in Marketing Management (MAR5806)",
+    "Product Development and Management (MAR6833)",
+    "Special Topics in Marketing (MAR6930)"
+   ],
+   "extension": [],
+   "google_scholar": "https://scholar.google.com/citations?user=iA0-B1QAAAAJ",
+   "orcid": "",
+   "lab_name": "",
+   "lab_url": "",
+   "website": "",
+   "edis_url": "",
+   "profile_url": "https://warrington.ufl.edu/directory/jim-hoover/",
+   "location": "",
+   "roles": [],
+   "current_students": [],
+   "sources": [
+    "https://warrington.ufl.edu/directory/jim-hoover/",
+    "https://warrington.ufl.edu/faculty-research/thought-leadership/"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "24d4af2f1638",
+   "name": "Ashish Mehta",
+   "title": "Professor Emeritus",
+   "college": "Herbert Wertheim College of Engineering",
+   "department": "Environmental Engineering Sciences Department",
+   "affiliations": [
+    {
+     "college": "Herbert Wertheim College of Engineering",
+     "department": "Environmental Engineering Sciences Department"
+    }
+   ],
+   "email": "",
+   "research_areas": [
+    "Coastal Oceanographic Engineering",
+    "Department of Civil Coastal Engineering"
+   ],
+   "research_summary": "",
+   "teaching": [],
+   "extension": [],
+   "google_scholar": "",
+   "orcid": "",
+   "lab_name": "",
+   "lab_url": "",
+   "website": "",
+   "edis_url": "",
+   "profile_url": "https://essie.ufl.edu/cce/faculty/name/ashish-mehta/",
+   "location": "",
+   "roles": [],
+   "current_students": [],
+   "sources": [
+    "https://essie.ufl.edu/cce/faculty/name/ashish-mehta/",
+    "https://essie.ufl.edu/people/cat/faculty/"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "f997f1cf2339",
+   "name": "Robert Holt",
+   "title": "Assistant Professor",
+   "college": "College of Agricultural and Life Sciences",
+   "department": "School of Natural Resources and Environment",
+   "affiliations": [
+    {
+     "college": "College of Agricultural and Life Sciences",
+     "department": "School of Natural Resources and Environment"
+    }
+   ],
+   "email": "rdholt@ufl.edu",
+   "research_areas": [
+    "Biology",
+    "Biodiversity, Biogeography, Conservation Biology, Ecological Modeling, Evolutionary Biology"
+   ],
+   "research_summary": "",
+   "teaching": [],
+   "extension": [],
+   "google_scholar": "",
+   "orcid": "",
+   "lab_name": "",
+   "lab_url": "",
+   "website": "",
+   "edis_url": "",
+   "profile_url": "https://people.clas.ufl.edu/rdholt/",
+   "location": "",
+   "roles": [],
+   "current_students": [],
+   "sources": [
+    "https://people.clas.ufl.edu/rdholt/",
+    "https://snre.ifas.ufl.edu/people/affiliate-faculty/",
+    "https://gradcatalog.ufl.edu/graduate/faculty/"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "94d631acc54e",
+   "name": "Mei He",
+   "title": "",
+   "college": "Herbert Wertheim College of Engineering",
+   "department": "J. Crayton Pruitt Family Department of Biomedical Engineering",
+   "affiliations": [
+    {
+     "college": "Herbert Wertheim College of Engineering",
+     "department": "J. Crayton Pruitt Family Department of Biomedical Engineering"
+    }
+   ],
+   "email": "",
+   "research_areas": [
+    "Affiliate Faculty"
+   ],
+   "research_summary": "",
+   "teaching": [],
+   "extension": [],
+   "google_scholar": "",
+   "orcid": "",
+   "lab_name": "",
+   "lab_url": "",
+   "website": "",
+   "edis_url": "",
+   "profile_url": "https://bme.ufl.edu/people/affiliate-faculty/name/mei-he/",
+   "location": "",
+   "roles": [],
+   "current_students": [],
+   "sources": [
+    "https://bme.ufl.edu/people/affiliate-faculty/name/mei-he/",
+    "https://bme.ufl.edu/people/affiliate-faculty/"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "a86cc3ea3ead",
+   "name": "Malini Johar Schueller",
+   "title": "Professor",
+   "college": "College of Liberal Arts and Sciences",
+   "department": "English Department",
+   "affiliations": [
+    {
+     "college": "College of Liberal Arts and Sciences",
+     "department": "English Department"
+    }
+   ],
+   "email": "",
+   "research_areas": [
+    "Campaigns of Knowledge: US Pedagogies of Colonialism and Occupation in the Philippines and Japan",
+    "(2019)"
+   ],
+   "research_summary": "",
+   "teaching": [],
+   "extension": [],
+   "google_scholar": "",
+   "orcid": "",
+   "lab_name": "",
+   "lab_url": "",
+   "website": "",
+   "edis_url": "",
+   "profile_url": "https://english.ufl.edu/campaigns-of-knowledge-us-pedagogies-of-colonialism-and-occupation-in-the-philippines-and-japan/",
+   "location": "",
+   "roles": [],
+   "current_students": [],
+   "sources": [
+    "https://english.ufl.edu/campaigns-of-knowledge-us-pedagogies-of-colonialism-and-occupation-in-the-philippines-and-japan/",
+    "https://english.ufl.edu/faculty-listing/emeritus-emerita-and-retired-faculty/",
+    "https://gradcatalog.ufl.edu/graduate/faculty/"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "59430cf6372e",
+   "name": "Sriyanka Lahiri",
+   "title": "Associate Professor",
+   "college": "College of Agricultural and Life Sciences",
+   "department": "Entomology and Nematology",
+   "affiliations": [
+    {
+     "college": "College of Agricultural and Life Sciences",
+     "department": "Entomology and Nematology"
+    }
+   ],
+   "email": "lahiris@ufl.edu",
+   "research_areas": [
+    "Small Fruit Crops",
+    "Entomology",
+    "Balm GCREC"
+   ],
+   "research_summary": "",
+   "teaching": [],
+   "extension": [],
+   "google_scholar": "https://scholar.google.com/citations?user=Az-5FwoAAAAJ",
+   "orcid": "",
+   "lab_name": "Dr. Lahiri's Lab",
+   "lab_url": "https://gcrec.ifas.ufl.edu/gcrec-facultystaff-directory/sriyanka-lahiri/lab-/",
+   "website": "",
+   "edis_url": "https://edis.ifas.ufl.edu/topic_a-lahiri",
+   "profile_url": "https://gcrec.ifas.ufl.edu/gcrec-facultystaff-directory/sriyanka-lahiri/",
+   "location": "",
+   "roles": [],
+   "current_students": [
+    {
+     "name": "Allan Busuulwa",
+     "program": "PhD"
+    }
+   ],
+   "sources": [
+    "https://gcrec.ifas.ufl.edu/gcrec-facultystaff-directory/sriyanka-lahiri/",
+    "https://entnemdept.ufl.edu/people-directory/courtesy-and-affiliate-faculty/",
+    "https://gradcatalog.ufl.edu/graduate/faculty/"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "dceca2d26fc7",
+   "name": "Manuel Arreola",
+   "title": "BME Graduate Faculty Status",
+   "college": "Herbert Wertheim College of Engineering",
+   "department": "J. Crayton Pruitt Family Department of Biomedical Engineering",
+   "affiliations": [
+    {
+     "college": "Herbert Wertheim College of Engineering",
+     "department": "J. Crayton Pruitt Family Department of Biomedical Engineering"
+    }
+   ],
+   "email": "",
+   "research_areas": [
+    "Affiliate Faculty"
+   ],
+   "research_summary": "",
+   "teaching": [],
+   "extension": [],
+   "google_scholar": "",
+   "orcid": "",
+   "lab_name": "",
+   "lab_url": "",
+   "website": "https://medphysics.med.ufl.edu/diagnostic-imaging-medical-physics-residency-program/faculty-facilities/program-faculty/manuel-arreola-phd/",
+   "edis_url": "",
+   "profile_url": "https://bme.ufl.edu/people/affiliate-faculty/name/manuel-arreola/",
+   "location": "",
+   "roles": [],
+   "current_students": [],
+   "sources": [
+    "https://bme.ufl.edu/people/affiliate-faculty/name/manuel-arreola/",
+    "https://bme.ufl.edu/people/affiliate-faculty/",
+    "https://gradcatalog.ufl.edu/graduate/faculty/"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "fb68ec548384",
+   "name": "Noah Rashkind",
+   "title": "Adjunct Professor",
+   "college": "College of Liberal Arts and Sciences",
+   "department": "Astronomy Department",
+   "affiliations": [
+    {
+     "college": "College of Liberal Arts and Sciences",
+     "department": "Astronomy Department"
+    }
+   ],
+   "email": "ufnoah@ufl.edu",
+   "research_areas": [
+    "BRT-220"
+   ],
+   "research_summary": "",
+   "teaching": [],
+   "extension": [],
+   "google_scholar": "",
+   "orcid": "",
+   "lab_name": "",
+   "lab_url": "",
+   "website": "",
+   "edis_url": "",
+   "profile_url": "https://astro.ufl.edu/directory/noah-rashkind/",
+   "location": "",
+   "roles": [],
+   "current_students": [],
+   "sources": [
+    "https://astro.ufl.edu/directory/noah-rashkind/",
+    "https://astro.ufl.edu/people/faculty/"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "131d9ac2f8de",
+   "name": "Ryan Wilhelmi",
+   "title": "Adjunct Lecturer",
+   "college": "College of Liberal Arts and Sciences",
+   "department": "Geological Sciences Department",
+   "affiliations": [
+    {
+     "college": "College of Liberal Arts and Sciences",
+     "department": "Geological Sciences Department"
+    }
+   ],
+   "email": "rwilhelmi@ufl.edu",
+   "research_areas": [],
+   "research_summary": "",
+   "teaching": [],
+   "extension": [],
+   "google_scholar": "",
+   "orcid": "",
+   "lab_name": "",
+   "lab_url": "",
+   "website": "",
+   "edis_url": "",
+   "profile_url": "https://geology.ufl.edu/directory/dr-ryan-wilhelmi/",
+   "location": "",
+   "roles": [],
+   "current_students": [],
+   "sources": [
+    "https://geology.ufl.edu/directory/dr-ryan-wilhelmi/",
+    "https://geology.ufl.edu/people/faculty/"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "76695a2513b8",
+   "name": "Sandra W Citty",
+   "title": "Clinical Professor",
+   "college": "College of Nursing",
+   "department": "Nursing Sciences",
+   "affiliations": [
+    {
+     "college": "College of Nursing",
+     "department": "Nursing Sciences"
+    }
+   ],
+   "email": "",
+   "research_areas": [
+    "PhD, RN, APRN-BC"
+   ],
+   "research_summary": "",
+   "teaching": [],
+   "extension": [],
+   "google_scholar": "",
+   "orcid": "",
+   "lab_name": "",
+   "lab_url": "",
+   "website": "",
+   "edis_url": "",
+   "profile_url": "https://nursing.ufl.edu/profile/citty-sandra",
+   "location": "",
+   "roles": [],
+   "current_students": [],
+   "sources": [
+    "https://nursing.ufl.edu/profile/citty-sandra",
+    "https://nursing.ufl.edu/faculty/faculty-directory/"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "cc04222af0a0",
+   "name": "Martin Gold",
+   "title": "Professor",
+   "college": "College of Agricultural and Life Sciences",
+   "department": "School of Natural Resources and Environment",
+   "affiliations": [
+    {
+     "college": "College of Agricultural and Life Sciences",
+     "department": "School of Natural Resources and Environment"
+    },
+    {
+     "college": "College of Design, Construction and Planning",
+     "department": "School of Architecture"
+    }
+   ],
+   "email": "mgold@ufl.edu",
+   "research_areas": [
+    "Architecture",
+    "Sustainable Infrastructure, Urban & Regional Planning",
+    "Ferr Bfer",
+    "School of Architecture",
+    "M.Arch., University of Florida, 1994"
+   ],
+   "research_summary": "",
+   "teaching": [],
+   "extension": [],
+   "google_scholar": "",
+   "orcid": "",
+   "lab_name": "",
+   "lab_url": "",
+   "website": "",
+   "edis_url": "",
+   "profile_url": "https://dcp.ufl.edu/faculties/martin-gold/",
+   "location": "",
+   "roles": [],
+   "current_students": [],
+   "sources": [
+    "https://dcp.ufl.edu/faculties/martin-gold/",
+    "https://snre.ifas.ufl.edu/people/affiliate-faculty/",
+    "https://dcp.ufl.edu/faculty/architecture/",
+    "https://gradcatalog.ufl.edu/graduate/faculty/"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "64e1269c3ff9",
+   "name": "Steven Laux",
+   "title": "Professor of Practice",
+   "college": "Herbert Wertheim College of Engineering",
+   "department": "Environmental Engineering Sciences Department",
+   "affiliations": [
+    {
+     "college": "Herbert Wertheim College of Engineering",
+     "department": "Environmental Engineering Sciences Department"
+    }
+   ],
+   "email": "",
+   "research_areas": [
+    "Department of Environmental Engineering Sciences",
+    "Geosystems Engineering",
+    "Materials Pavements",
+    "Sustainable Construction Engineering"
+   ],
+   "research_summary": "",
+   "teaching": [],
+   "extension": [],
+   "google_scholar": "",
+   "orcid": "",
+   "lab_name": "",
+   "lab_url": "",
+   "website": "",
+   "edis_url": "",
+   "profile_url": "https://essie.ufl.edu/people/name/steven-laux/",
+   "location": "",
+   "roles": [],
+   "current_students": [],
+   "sources": [
+    "https://essie.ufl.edu/people/name/steven-laux/",
+    "https://essie.ufl.edu/people/cat/faculty/",
+    "https://essie.ufl.edu/ees/faculty/name/steven-laux/"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "74f1dd722fe6",
+   "name": "Adam G. Dale",
+   "title": "Associate Chair for Extension",
+   "college": "College of Agricultural and Life Sciences",
+   "department": "Entomology and Nematology",
+   "affiliations": [
+    {
+     "college": "College of Agricultural and Life Sciences",
+     "department": "Entomology and Nematology"
+    },
+    {
+     "college": "College of Agricultural and Life Sciences",
+     "department": "School of Natural Resources and Environment"
+    }
+   ],
+   "email": "agdale@ufl.edu",
+   "research_areas": [
+    "For information about my research, please visit my lab website: https://dalelab.org/publications/",
+    "Extension For information about my Extension program, please visit my lab website: https://dalelab.org/",
+    "Entomology and Nematology",
+    "Other"
+   ],
+   "research_summary": "",
+   "teaching": [],
+   "extension": [
+    "For information about my Extension program, please visit my lab website: https://dalelab.org/"
+   ],
+   "google_scholar": "https://scholar.google.com/citations?user=ezHxd9AAAAAJ",
+   "orcid": "",
+   "lab_name": "Dale Laboratory Publications",
+   "lab_url": "https://dalelab.org/publications/",
+   "website": "",
+   "edis_url": "",
+   "profile_url": "https://entnemdept.ufl.edu/people-directory/adam-dale/",
+   "location": "Gainesville",
+   "roles": [],
+   "current_students": [
+    {
+     "name": "Daniel Rhodes",
+     "program": "MS"
+    },
+    {
+     "name": "Minor Vicente Solano Gutierrez",
+     "program": "PhD"
+    }
+   ],
+   "sources": [
+    "https://entnemdept.ufl.edu/people-directory/adam-dale/",
+    "https://entnemdept.ufl.edu/people-directory/courtesy-and-affiliate-faculty/",
+    "https://snre.ifas.ufl.edu/people/affiliate-faculty/",
+    "https://gradcatalog.ufl.edu/graduate/faculty/"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "426f33b0cade",
+   "name": "Anne MATHEWS",
+   "title": "Associate Professor",
+   "college": "College of Agricultural and Life Sciences",
+   "department": "Food Science and Human Nutrition",
+   "affiliations": [
+    {
+     "college": "College of Agricultural and Life Sciences",
+     "department": "Food Science and Human Nutrition"
+    }
+   ],
+   "email": "",
+   "research_areas": [
+    "MATHEWS, Anne",
+    "–Ph.D. University of Pittsburgh: Energy metabolism and exercise in Type 2 diabetes; clinical research management."
+   ],
+   "research_summary": "",
+   "teaching": [],
+   "extension": [],
+   "google_scholar": "",
+   "orcid": "",
+   "lab_name": "",
+   "lab_url": "",
+   "website": "",
+   "edis_url": "",
+   "profile_url": "https://fshn.ifas.ufl.edu/about/faculty-bio-pages/mathews/",
+   "location": "",
+   "roles": [],
+   "current_students": [],
+   "sources": [
+    "https://fshn.ifas.ufl.edu/about/faculty-bio-pages/mathews/",
+    "https://fshn.ifas.ufl.edu/about/directory-40/",
+    "https://gradcatalog.ufl.edu/graduate/faculty/"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "2b21461e2148",
+   "name": "Kathryn Stofer",
+   "title": "Research Associate Professor",
+   "college": "College of Agricultural and Life Sciences",
+   "department": "School of Natural Resources and Environment",
+   "affiliations": [
+    {
+     "college": "College of Agricultural and Life Sciences",
+     "department": "School of Natural Resources and Environment"
+    }
+   ],
+   "email": "stofer@ufl.edu",
+   "research_areas": [
+    "Public engagement with science",
+    "Health Extension",
+    "Data visualization",
+    "Making STEM evident in agriculture",
+    "Supporting scientists in public engagement",
+    "Research Profiles",
+    "Research Profiles Google Scholar ORCID ResearchGate"
+   ],
+   "research_summary": "",
+   "teaching": [],
+   "extension": [],
+   "google_scholar": "https://scholar.google.com/citations?user=xFGJSqEAAAAJ",
+   "orcid": "https://orcid.org/0000-0002-3659-490X",
+   "lab_name": "",
+   "lab_url": "",
+   "website": "",
+   "edis_url": "",
+   "profile_url": "https://aec.ifas.ufl.edu/directory/faculty/katie-stofer/",
+   "location": "",
+   "roles": [],
+   "current_students": [],
+   "sources": [
+    "https://aec.ifas.ufl.edu/directory/faculty/katie-stofer/",
+    "https://snre.ifas.ufl.edu/people/affiliate-faculty/"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "c1f542e04e28",
+   "name": "Randal Switt",
+   "title": "",
+   "college": "Herbert Wertheim College of Engineering",
+   "department": "Environmental Engineering Sciences Department",
+   "affiliations": [
+    {
+     "college": "Herbert Wertheim College of Engineering",
+     "department": "Environmental Engineering Sciences Department"
+    }
+   ],
+   "email": "",
+   "research_areas": [
+    "Information Technology"
+   ],
+   "research_summary": "",
+   "teaching": [],
+   "extension": [],
+   "google_scholar": "",
+   "orcid": "",
+   "lab_name": "",
+   "lab_url": "",
+   "website": "",
+   "edis_url": "",
+   "profile_url": "https://essie.ufl.edu/people/name/randal-switt/",
+   "location": "",
+   "roles": [],
+   "current_students": [],
+   "sources": [
+    "https://essie.ufl.edu/people/name/randal-switt/",
+    "https://essie.ufl.edu/people/cat/faculty/"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "282c304b288e",
+   "name": "Renée Goodrich-Schneider",
+   "title": "Chair & Professor",
+   "college": "College of Agricultural and Life Sciences",
+   "department": "Food Science and Human Nutrition",
+   "affiliations": [
+    {
+     "college": "College of Agricultural and Life Sciences",
+     "department": "Food Science and Human Nutrition"
+    }
+   ],
+   "email": "goodrich@ufl.edu",
+   "research_areas": [
+    "Food Science",
+    "| FSHN 359C",
+    "Laura Acosta, D.C.N., R.D.N., L.D.N."
+   ],
+   "research_summary": "",
+   "teaching": [],
+   "extension": [],
+   "google_scholar": "https://scholar.google.com/citations?user=yPeGD40AAAAJ",
+   "orcid": "",
+   "lab_name": "",
+   "lab_url": "",
+   "website": "",
+   "edis_url": "",
+   "profile_url": "https://fshn.ifas.ufl.edu/about/faculty-bio-pages/goodrich/",
+   "location": "",
+   "roles": [
+    "& Undergraduate Coordinator"
+   ],
+   "current_students": [],
+   "sources": [
+    "https://fshn.ifas.ufl.edu/about/faculty-bio-pages/goodrich/",
+    "https://fshn.ifas.ufl.edu/about/directory-40/"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "fb412b97f572",
+   "name": "Lu Li",
+   "title": "",
+   "college": "College of Medicine",
+   "department": "Biochemistry and Molecular Biology",
+   "affiliations": [
+    {
+     "college": "College of Medicine",
+     "department": "Biochemistry and Molecular Biology"
+    }
+   ],
+   "email": "luli1@ufl.edu",
+   "research_areas": [
+    "Department:",
+    "MD-BIOCHEM – MOLECULAR BIOL",
+    "AST SCTST"
+   ],
+   "research_summary": "",
+   "teaching": [],
+   "extension": [],
+   "google_scholar": "",
+   "orcid": "",
+   "lab_name": "",
+   "lab_url": "",
+   "website": "",
+   "edis_url": "",
+   "profile_url": "https://biochem.med.ufl.edu/profile/li-lu-2",
+   "location": "",
+   "roles": [],
+   "current_students": [],
+   "sources": [
+    "https://biochem.med.ufl.edu/profile/li-lu-2",
+    "https://biochem.med.ufl.edu/faculty/primary-faculty/"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "4804a1a2f88f",
+   "name": "Liza S Koster",
+   "title": "Clinical Associate Professor",
+   "college": "College of Veterinary Medicine",
+   "department": "Veterinary Medical Sciences",
+   "affiliations": [
+    {
+     "college": "College of Veterinary Medicine",
+     "department": "Veterinary Medical Sciences"
+    }
+   ],
+   "email": "lizakoster@ufl.edu",
+   "research_areas": [
+    "Phone:",
+    "Email:",
+    "ORCID:"
+   ],
+   "research_summary": "",
+   "teaching": [],
+   "extension": [],
+   "google_scholar": "",
+   "orcid": "",
+   "lab_name": "",
+   "lab_url": "",
+   "website": "",
+   "edis_url": "",
+   "profile_url": "https://www.vetmed.ufl.edu/profile/koster-liza-1",
+   "location": "",
+   "roles": [],
+   "current_students": [],
+   "sources": [
+    "https://www.vetmed.ufl.edu/profile/koster-liza-1",
+    "https://www.vetmed.ufl.edu/about-the-college/directory/"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "1e79af1012f5",
+   "name": "Marit Østebø",
+   "title": ", Assistant Professor, Department of Anthropology",
+   "college": "College of Liberal Arts and Sciences",
+   "department": "Gender, Sexuality, and Women's Studies Department",
+   "affiliations": [
+    {
+     "college": "College of Liberal Arts and Sciences",
+     "department": "Gender, Sexuality, and Women's Studies Department"
+    }
+   ],
+   "email": "",
+   "research_areas": [],
+   "research_summary": "",
+   "teaching": [],
+   "extension": [],
+   "google_scholar": "",
+   "orcid": "",
+   "lab_name": "",
+   "lab_url": "",
+   "website": "",
+   "edis_url": "",
+   "profile_url": "https://people.clas.ufl.edu/maritostebo/",
+   "location": "",
+   "roles": [],
+   "current_students": [],
+   "sources": [
+    "https://people.clas.ufl.edu/maritostebo/",
+    "https://wst.ufl.edu/people/affiliate-faculty/"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "9b8b8f345760",
+   "name": "D. Scott Stewart",
+   "title": "Adjunct Research Professor",
+   "college": "Herbert Wertheim College of Engineering",
+   "department": "Mechanical and Aerospace Engineering Department",
+   "affiliations": [
+    {
+     "college": "Herbert Wertheim College of Engineering",
+     "department": "Mechanical and Aerospace Engineering Department"
+    }
+   ],
+   "email": "stewart.dscott@ufl.edu",
+   "research_areas": [
+    "Fluid Dynamics and Acoustics"
+   ],
+   "research_summary": "",
+   "teaching": [],
+   "extension": [],
+   "google_scholar": "",
+   "orcid": "",
+   "lab_name": "",
+   "lab_url": "",
+   "website": "",
+   "edis_url": "",
+   "profile_url": "https://mae.ufl.edu/people/name/d-scott-stewart/",
+   "location": "",
+   "roles": [
+    "Adjunct"
+   ],
+   "current_students": [],
+   "sources": [
+    "https://mae.ufl.edu/people/name/d-scott-stewart/",
+    "https://mae.ufl.edu/people/?cn-cat=3"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "17ff249139bc",
+   "name": "Martina T. Sumner",
+   "title": "Instructional Professor",
+   "college": "College of Liberal Arts and Sciences",
+   "department": "Chemistry Department",
+   "affiliations": [
+    {
+     "college": "College of Liberal Arts and Sciences",
+     "department": "Chemistry Department"
+    }
+   ],
+   "email": "m.sumner@ufl.edu",
+   "research_areas": [],
+   "research_summary": "",
+   "teaching": [],
+   "extension": [],
+   "google_scholar": "",
+   "orcid": "",
+   "lab_name": "",
+   "lab_url": "",
+   "website": "",
+   "edis_url": "",
+   "profile_url": "https://chem.ufl.edu/people-2/instructional-faculty/sumner-bio/",
+   "location": "",
+   "roles": [],
+   "current_students": [],
+   "sources": [
+    "https://chem.ufl.edu/people-2/instructional-faculty/sumner-bio/",
+    "https://chem.ufl.edu/people-2/faculty-2/"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "ec2fe0d4b7c9",
+   "name": "John Palmer",
+   "title": "Professor",
+   "college": "College of Liberal Arts and Sciences",
+   "department": "Philosophy Department",
+   "affiliations": [
+    {
+     "college": "College of Liberal Arts and Sciences",
+     "department": "Philosophy Department"
+    }
+   ],
+   "email": "palmerj@ufl.edu",
+   "research_areas": [
+    "Ancient Greek and Roman Philosophy"
+   ],
+   "research_summary": "",
+   "teaching": [],
+   "extension": [],
+   "google_scholar": "",
+   "orcid": "",
+   "lab_name": "",
+   "lab_url": "",
+   "website": "https://people.clas.ufl.edu/palmerj/",
+   "edis_url": "",
+   "profile_url": "https://phil.ufl.edu/directory/john-palmer/",
+   "location": "",
+   "roles": [],
+   "current_students": [],
+   "sources": [
+    "https://phil.ufl.edu/directory/john-palmer/",
+    "https://phil.ufl.edu/people/faculty/",
+    "https://gradcatalog.ufl.edu/graduate/faculty/"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "82508778158a",
+   "name": "Anje G Bauck",
+   "title": "Clinical Assistant Professor, Large Animal Surgery",
+   "college": "College of Veterinary Medicine",
+   "department": "Veterinary Medical Sciences",
+   "affiliations": [
+    {
+     "college": "College of Veterinary Medicine",
+     "department": "Veterinary Medical Sciences"
+    }
+   ],
+   "email": "baucka@ufl.edu",
+   "research_areas": [
+    "DVM, PhD, DACVS (LA)",
+    "Phone:",
+    "Email:"
+   ],
+   "research_summary": "",
+   "teaching": [
+    "VEM5422 – Equine Surgery and Lab 2017-2018,2020-2026 College of Veterinary Medicine",
+    "VEM5733 – Core Clk Large An Med 2020-2024 College of Veterinary Medicine",
+    "VEM5737 – Large Animal Surgery Clerkship 2014-2018,2020-2026 College of Veterinary Medicine",
+    "VEM5833 – Senior Clk Lg An Med 2020-2024 College of Veterinary Medicine",
+    "VEM5837 – Adv. Large Animal Surgery Clerkship 2014,2016-2020,2020-2026 College of Veterinary Medicine",
+    "VEM5402 – Introduction to Surgery 2020-2025 College of Veterinary Medicine",
+    "VEM5440 – Funda Orthopedic Surg 2017,2021-2025 College of Veterinary Medicine",
+    "VEM5112 – Animal Systems 3 2021-2023 College of Veterinary Medicine",
+    "VEM5402L – Introduction to Surgery Lab 2023-2025 College of Veterinary Medicine"
+   ],
+   "extension": [],
+   "google_scholar": "",
+   "orcid": "",
+   "lab_name": "",
+   "lab_url": "",
+   "website": "",
+   "edis_url": "",
+   "profile_url": "https://www.vetmed.ufl.edu/profile/bauck-anje/",
+   "location": "",
+   "roles": [],
+   "current_students": [],
+   "sources": [
+    "https://www.vetmed.ufl.edu/profile/bauck-anje/",
+    "https://www.vetmed.ufl.edu/about-the-college/directory/",
+    "https://gradcatalog.ufl.edu/graduate/faculty/"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  },
+  {
+   "id": "228f7dfdce72",
+   "name": "Terence Small",
+   "title": "Professor Emeritus",
+   "college": "College of the Arts",
+   "department": "Digital Worlds Institute",
+   "affiliations": [
+    {
+     "college": "College of the Arts",
+     "department": "Digital Worlds Institute"
+    },
+    {
+     "college": "College of the Arts",
+     "department": "School of Art and Art History"
+    },
+    {
+     "college": "College of the Arts",
+     "department": "School of Music"
+    },
+    {
+     "college": "College of the Arts",
+     "department": "School of Theatre and Dance"
+    }
+   ],
+   "email": "",
+   "research_areas": [
+    "School of Music"
+   ],
+   "research_summary": "",
+   "teaching": [],
+   "extension": [],
+   "google_scholar": "",
+   "orcid": "",
+   "lab_name": "",
+   "lab_url": "",
+   "website": "",
+   "edis_url": "",
+   "profile_url": "https://arts.ufl.edu/people/profiles/terence-small/",
+   "location": "",
+   "roles": [],
+   "current_students": [],
+   "sources": [
+    "https://arts.ufl.edu/people/profiles/terence-small/",
+    "https://arts.ufl.edu/about/directory/emeritus-faculty/"
+   ],
+   "verified_at": "2026-10-10T08:48:49+00:00"
+  }
+ ],
+ "students": [
+  {
+   "id": "f8576bcd741e",
+   "name": "Study Abroad",
+   "program": "",
+   "college": "Herbert Wertheim College of Engineering",
+   "department": "Environmental Engineering Sciences Department",
+   "advisor_raw": "",
+   "advisor_ids": [],
+   "advisor_names": [],
+   "research": "",
+   "lab": "",
+   "source_url": "https://essie.ufl.edu/resources/students/"
+  },
+  {
+   "id": "7fbc79bab192",
+   "name": "Request ADA Accommodations",
+   "program": "",
+   "college": "Levin College of Law",
+   "department": "Levin College of Law",
+   "advisor_raw": "",
+   "advisor_ids": [],
+   "advisor_names": [],
+   "research": "",
+   "lab": "",
+   "source_url": "https://law.ufl.edu/student-support/"
+  },
+  {
+   "id": "af744d265ec8",
+   "name": "ACEND Accreditation",
+   "program": "",
+   "college": "College of Agricultural and Life Sciences",
+   "department": "Food Science and Human Nutrition",
+   "advisor_raw": "",
+   "advisor_ids": [],
+   "advisor_names": [],
+   "research": "",
+   "lab": "",
+   "source_url": "https://fshn.ifas.ufl.edu/current-students/graduate/ms-dietetic-internship-program/"
+  },
+  {
+   "id": "7249d3ef6fc2",
+   "name": "Daniel Acton",
+   "program": "PhD",
+   "college": "College of Liberal Arts and Sciences",
+   "department": "Sociology and Criminology & Law Department",
+   "advisor_raw": "Chris Gibson",
+   "advisor_ids": [
+    "3411d9135451"
+   ],
+   "advisor_names": [
+    "Chris Gibson"
+   ],
+   "research": "Sibling Influences: Delinquency and Victimization",
+   "lab": "",
+   "source_url": "https://soccrim.clas.ufl.edu/graduate-students/"
+  },
+  {
+   "id": "d0e4b865a275",
+   "name": "Jared Adams",
+   "program": "PhD",
+   "college": "College of Liberal Arts and Sciences",
+   "department": "Sociology and Criminology & Law Department",
+   "advisor_raw": "Raffaele Vacca",
+   "advisor_ids": [],
+   "advisor_names": [
+    "Raffaele Vacca"
+   ],
+   "research": "Revisiting the Academic Caste System: Prestige, Gender, and Stratification and Inequality in Academic Networks",
+   "lab": "",
+   "source_url": "https://soccrim.clas.ufl.edu/graduate-students/"
+  },
+  {
+   "id": "24844526fe9b",
+   "name": "Charlotte Addae",
+   "program": "PhD",
+   "college": "College of Agricultural and Life Sciences",
+   "department": "Entomology and Nematology",
+   "advisor_raw": "Buckner",
+   "advisor_ids": [
+    "e8e20dae1ced"
+   ],
+   "advisor_names": [
+    "Eva Buckner"
+   ],
+   "research": "",
+   "lab": "",
+   "source_url": "https://entnemdept.ufl.edu/people-directory/graduate-students/"
+  },
+  {
+   "id": "b2c71f8022e3",
+   "name": "Steven Addcox",
+   "program": "PhD",
+   "college": "College of Liberal Arts and Sciences",
+   "department": "English Department",
+   "advisor_raw": "",
+   "advisor_ids": [],
+   "advisor_names": [],
+   "research": "",
+   "lab": "",
+   "source_url": "https://english.ufl.edu/graduate-programs/recent-phd-student-placements/"
+  },
+  {
+   "id": "90fb08c1bbe1",
+   "name": "Kavita Adhikari",
+   "program": "PhD",
+   "college": "College of Agricultural and Life Sciences",
+   "department": "Entomology and Nematology",
+   "advisor_raw": "Gondhalekar",
+   "advisor_ids": [
+    "d131af88dc2d"
+   ],
+   "advisor_names": [
+    "Ameya Gondhalekar"
+   ],
+   "research": "",
+   "lab": "",
+   "source_url": "https://entnemdept.ufl.edu/people-directory/graduate-students/"
+  },
+  {
+   "id": "fc1984aaccc6",
+   "name": "Entomology Major Advising",
+   "program": "Undergraduate",
+   "college": "College of Agricultural and Life Sciences",
+   "department": "Entomology and Nematology",
+   "advisor_raw": "",
+   "advisor_ids": [],
+   "advisor_names": [],
+   "research": "",
+   "lab": "",
+   "source_url": "https://entnemdept.ufl.edu/academic-programs/current-students/"
+  },
+  {
+   "id": "52e293725d68",
+   "name": "Mayank Aggarwal",
+   "program": "PhD",
+   "college": "College of Medicine",
+   "department": "Biochemistry and Molecular Biology",
+   "advisor_raw": "Robert McKenna",
+   "advisor_ids": [
+    "edd33fd7e13f"
+   ],
+   "advisor_names": [
+    "Robert McKenna"
+   ],
+   "research": "",
+   "lab": "",
+   "source_url": "https://biochem.med.ufl.edu/graduate-programs/former-graduate-students/"
+  },
+  {
+   "id": "b926c11c1e3f",
+   "name": "Labake Ogunkanmi Agunbiade",
+   "program": "PhD",
+   "college": "College of Agricultural and Life Sciences",
+   "department": "Soil, Water, and Ecosystem Sciences",
+   "advisor_raw": "Kadyampakeni & Nunes",
+   "advisor_ids": [
+    "553757e85b53"
+   ],
+   "advisor_names": [
+    "Davie Kadyampakeni",
+    "Nunes"
+   ],
+   "research": "",
+   "lab": "",
+   "source_url": "https://soils.ifas.ufl.edu/people/graduate-students/"
+  },
+  {
+   "id": "4fb1f00561b6",
+   "name": "Carole Ahossin",
+   "program": "PhD",
+   "college": "College of Liberal Arts and Sciences",
+   "department": "Sociology and Criminology & Law Department",
+   "advisor_raw": "Nicholas Vargas",
+   "advisor_ids": [],
+   "advisor_names": [
+    "Nicholas Vargas"
+   ],
+   "research": "Marriage and Integration: Exploring the Perceptions of Belonging of Black African Immigrants in the United States",
+   "lab": "",
+   "source_url": "https://soccrim.clas.ufl.edu/graduate-students/"
+  },
+  {
+   "id": "cf462396139c",
+   "name": "Financial Aid",
+   "program": "Undergraduate",
+   "college": "College of Agricultural and Life Sciences",
+   "department": "Entomology and Nematology",
+   "advisor_raw": "",
+   "advisor_ids": [],
+   "advisor_names": [],
+   "research": "",
+   "lab": "",
+   "source_url": "https://entnemdept.ufl.edu/academic-programs/current-students/"
+  },
+  {
+   "id": "fc0e04dee54f",
+   "name": "Financial Aid",
+   "program": "",
+   "college": "College of Agricultural and Life Sciences",
+   "department": "Food Science and Human Nutrition",
+   "advisor_raw": "",
+   "advisor_ids": [],
+   "advisor_names": [],
+   "research": "",
+   "lab": "",
+   "source_url": "https://fshn.ifas.ufl.edu/current-students/graduate/ms-dietetic-internship-program/"
+  },
+  {
+   "id": "8e49ef310921",
+   "name": "Seun Ajoseh",
+   "program": "PhD",
+   "college": "College of Liberal Arts and Sciences",
+   "department": "Sociology and Criminology & Law Department",
+   "advisor_raw": "Charles Peek",
+   "advisor_ids": [
+    "9c7a493d453a"
+   ],
+   "advisor_names": [
+    "Charles Peek"
+   ],
+   "research": "Doula Support and the US Maternal Healthcare System: Insights into Public Discourse, Finances, and Access and Utilization",
+   "lab": "",
+   "source_url": "https://soccrim.clas.ufl.edu/graduate-students/"
+  },
+  {
+   "id": "54aa53eea76a",
+   "name": "Sunfeel Akaphan",
+   "program": "MS",
+   "college": "College of Medicine",
+   "department": "Biochemistry and Molecular Biology",
+   "advisor_raw": "Kotaro Fujii",
+   "advisor_ids": [],
+   "advisor_names": [
+    "Kotaro Fujii"
+   ],
+   "research": "",
+   "lab": "",
+   "source_url": "https://biochem.med.ufl.edu/graduate-programs/former-graduate-students/"
+  },
+  {
+   "id": "6750da34790d",
+   "name": "Sameera Akella",
+   "program": "PhD",
+   "college": "College of Liberal Arts and Sciences",
+   "department": "Sociology and Criminology & Law Department",
+   "advisor_raw": "Charles Gattone",
+   "advisor_ids": [
+    "a003380b7dd3"
+   ],
+   "advisor_names": [
+    "Charles Gattone"
+   ],
+   "research": "Beyond Just Managing Hopelessness: The Health-Seeking Processes and Negotiations for Queer and/or Trans Black, Indigenous, People of Color in the United States",
+   "lab": "",
+   "source_url": "https://soccrim.clas.ufl.edu/graduate-students/"
+  },
+  {
+   "id": "ad56c7208781",
+   "name": "Ilerioluwa Akinnola",
+   "program": "",
+   "college": "College of Liberal Arts and Sciences",
+   "department": "Psychology Department",
+   "advisor_raw": "Webster",
+   "advisor_ids": [
+    "d056a7f03b31"
+   ],
+   "advisor_names": [
+    "Gregory Webster"
+   ],
+   "research": "",
+   "lab": "",
+   "source_url": "https://psych.ufl.edu/people/graduate-student/"
+  },
+  {
+   "id": "03d2fb756914",
+   "name": "Mushfiq Alam",
+   "program": "",
+   "college": "College of Medicine",
+   "department": "Biochemistry and Molecular Biology",
+   "advisor_raw": "Kotaro Fujii",
+   "advisor_ids": [],
+   "advisor_names": [
+    "Kotaro Fujii"
+   ],
+   "research": "",
+   "lab": "",
+   "source_url": "https://biochem.med.ufl.edu/graduate-programs/currentgradstudents/"
+  },
+  {
+   "id": "a26c0f8404fe",
+   "name": "Oluwatobi Alawode",
+   "program": "PhD",
+   "college": "College of Liberal Arts and Sciences",
+   "department": "Sociology and Criminology & Law Department",
+   "advisor_raw": "Barbara Zsembik",
+   "advisor_ids": [
+    "985a3ebad0d0"
+   ],
+   "advisor_names": [
+    "Barbara A. Zsembik"
+   ],
+   "research": "Preventive Healthcare Experiences of Black Immigrants in the United States: Exploring Inequalities in Access and Utilization",
+   "lab": "",
+   "source_url": "https://soccrim.clas.ufl.edu/graduate-students/"
+  },
+  {
+   "id": "9298d30b0d71",
+   "name": "Jamilah Aldawsaria",
+   "program": "PhD",
+   "college": "College of Nursing",
+   "department": "Nursing Sciences",
+   "advisor_raw": "",
+   "advisor_ids": [],
+   "advisor_names": [],
+   "research": "",
+   "lab": "",
+   "source_url": "https://nursing.ufl.edu/2026/08/14/graduate-students-begin-their-gator-nursing-journey/"
+  },
+  {
+   "id": "bda8a7769078",
+   "name": "Yasmin Ali",
+   "program": "MS",
+   "college": "College of Medicine",
+   "department": "Biochemistry and Molecular Biology",
+   "advisor_raw": "Linda Bloom",
+   "advisor_ids": [
+    "d7d8d3842bed"
+   ],
+   "advisor_names": [
+    "Linda B Bloom"
+   ],
+   "research": "",
+   "lab": "",
+   "source_url": "https://biochem.med.ufl.edu/graduate-programs/former-graduate-students/"
+  },
+  {
+   "id": "3af6848f701e",
+   "name": "Kristin Allukian",
+   "program": "PhD",
+   "college": "College of Liberal Arts and Sciences",
+   "department": "English Department",
+   "advisor_raw": "",
+   "advisor_ids": [],
+   "advisor_names": [],
+   "research": "",
+   "lab": "",
+   "source_url": "https://english.ufl.edu/graduate-programs/recent-phd-student-placements/"
+  },
+  {
+   "id": "183505a59969",
+   "name": "Nina Ally",
+   "program": "",
+   "college": "College of Medicine",
+   "department": "Biochemistry and Molecular Biology",
+   "advisor_raw": "Matthew Gentry",
+   "advisor_ids": [
+    "b80ab3df4ca8"
+   ],
+   "advisor_names": [
+    "Matthew S Gentry"
+   ],
+   "research": "",
+   "lab": "",
+   "source_url": "https://biochem.med.ufl.edu/graduate-programs/currentgradstudents/"
+  },
+  {
+   "id": "fec434b136af",
+   "name": "Pedro Almeida",
+   "program": "PhD",
+   "college": "College of Liberal Arts and Sciences",
+   "department": "Economics Department",
+   "advisor_raw": "",
+   "advisor_ids": [],
+   "advisor_names": [],
+   "research": "",
+   "lab": "",
+   "source_url": "https://economics.clas.ufl.edu/people/current-phds/"
+  },
+  {
+   "id": "60518cba8a01",
+   "name": "Carla Alonso-Contes",
+   "program": "PhD",
+   "college": "College of Agricultural and Life Sciences",
+   "department": "Soil, Water, and Ecosystem Sciences",
+   "advisor_raw": "Gerber",
+   "advisor_ids": [],
+   "advisor_names": [
+    "Gerber"
+   ],
+   "research": "",
+   "lab": "",
+   "source_url": "https://soils.ifas.ufl.edu/people/graduate-students/"
+  },
+  {
+   "id": "e517d21f1858",
+   "name": "Abdulla Alrashdi",
+   "program": "",
+   "college": "College of Liberal Arts and Sciences",
+   "department": "Sociology and Criminology & Law Department",
+   "advisor_raw": "",
+   "advisor_ids": [],
+   "advisor_names": [],
+   "research": "",
+   "lab": "",
+   "source_url": "https://soccrim.clas.ufl.edu/graduate-students/"
+  },
+  {
+   "id": "f9b681fd2a45",
+   "name": "Maria Alvarez",
+   "program": "MS",
+   "college": "College of Agricultural and Life Sciences",
+   "department": "Soil, Water, and Ecosystem Sciences",
+   "advisor_raw": "Daroub (Temp)",
+   "advisor_ids": [],
+   "advisor_names": [
+    "Daroub"
+   ],
+   "research": "",
+   "lab": "",
+   "source_url": "https://soils.ifas.ufl.edu/people/graduate-students/"
+  },
+  {
+   "id": "1106f6a929a6",
+   "name": "Jackie Amorim",
+   "program": "PhD",
+   "college": "College of Liberal Arts and Sciences",
+   "department": "English Department",
+   "advisor_raw": "",
+   "advisor_ids": [],
+   "advisor_names": [],
+   "research": "",
+   "lab": "",
+   "source_url": "https://english.ufl.edu/graduate-programs/recent-phd-student-placements/"
+  },
+  {
+   "id": "aa5a7bcb8550",
+   "name": "Cost-Volume-Profit Analysis",
+   "program": "Undergraduate",
+   "college": "Warrington College of Business",
+   "department": "Fisher School of Accounting",
+   "advisor_raw": "",
+   "advisor_ids": [],
+   "advisor_names": [],
+   "research": "",
+   "lab": "",
+   "source_url": "https://warrington.ufl.edu/current-students/accounting/"
+  },
+  {
+   "id": "c162cbebec67",
+   "name": "Cost-Volume-Profit Analysis",
+   "program": "Undergraduate",
+   "college": "Warrington College of Business",
+   "department": "Information Systems and Operations Management",
+   "advisor_raw": "",
+   "advisor_ids": [],
+   "advisor_names": [],
+   "research": "",
+   "lab": "",
+   "source_url": "https://warrington.ufl.edu/current-students/accounting/"
+  },
+  {
+   "id": "8eadb74885de",
+   "name": "Differential Analysis",
+   "program": "Undergraduate",
+   "college": "Warrington College of Business",
+   "department": "Fisher School of Accounting",
+   "advisor_raw": "",
+   "advisor_ids": [],
+   "advisor_names": [],
+   "research": "",
+   "lab": "",
+   "source_url": "https://warrington.ufl.edu/current-students/accounting/"
+  },
+  {
+   "id": "e897a15eac3f",
+   "name": "Differential Analysis",
+   "program": "Undergraduate",
+   "college": "Warrington College of Business",
+   "department": "Information Systems and Operations Management",
+   "advisor_raw": "",
+   "advisor_ids": [],
+   "advisor_names": [],
+   "research": "",
+   "lab": "",
+   "source_url": "https://warrington.ufl.edu/current-students/accounting/"
+  },
+  {
+   "id": "60efab753df6",
+   "name": "Variance Analysis",
+   "program": "Undergraduate",
+   "college": "Warrington College of Business",
+   "department": "Fisher School of Accounting",
+   "advisor_raw": "",
+   "advisor_ids": [],
+   "advisor_names": [],
+   "research": "",
+   "lab": "",
+   "source_url": "https://warrington.ufl.edu/current-students/accounting/"
+  },
+  {
+   "id": "b70b520adf68",
+   "name": "Variance Analysis",
+   "program": "Undergraduate",
+   "college": "Warrington College of Business",
+   "department": "Information Systems and Operations Management",
+   "advisor_raw": "",
+   "advisor_ids": [],
+   "advisor_names": [],
+   "research": "",
+   "lab": "",
+   "source_url": "https://warrington.ufl.edu/current-students/accounting/"
+  },
+  {
+   "id": "b7f62cf3c35e",
+   "name": "Tax Analysts",
+   "program": "",
+   "college": "Levin College of Law",
+   "department": "Levin College of Law",
+   "advisor_raw": "",
+   "advisor_ids": [],
+   "advisor_names": [],
+   "research": "",
+   "lab": "",
+   "source_url": "https://law.ufl.edu/student-support/"
+  },
+  {
+   "id": "20a0bd6019dc",
+   "name": "Brianna Anderson",
+   "program": "PhD",
+   "college": "College of Liberal Arts and Sciences",
+   "department": "English Department",
+   "advisor_raw": "",
+   "advisor_ids": [],
+   "advisor_names": [],
+   "research": "",
+   "lab": "",
+   "source_url": "https://english.ufl.edu/graduate-programs/recent-phd-student-placements/"
+  },
+  {
+   "id": "5dba70cef7a3",
+   "name": "Victor Anderson",
+   "program": "",
+   "college": "College of Design, Construction and Planning",
+   "department": "Landscape Architecture",
+   "advisor_raw": "",
+   "advisor_ids": [],
+   "advisor_names": [],
+   "research": "",
+   "lab": "",
+   "source_url": "https://dcp.ufl.edu/landscape/uf-landscape-architecture-seniors-present-capstone-projects/"
+  },
+  {
+   "id": "c460dd15d614",
+   "name": "Damien Andino",
+   "program": "MS",
+   "college": "College of Agricultural and Life Sciences",
+   "department": "Soil, Water, and Ecosystem Sciences",
+   "advisor_raw": "Reddy (Temp)",
+   "advisor_ids": [],
+   "advisor_names": [
+    "Reddy"
+   ],
+   "research": "",
+   "lab": "",
+   "source_url": "https://soils.ifas.ufl.edu/people/graduate-students/"
+  },
+  {
+   "id": "7bb31a7bb903",
+   "name": "Juan Sebastian Angel-Salazar",
+   "program": "PhD",
+   "college": "College of Agricultural and Life Sciences",
+   "department": "Entomology and Nematology",
+   "advisor_raw": "Mou",
+   "advisor_ids": [
+    "b781fac46dc1"
+   ],
+   "advisor_names": [
+    "De-Fen Mou"
+   ],
+   "research": "",
+   "lab": "",
+   "source_url": "https://entnemdept.ufl.edu/people-directory/graduate-students/"
+  }
+ ]
+}

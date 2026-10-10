@@ -1,0 +1,5592 @@
+{
+ "updated_at": "2026-10-10T08:48:50+00:00",
+ "elapsed_seconds": 18914,
+ "pages_requested": 2170,
+ "status_counts": {
+  "ok": 67,
+  "no_site": 18,
+  "no_people_page": 2,
+  "unreachable": 17,
+  "partial": 1
+ },
+ "profiles_skipped_for_time": 1932,
+ "colleges": [
+  {
+   "name": "College of Agricultural and Life Sciences",
+   "departments": 17,
+   "faculty": 1009,
+   "departments_ok": 12
+  },
+  {
+   "name": "College of the Arts",
+   "departments": 5,
+   "faculty": 182,
+   "departments_ok": 4
+  },
+  {
+   "name": "Warrington College of Business",
+   "departments": 6,
+   "faculty": 67,
+   "departments_ok": 2
+  },
+  {
+   "name": "College of Dentistry",
+   "departments": 1,
+   "faculty": 0,
+   "departments_ok": 0
+  },
+  {
+   "name": "College of Design, Construction and Planning",
+   "departments": 6,
+   "faculty": 127,
+   "departments_ok": 5
+  },
+  {
+   "name": "College of Education",
+   "departments": 3,
+   "faculty": 129,
+   "departments_ok": 3
+  },
+  {
+   "name": "Herbert Wertheim College of Engineering",
+   "departments": 12,
+   "faculty": 619,
+   "departments_ok": 5
+  },
+  {
+   "name": "College of Health and Human Performance",
+   "departments": 5,
+   "faculty": 113,
+   "departments_ok": 2
+  },
+  {
+   "name": "College of Journalism and Communications",
+   "departments": 1,
+   "faculty": 57,
+   "departments_ok": 1
+  },
+  {
+   "name": "College of Liberal Arts and Sciences",
+   "departments": 26,
+   "faculty": 1165,
+   "departments_ok": 19
+  },
+  {
+   "name": "College of Medicine",
+   "departments": 6,
+   "faculty": 296,
+   "departments_ok": 5
+  },
+  {
+   "name": "College of Nursing",
+   "departments": 1,
+   "faculty": 87,
+   "departments_ok": 1
+  },
+  {
+   "name": "College of Pharmacy",
+   "departments": 5,
+   "faculty": 141,
+   "departments_ok": 4
+  },
+  {
+   "name": "College of Public Health and Health Professions",
+   "departments": 7,
+   "faculty": 170,
+   "departments_ok": 2
+  },
+  {
+   "name": "College of Veterinary Medicine",
+   "departments": 3,
+   "faculty": 193,
+   "departments_ok": 1
+  },
+  {
+   "name": "Levin College of Law",
+   "departments": 1,
+   "faculty": 142,
+   "departments_ok": 1
+  }
+ ],
+ "departments": [
+  {
+   "college": "College of Agricultural and Life Sciences",
+   "department": "Agricultural and Biological Engineering",
+   "site": "https://www.abe.ufl.edu/",
+   "status": "ok",
+   "faculty_page": "https://abe.ufl.edu/people/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://abe.ufl.edu/people/faculty/yiannis-ampatzidis/",
+     "people": 0
+    },
+    {
+     "url": "https://abe.ufl.edu/people/faculty/haimanote-bayabil/",
+     "people": 0
+    },
+    {
+     "url": "https://abe.ufl.edu/people/faculty/eban-bean/",
+     "people": 0
+    },
+    {
+     "url": "https://abe.ufl.edu/people/faculty/nikolay-bliznyuk/",
+     "people": 0
+    },
+    {
+     "url": "https://abe.ufl.edu/people/faculty/ziynet-boz/",
+     "people": 0
+    },
+    {
+     "url": "https://abe.ufl.edu/people/",
+     "people": 72
+    },
+    {
+     "url": "https://www.abe.ufl.edu/people/",
+     "people": 72
+    },
+    {
+     "url": "https://www.abe.ufl.edu/faculty/",
+     "people": 0
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://abe.ufl.edu/graduate/abegso/",
+     "students": 2
+    }
+   ],
+   "faculty_in_database": 112,
+   "faculty_listed_on_site": 72,
+   "with_email": 72,
+   "with_scholar": 0,
+   "with_research": 70,
+   "with_teaching": 0,
+   "students_found": 2,
+   "notes": []
+  },
+  {
+   "college": "College of Agricultural and Life Sciences",
+   "department": "Agricultural Education and Communication",
+   "site": "https://aec.ifas.ufl.edu/",
+   "status": "ok",
+   "faculty_page": "https://aec.ifas.ufl.edu/people/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://aec.ifas.ufl.edu/directory/faculty/jaehyun-ahn/",
+     "people": 0
+    },
+    {
+     "url": "https://aec.ifas.ufl.edu/directory/faculty/lauri-baker/",
+     "people": 0
+    },
+    {
+     "url": "https://aec.ifas.ufl.edu/directory/faculty/debra-barry/",
+     "people": 0
+    },
+    {
+     "url": "https://aec.ifas.ufl.edu/directory/faculty/peyton-beattie/",
+     "people": 0
+    },
+    {
+     "url": "https://aec.ifas.ufl.edu/directory/faculty/matt-benge/",
+     "people": 0
+    },
+    {
+     "url": "https://aec.ifas.ufl.edu/people/",
+     "people": 52
+    },
+    {
+     "url": "https://aec.ifas.ufl.edu/faculty/",
+     "people": 0
+    },
+    {
+     "url": "https://aec.ifas.ufl.edu/people/faculty/",
+     "people": 0
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://aec.ifas.ufl.edu/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://aec.ifas.ufl.edu/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://aec.ifas.ufl.edu/students/",
+     "students": 0
+    },
+    {
+     "url": "https://aec.ifas.ufl.edu/people/students/",
+     "students": 0
+    },
+    {
+     "url": "https://aec.ifas.ufl.edu/graduate/students/",
+     "students": 0
+    },
+    {
+     "url": "https://aec.ifas.ufl.edu/academics/graduate-students/",
+     "students": 0
+    }
+   ],
+   "faculty_in_database": 81,
+   "faculty_listed_on_site": 52,
+   "with_email": 52,
+   "with_scholar": 0,
+   "with_research": 52,
+   "with_teaching": 0,
+   "students_found": 0,
+   "notes": []
+  },
+  {
+   "college": "College of Agricultural and Life Sciences",
+   "department": "Agronomy",
+   "site": "https://agronomy.ifas.ufl.edu/",
+   "status": "ok",
+   "faculty_page": "https://directory.ifas.ufl.edu/ext/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://directory.ifas.ufl.edu/ext/",
+     "people": 4
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://agronomy.ifas.ufl.edu/students/",
+     "students": 0
+    },
+    {
+     "url": "https://agronomy.ifas.ufl.edu/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://agronomy.ifas.ufl.edu/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://agronomy.ifas.ufl.edu/people/students/",
+     "students": 0
+    },
+    {
+     "url": "https://agronomy.ifas.ufl.edu/graduate/students/",
+     "students": 0
+    },
+    {
+     "url": "https://agronomy.ifas.ufl.edu/academics/graduate-students/",
+     "students": 0
+    }
+   ],
+   "faculty_in_database": 37,
+   "faculty_listed_on_site": 4,
+   "with_email": 4,
+   "with_scholar": 2,
+   "with_research": 0,
+   "with_teaching": 0,
+   "students_found": 0,
+   "notes": []
+  },
+  {
+   "college": "College of Agricultural and Life Sciences",
+   "department": "Animal Sciences",
+   "site": "https://animal.ifas.ufl.edu/graduate",
+   "status": "ok",
+   "faculty_page": "https://animal.ifas.ufl.edu/people/?view=faculty",
+   "faculty_pages_tried": [
+    {
+     "url": "https://cals.ufl.edu/faculty-staff/",
+     "people": 1
+    },
+    {
+     "url": "https://animal.ifas.ufl.edu/people/?view=faculty",
+     "people": 58
+    },
+    {
+     "url": "https://animal.ifas.ufl.edu/people/antonio-faciola/",
+     "people": 2
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://animal.ifas.ufl.edu/people/?view=students",
+     "students": 0
+    },
+    {
+     "url": "https://animal.ifas.ufl.edu/students/",
+     "students": 0
+    },
+    {
+     "url": "https://animal.ifas.ufl.edu/graduate/asgsa/",
+     "students": 1
+    },
+    {
+     "url": "https://animal.ifas.ufl.edu/students/course-listings/",
+     "students": 2
+    }
+   ],
+   "faculty_in_database": 93,
+   "faculty_listed_on_site": 61,
+   "with_email": 58,
+   "with_scholar": 0,
+   "with_research": 59,
+   "with_teaching": 0,
+   "students_found": 3,
+   "notes": []
+  },
+  {
+   "college": "College of Agricultural and Life Sciences",
+   "department": "CALS Interdisciplinary Program",
+   "site": "",
+   "status": "no_site",
+   "faculty_page": "",
+   "faculty_pages_tried": [],
+   "student_pages_tried": [],
+   "faculty_in_database": 0,
+   "faculty_listed_on_site": 0,
+   "with_email": 0,
+   "with_scholar": 0,
+   "with_research": 0,
+   "with_teaching": 0,
+   "students_found": 0,
+   "notes": [
+    "no department website found on the catalog page"
+   ]
+  },
+  {
+   "college": "College of Agricultural and Life Sciences",
+   "department": "Entomology and Nematology",
+   "site": "https://entnemdept.ufl.edu/academic-programs/graduate-studies/",
+   "status": "ok",
+   "faculty_page": "https://entnemdept.ufl.edu/people-directory/courtesy-and-affiliate-faculty/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://entnemdept.ufl.edu/people-directory/all-faculty/",
+     "people": 7
+    },
+    {
+     "url": "https://entnemdept.ufl.edu/people-directory/gainesville-faculty/",
+     "people": 35
+    },
+    {
+     "url": "https://entnemdept.ufl.edu/people-directory/rec-faculty/",
+     "people": 25
+    },
+    {
+     "url": "https://entnemdept.ufl.edu/people-directory/extension-faculty-/",
+     "people": 26
+    },
+    {
+     "url": "https://entnemdept.ufl.edu/people-directory/courtesy-and-affiliate-faculty/",
+     "people": 37
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://entnemdept.ufl.edu/people-directory/graduate-students/",
+     "students": 96
+    },
+    {
+     "url": "https://entnemdept.ufl.edu/academic-programs/current-students/",
+     "students": 9
+    }
+   ],
+   "faculty_in_database": 114,
+   "faculty_listed_on_site": 98,
+   "with_email": 97,
+   "with_scholar": 27,
+   "with_research": 97,
+   "with_teaching": 8,
+   "students_found": 105,
+   "notes": []
+  },
+  {
+   "college": "College of Agricultural and Life Sciences",
+   "department": "Family, Youth and Community Sciences",
+   "site": "https://fycs.ifas.ufl.edu/",
+   "status": "no_people_page",
+   "faculty_page": "",
+   "faculty_pages_tried": [
+    {
+     "url": "https://fycs.ifas.ufl.edu/directory/",
+     "people": 0
+    },
+    {
+     "url": "https://fycs.ifas.ufl.edu/people/",
+     "people": 0
+    },
+    {
+     "url": "https://fycs.ifas.ufl.edu/faculty/",
+     "people": 0
+    },
+    {
+     "url": "https://fycs.ifas.ufl.edu/people/faculty/",
+     "people": 0
+    },
+    {
+     "url": "https://fycs.ifas.ufl.edu/about/people/",
+     "people": 0
+    },
+    {
+     "url": "https://fycs.ifas.ufl.edu/faculty-staff/",
+     "people": 0
+    },
+    {
+     "url": "https://fycs.ifas.ufl.edu/people/faculty-staff/",
+     "people": 0
+    },
+    {
+     "url": "https://fycs.ifas.ufl.edu/our-people/",
+     "people": 0
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://fycs.ifas.ufl.edu/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://fycs.ifas.ufl.edu/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://fycs.ifas.ufl.edu/students/",
+     "students": 0
+    },
+    {
+     "url": "https://fycs.ifas.ufl.edu/people/students/",
+     "students": 0
+    },
+    {
+     "url": "https://fycs.ifas.ufl.edu/graduate/students/",
+     "students": 0
+    },
+    {
+     "url": "https://fycs.ifas.ufl.edu/academics/graduate-students/",
+     "students": 0
+    }
+   ],
+   "faculty_in_database": 0,
+   "faculty_listed_on_site": 0,
+   "with_email": 0,
+   "with_scholar": 0,
+   "with_research": 0,
+   "with_teaching": 0,
+   "students_found": 0,
+   "notes": [
+    "no faculty list with individual profile links was recognised; graduate-catalog roster only"
+   ]
+  },
+  {
+   "college": "College of Agricultural and Life Sciences",
+   "department": "Food and Resource Economics",
+   "site": "https://www.fred.ifas.ufl.edu/",
+   "status": "unreachable",
+   "faculty_page": "",
+   "faculty_pages_tried": [],
+   "student_pages_tried": [],
+   "faculty_in_database": 41,
+   "faculty_listed_on_site": 0,
+   "with_email": 0,
+   "with_scholar": 0,
+   "with_research": 0,
+   "with_teaching": 0,
+   "students_found": 0,
+   "notes": [
+    "department website did not load"
+   ]
+  },
+  {
+   "college": "College of Agricultural and Life Sciences",
+   "department": "Food Science and Human Nutrition",
+   "site": "https://fshn.ifas.ufl.edu/",
+   "status": "ok",
+   "faculty_page": "https://fshn.ifas.ufl.edu/about/directory-40/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://fshn.ifas.ufl.edu/about/directory-40/",
+     "people": 20
+    },
+    {
+     "url": "https://fshn.ifas.ufl.edu/research/faculty-research/",
+     "people": 20
+    },
+    {
+     "url": "https://fshn.ifas.ufl.edu/extension/extension-faculty/",
+     "people": 4
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://fshn.ifas.ufl.edu/current-students/graduate/current-graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://fshn.ifas.ufl.edu/current-students/minors/",
+     "students": 0
+    },
+    {
+     "url": "https://fshn.ifas.ufl.edu/current-students/graduate/",
+     "students": 2
+    },
+    {
+     "url": "https://fshn.ifas.ufl.edu/current-students/graduate/ms-dietetic-internship-program/",
+     "students": 31
+    }
+   ],
+   "faculty_in_database": 25,
+   "faculty_listed_on_site": 22,
+   "with_email": 20,
+   "with_scholar": 16,
+   "with_research": 22,
+   "with_teaching": 1,
+   "students_found": 27,
+   "notes": []
+  },
+  {
+   "college": "College of Agricultural and Life Sciences",
+   "department": "Horticultural Sciences",
+   "site": "https://hos.ufl.edu/",
+   "status": "unreachable",
+   "faculty_page": "",
+   "faculty_pages_tried": [],
+   "student_pages_tried": [],
+   "faculty_in_database": 70,
+   "faculty_listed_on_site": 0,
+   "with_email": 0,
+   "with_scholar": 0,
+   "with_research": 0,
+   "with_teaching": 0,
+   "students_found": 0,
+   "notes": [
+    "department website did not load"
+   ]
+  },
+  {
+   "college": "College of Agricultural and Life Sciences",
+   "department": "Microbiology and Cell Science",
+   "site": "https://microcell.ufl.edu/",
+   "status": "ok",
+   "faculty_page": "https://microcell.ufl.edu/about-us-/people/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://microcell.ufl.edu/about-us-/people/",
+     "people": 36
+    },
+    {
+     "url": "https://microcell.ufl.edu/people/",
+     "people": 1
+    },
+    {
+     "url": "https://microcell.ufl.edu/faculty/",
+     "people": 1
+    },
+    {
+     "url": "https://microcell.ufl.edu/people/faculty/",
+     "people": 1
+    },
+    {
+     "url": "https://microcell.ufl.edu/directory/",
+     "people": 1
+    },
+    {
+     "url": "https://microcell.ufl.edu/about/people/",
+     "people": 1
+    },
+    {
+     "url": "https://microcell.ufl.edu/faculty-staff/",
+     "people": 1
+    },
+    {
+     "url": "https://microcell.ufl.edu/people/faculty-staff/",
+     "people": 1
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://microcell.ufl.edu/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://microcell.ufl.edu/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://microcell.ufl.edu/students/",
+     "students": 0
+    },
+    {
+     "url": "https://microcell.ufl.edu/people/students/",
+     "students": 0
+    },
+    {
+     "url": "https://microcell.ufl.edu/graduate/students/",
+     "students": 0
+    },
+    {
+     "url": "https://microcell.ufl.edu/academics/graduate-students/",
+     "students": 0
+    }
+   ],
+   "faculty_in_database": 44,
+   "faculty_listed_on_site": 36,
+   "with_email": 36,
+   "with_scholar": 15,
+   "with_research": 3,
+   "with_teaching": 15,
+   "students_found": 0,
+   "notes": []
+  },
+  {
+   "college": "College of Agricultural and Life Sciences",
+   "department": "Plant Molecular and Cellular Biology",
+   "site": "https://agronomy.ifas.ufl.edu/",
+   "status": "ok",
+   "faculty_page": "https://directory.ifas.ufl.edu/ext/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://directory.ifas.ufl.edu/ext/",
+     "people": 4
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://agronomy.ifas.ufl.edu/students/",
+     "students": 0
+    },
+    {
+     "url": "https://agronomy.ifas.ufl.edu/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://agronomy.ifas.ufl.edu/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://agronomy.ifas.ufl.edu/people/students/",
+     "students": 0
+    },
+    {
+     "url": "https://agronomy.ifas.ufl.edu/graduate/students/",
+     "students": 0
+    },
+    {
+     "url": "https://agronomy.ifas.ufl.edu/academics/graduate-students/",
+     "students": 0
+    }
+   ],
+   "faculty_in_database": 4,
+   "faculty_listed_on_site": 4,
+   "with_email": 4,
+   "with_scholar": 2,
+   "with_research": 0,
+   "with_teaching": 0,
+   "students_found": 0,
+   "notes": []
+  },
+  {
+   "college": "College of Agricultural and Life Sciences",
+   "department": "Plant Pathology",
+   "site": "https://plantpath.ifas.ufl.edu/",
+   "status": "ok",
+   "faculty_page": "https://plantpath.ifas.ufl.edu/people/faculty/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://plantpath.ifas.ufl.edu/people/faculty/",
+     "people": 17
+    },
+    {
+     "url": "https://plantpath.ifas.ufl.edu/people/faculty-location-map/",
+     "people": 12
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://plantpath.ifas.ufl.edu/people/grad-students/",
+     "students": 50
+    },
+    {
+     "url": "https://plantpath.ifas.ufl.edu/people/graduate-student-organization/",
+     "students": 0
+    }
+   ],
+   "faculty_in_database": 52,
+   "faculty_listed_on_site": 29,
+   "with_email": 16,
+   "with_scholar": 13,
+   "with_research": 27,
+   "with_teaching": 3,
+   "students_found": 50,
+   "notes": []
+  },
+  {
+   "college": "College of Agricultural and Life Sciences",
+   "department": "School of Forest, Fisheries, and Geomatics Sciences",
+   "site": "https://ffgs.ifas.ufl.edu/",
+   "status": "ok",
+   "faculty_page": "https://ffgs.ifas.ufl.edu/faculty/abd-elrahman-amr/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://ffgs.ifas.ufl.edu/faculty/abd-elrahman-amr/",
+     "people": 3
+    },
+    {
+     "url": "https://ffgs.ifas.ufl.edu/faculty/baker-shirley/",
+     "people": 0
+    },
+    {
+     "url": "https://ffgs.ifas.ufl.edu/faculty/stein-taylor/",
+     "people": 1
+    },
+    {
+     "url": "https://ffgs.ifas.ufl.edu/faculty/adams-alison/",
+     "people": 1
+    },
+    {
+     "url": "https://ffgs.ifas.ufl.edu/faculty/adams-damian/",
+     "people": 0
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://ffgs.ifas.ufl.edu/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://ffgs.ifas.ufl.edu/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://ffgs.ifas.ufl.edu/students/",
+     "students": 0
+    },
+    {
+     "url": "https://ffgs.ifas.ufl.edu/people/students/",
+     "students": 0
+    },
+    {
+     "url": "https://ffgs.ifas.ufl.edu/graduate/students/",
+     "students": 0
+    },
+    {
+     "url": "https://ffgs.ifas.ufl.edu/academics/graduate-students/",
+     "students": 0
+    }
+   ],
+   "faculty_in_database": 5,
+   "faculty_listed_on_site": 5,
+   "with_email": 0,
+   "with_scholar": 0,
+   "with_research": 0,
+   "with_teaching": 0,
+   "students_found": 0,
+   "notes": []
+  },
+  {
+   "college": "College of Agricultural and Life Sciences",
+   "department": "School of Natural Resources and Environment",
+   "site": "https://snre.ifas.ufl.edu/",
+   "status": "ok",
+   "faculty_page": "https://snre.ifas.ufl.edu/people/affiliate-faculty/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://snre.ifas.ufl.edu/people/faculty-staff-and-administration/",
+     "people": 4
+    },
+    {
+     "url": "https://snre.ifas.ufl.edu/people/affiliate-faculty/",
+     "people": 308
+    },
+    {
+     "url": "https://snre.ifas.ufl.edu/people/faculty-advisory-council/",
+     "people": 6
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://snre.ifas.ufl.edu/people/current-graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://snre.ifas.ufl.edu/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://snre.ifas.ufl.edu/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://snre.ifas.ufl.edu/students/",
+     "students": 0
+    },
+    {
+     "url": "https://snre.ifas.ufl.edu/people/students/",
+     "students": 0
+    },
+    {
+     "url": "https://snre.ifas.ufl.edu/graduate/students/",
+     "students": 0
+    }
+   ],
+   "faculty_in_database": 308,
+   "faculty_listed_on_site": 308,
+   "with_email": 306,
+   "with_scholar": 114,
+   "with_research": 305,
+   "with_teaching": 59,
+   "students_found": 0,
+   "notes": []
+  },
+  {
+   "college": "College of Agricultural and Life Sciences",
+   "department": "Soil, Water, and Ecosystem Sciences",
+   "site": "https://soils.ifas.ufl.edu/",
+   "status": "ok",
+   "faculty_page": "https://soils.ifas.ufl.edu/people/swes-faculty/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://soils.ifas.ufl.edu/people/swes-faculty/",
+     "people": 42
+    },
+    {
+     "url": "https://soils.ifas.ufl.edu/people/affiliatecourtesyadjunct-faculty/",
+     "people": 5
+    },
+    {
+     "url": "https://soils.ifas.ufl.edu/people/visiting-professors-scholars-and-scientists/",
+     "people": 4
+    },
+    {
+     "url": "https://soils.ifas.ufl.edu/people/emeritus-faculty/",
+     "people": 8
+    },
+    {
+     "url": "https://soils.ifas.ufl.edu/extension/extension-faculty/",
+     "people": 16
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://soils.ifas.ufl.edu/people/graduate-students/",
+     "students": 143
+    }
+   ],
+   "faculty_in_database": 59,
+   "faculty_listed_on_site": 59,
+   "with_email": 44,
+   "with_scholar": 14,
+   "with_research": 52,
+   "with_teaching": 13,
+   "students_found": 143,
+   "notes": []
+  },
+  {
+   "college": "College of Agricultural and Life Sciences",
+   "department": "Wildlife Ecology and Conservation",
+   "site": "https://www.wec.ufl.edu/",
+   "status": "unreachable",
+   "faculty_page": "",
+   "faculty_pages_tried": [],
+   "student_pages_tried": [],
+   "faculty_in_database": 53,
+   "faculty_listed_on_site": 0,
+   "with_email": 0,
+   "with_scholar": 0,
+   "with_research": 0,
+   "with_teaching": 0,
+   "students_found": 0,
+   "notes": [
+    "department website did not load"
+   ]
+  },
+  {
+   "college": "College of the Arts",
+   "department": "College of the Arts Interdisciplinary Program",
+   "site": "",
+   "status": "no_site",
+   "faculty_page": "",
+   "faculty_pages_tried": [],
+   "student_pages_tried": [],
+   "faculty_in_database": 0,
+   "faculty_listed_on_site": 0,
+   "with_email": 0,
+   "with_scholar": 0,
+   "with_research": 0,
+   "with_teaching": 0,
+   "students_found": 0,
+   "notes": [
+    "no department website found on the catalog page"
+   ]
+  },
+  {
+   "college": "College of the Arts",
+   "department": "Digital Worlds Institute",
+   "site": "https://www.digitalworlds.ufl.edu/",
+   "status": "ok",
+   "faculty_page": "https://arts.ufl.edu/about/directory/emeritus-faculty/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://arts.ufl.edu/about/directory/?global-taxonomy=93&local-taxonomy=all",
+     "people": 16
+    },
+    {
+     "url": "https://arts.ufl.edu/about/directory/emeritus-faculty/",
+     "people": 66
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://www.digitalworlds.ufl.edu/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://www.digitalworlds.ufl.edu/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://www.digitalworlds.ufl.edu/students/",
+     "students": 0
+    },
+    {
+     "url": "https://www.digitalworlds.ufl.edu/people/students/",
+     "students": 0
+    },
+    {
+     "url": "https://www.digitalworlds.ufl.edu/graduate/students/",
+     "students": 0
+    },
+    {
+     "url": "https://www.digitalworlds.ufl.edu/academics/graduate-students/",
+     "students": 0
+    }
+   ],
+   "faculty_in_database": 82,
+   "faculty_listed_on_site": 82,
+   "with_email": 55,
+   "with_scholar": 1,
+   "with_research": 82,
+   "with_teaching": 0,
+   "students_found": 0,
+   "notes": []
+  },
+  {
+   "college": "College of the Arts",
+   "department": "School of Art and Art History",
+   "site": "https://arts.ufl.edu/academics/art-and-art-history/",
+   "status": "ok",
+   "faculty_page": "https://arts.ufl.edu/about/directory/emeritus-faculty/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://arts.ufl.edu/about/directory/emeritus-faculty/",
+     "people": 66
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://arts.ufl.edu/academics/art-and-art-history/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://arts.ufl.edu/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://arts.ufl.edu/academics/art-and-art-history/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://arts.ufl.edu/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://arts.ufl.edu/academics/art-and-art-history/students/",
+     "students": 0
+    },
+    {
+     "url": "https://arts.ufl.edu/students/",
+     "students": 0
+    }
+   ],
+   "faculty_in_database": 66,
+   "faculty_listed_on_site": 66,
+   "with_email": 39,
+   "with_scholar": 0,
+   "with_research": 66,
+   "with_teaching": 0,
+   "students_found": 0,
+   "notes": []
+  },
+  {
+   "college": "College of the Arts",
+   "department": "School of Music",
+   "site": "https://www.arts.ufl.edu/welcome/music",
+   "status": "ok",
+   "faculty_page": "https://arts.ufl.edu/about/directory/emeritus-faculty/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://arts.ufl.edu/about/directory/emeritus-faculty/",
+     "people": 66
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://www.arts.ufl.edu/welcome/music/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://www.arts.ufl.edu/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://www.arts.ufl.edu/welcome/music/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://www.arts.ufl.edu/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://www.arts.ufl.edu/welcome/music/students/",
+     "students": 0
+    },
+    {
+     "url": "https://www.arts.ufl.edu/students/",
+     "students": 0
+    }
+   ],
+   "faculty_in_database": 66,
+   "faculty_listed_on_site": 66,
+   "with_email": 39,
+   "with_scholar": 0,
+   "with_research": 66,
+   "with_teaching": 0,
+   "students_found": 0,
+   "notes": []
+  },
+  {
+   "college": "College of the Arts",
+   "department": "School of Theatre and Dance",
+   "site": "https://arts.ufl.edu/academics/theatre-and-dance/forms-manuals-handbooks/",
+   "status": "ok",
+   "faculty_page": "https://arts.ufl.edu/about/directory/emeritus-faculty/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://arts.ufl.edu/about/directory/emeritus-faculty/",
+     "people": 66
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://arts.ufl.edu/academics/theatre-and-dance/forms-manuals-handbooks/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://arts.ufl.edu/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://arts.ufl.edu/academics/theatre-and-dance/forms-manuals-handbooks/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://arts.ufl.edu/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://arts.ufl.edu/academics/theatre-and-dance/forms-manuals-handbooks/students/",
+     "students": 0
+    },
+    {
+     "url": "https://arts.ufl.edu/students/",
+     "students": 0
+    }
+   ],
+   "faculty_in_database": 66,
+   "faculty_listed_on_site": 66,
+   "with_email": 39,
+   "with_scholar": 0,
+   "with_research": 66,
+   "with_teaching": 0,
+   "students_found": 0,
+   "notes": []
+  },
+  {
+   "college": "Warrington College of Business",
+   "department": "College of Business Interdisciplinary Programs in Business Administration",
+   "site": "",
+   "status": "no_site",
+   "faculty_page": "",
+   "faculty_pages_tried": [],
+   "student_pages_tried": [],
+   "faculty_in_database": 0,
+   "faculty_listed_on_site": 0,
+   "with_email": 0,
+   "with_scholar": 0,
+   "with_research": 0,
+   "with_teaching": 0,
+   "students_found": 0,
+   "notes": [
+    "no department website found on the catalog page"
+   ]
+  },
+  {
+   "college": "Warrington College of Business",
+   "department": "Finance, Insurance, and Real Estate",
+   "site": "https://warrington.ufl.edu/departments/fire",
+   "status": "unreachable",
+   "faculty_page": "",
+   "faculty_pages_tried": [],
+   "student_pages_tried": [],
+   "faculty_in_database": 0,
+   "faculty_listed_on_site": 0,
+   "with_email": 0,
+   "with_scholar": 0,
+   "with_research": 0,
+   "with_teaching": 0,
+   "students_found": 0,
+   "notes": [
+    "department website did not load"
+   ]
+  },
+  {
+   "college": "Warrington College of Business",
+   "department": "Fisher School of Accounting",
+   "site": "https://warrington.ufl.edu/about/fisher",
+   "status": "ok",
+   "faculty_page": "https://warrington.ufl.edu/faculty-research/thought-leadership/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://warrington.ufl.edu/faculty-research/",
+     "people": 0
+    },
+    {
+     "url": "https://warrington.ufl.edu/faculty-research/thought-leadership/",
+     "people": 14
+    },
+    {
+     "url": "https://warrington.ufl.edu/faculty-research/recent-publications/",
+     "people": 0
+    },
+    {
+     "url": "https://warrington.ufl.edu/faculty-research/research-centers/",
+     "people": 1
+    },
+    {
+     "url": "https://warrington.ufl.edu/faculty-research/research-centers/fintech-center/",
+     "people": 5
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://warrington.ufl.edu/current-students/accounting/",
+     "students": 13
+    },
+    {
+     "url": "https://warrington.ufl.edu/current-students/graduate/",
+     "students": 1
+    },
+    {
+     "url": "https://warrington.ufl.edu/current-students/graduate/hough-hall/",
+     "students": 0
+    }
+   ],
+   "faculty_in_database": 19,
+   "faculty_listed_on_site": 19,
+   "with_email": 17,
+   "with_scholar": 7,
+   "with_research": 17,
+   "with_teaching": 16,
+   "students_found": 13,
+   "notes": []
+  },
+  {
+   "college": "Warrington College of Business",
+   "department": "Information Systems and Operations Management",
+   "site": "https://warrington.ufl.edu/departments/isom",
+   "status": "ok",
+   "faculty_page": "https://warrington.ufl.edu/faculty-research/thought-leadership/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://warrington.ufl.edu/faculty-research/",
+     "people": 0
+    },
+    {
+     "url": "https://warrington.ufl.edu/faculty-research/thought-leadership/",
+     "people": 14
+    },
+    {
+     "url": "https://warrington.ufl.edu/faculty-research/recent-publications/",
+     "people": 0
+    },
+    {
+     "url": "https://warrington.ufl.edu/faculty-research/research-centers/",
+     "people": 1
+    },
+    {
+     "url": "https://warrington.ufl.edu/faculty-research/research-centers/fintech-center/",
+     "people": 5
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://warrington.ufl.edu/current-students/accounting/",
+     "students": 13
+    },
+    {
+     "url": "https://warrington.ufl.edu/current-students/graduate/",
+     "students": 1
+    }
+   ],
+   "faculty_in_database": 38,
+   "faculty_listed_on_site": 19,
+   "with_email": 17,
+   "with_scholar": 7,
+   "with_research": 17,
+   "with_teaching": 16,
+   "students_found": 13,
+   "notes": []
+  },
+  {
+   "college": "Warrington College of Business",
+   "department": "Management",
+   "site": "https://warrington.ufl.edu/departments/mgt",
+   "status": "unreachable",
+   "faculty_page": "",
+   "faculty_pages_tried": [],
+   "student_pages_tried": [],
+   "faculty_in_database": 16,
+   "faculty_listed_on_site": 0,
+   "with_email": 0,
+   "with_scholar": 0,
+   "with_research": 0,
+   "with_teaching": 0,
+   "students_found": 0,
+   "notes": [
+    "department website did not load"
+   ]
+  },
+  {
+   "college": "Warrington College of Business",
+   "department": "Marketing",
+   "site": "https://warrington.ufl.edu/departments/mkt",
+   "status": "unreachable",
+   "faculty_page": "",
+   "faculty_pages_tried": [],
+   "student_pages_tried": [],
+   "faculty_in_database": 13,
+   "faculty_listed_on_site": 0,
+   "with_email": 0,
+   "with_scholar": 0,
+   "with_research": 0,
+   "with_teaching": 0,
+   "students_found": 0,
+   "notes": [
+    "department website did not load"
+   ]
+  },
+  {
+   "college": "College of Dentistry",
+   "department": "Dental Sciences",
+   "site": "https://admissions.dental.ufl.edu/advanced-graduate-programs/programs-application-process/",
+   "status": "no_people_page",
+   "faculty_page": "",
+   "faculty_pages_tried": [
+    {
+     "url": "https://admissions.dental.ufl.edu/advanced-graduate-programs/programs-application-process/people/",
+     "people": 0
+    },
+    {
+     "url": "https://admissions.dental.ufl.edu/people/",
+     "people": 0
+    },
+    {
+     "url": "https://admissions.dental.ufl.edu/advanced-graduate-programs/programs-application-process/faculty/",
+     "people": 0
+    },
+    {
+     "url": "https://admissions.dental.ufl.edu/faculty/",
+     "people": 0
+    },
+    {
+     "url": "https://admissions.dental.ufl.edu/advanced-graduate-programs/programs-application-process/people/faculty/",
+     "people": 0
+    },
+    {
+     "url": "https://admissions.dental.ufl.edu/people/faculty/",
+     "people": 0
+    },
+    {
+     "url": "https://admissions.dental.ufl.edu/advanced-graduate-programs/programs-application-process/directory/",
+     "people": 0
+    },
+    {
+     "url": "https://admissions.dental.ufl.edu/directory/",
+     "people": 0
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://research.dental.ufl.edu/student-resource/dmd-phd-program/",
+     "students": 3
+    }
+   ],
+   "faculty_in_database": 0,
+   "faculty_listed_on_site": 0,
+   "with_email": 0,
+   "with_scholar": 0,
+   "with_research": 0,
+   "with_teaching": 0,
+   "students_found": 3,
+   "notes": [
+    "no faculty list with individual profile links was recognised; graduate-catalog roster only"
+   ]
+  },
+  {
+   "college": "College of Design, Construction and Planning",
+   "department": "DCP Interdisciplinary Programs",
+   "site": "",
+   "status": "no_site",
+   "faculty_page": "",
+   "faculty_pages_tried": [],
+   "student_pages_tried": [],
+   "faculty_in_database": 0,
+   "faculty_listed_on_site": 0,
+   "with_email": 0,
+   "with_scholar": 0,
+   "with_research": 0,
+   "with_teaching": 0,
+   "students_found": 0,
+   "notes": [
+    "no department website found on the catalog page"
+   ]
+  },
+  {
+   "college": "College of Design, Construction and Planning",
+   "department": "Interior Design",
+   "site": "https://dcp.ufl.edu/interior/",
+   "status": "ok",
+   "faculty_page": "https://dcp.ufl.edu/interior/faculty-staff/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://dcp.ufl.edu/interior/faculty-staff/",
+     "people": 9
+    },
+    {
+     "url": "https://dcp.ufl.edu/interior/faculty-expertise/",
+     "people": 3
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://dcp.ufl.edu/interior/current-graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://dcp.ufl.edu/interior/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://dcp.ufl.edu/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://dcp.ufl.edu/interior/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://dcp.ufl.edu/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://dcp.ufl.edu/interior/students/",
+     "students": 0
+    }
+   ],
+   "faculty_in_database": 12,
+   "faculty_listed_on_site": 12,
+   "with_email": 9,
+   "with_scholar": 0,
+   "with_research": 9,
+   "with_teaching": 0,
+   "students_found": 0,
+   "notes": []
+  },
+  {
+   "college": "College of Design, Construction and Planning",
+   "department": "Landscape Architecture",
+   "site": "https://www.dcp.ufl.edu/landscape",
+   "status": "ok",
+   "faculty_page": "https://dcp.ufl.edu/landscape/slap-faculty-florida-planning-published/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://dcp.ufl.edu/landscape/two-uf-landscape-architecture-faculty-receive-promotions/",
+     "people": 2
+    },
+    {
+     "url": "https://dcp.ufl.edu/landscape/slap-faculty-florida-planning-published/",
+     "people": 3
+    },
+    {
+     "url": "https://hort.ifas.ufl.edu/faculty-profiles/gail-hansen/",
+     "people": 1
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://www.dcp.ufl.edu/landscape/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://www.dcp.ufl.edu/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://www.dcp.ufl.edu/landscape/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://www.dcp.ufl.edu/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://www.dcp.ufl.edu/landscape/students/",
+     "students": 46
+    }
+   ],
+   "faculty_in_database": 15,
+   "faculty_listed_on_site": 4,
+   "with_email": 3,
+   "with_scholar": 0,
+   "with_research": 4,
+   "with_teaching": 0,
+   "students_found": 24,
+   "notes": []
+  },
+  {
+   "college": "College of Design, Construction and Planning",
+   "department": "M.E. Rinker, Sr. School of Construction Management",
+   "site": "https://dcp.ufl.edu/rinker/research/",
+   "status": "ok",
+   "faculty_page": "https://dcp.ufl.edu/faculty/?department=constructionmanagement",
+   "faculty_pages_tried": [
+    {
+     "url": "https://dcp.ufl.edu/faculty/?department=constructionmanagement",
+     "people": 29
+    },
+    {
+     "url": "https://dcp.ufl.edu/rinker/about/adjunct-faculty/",
+     "people": 15
+    },
+    {
+     "url": "https://dcp.ufl.edu/rinker/academics/certificates/critical-care-paramedic-certificate/ccp-faculty/",
+     "people": 0
+    },
+    {
+     "url": "https://dcp.ufl.edu/rinker/faculty-meeting/",
+     "people": 0
+    },
+    {
+     "url": "https://dcp.ufl.edu/rinker/faculty-meeting/august-19-2019/",
+     "people": 0
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://dcp.ufl.edu/rinker/research/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://dcp.ufl.edu/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://dcp.ufl.edu/rinker/research/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://dcp.ufl.edu/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://dcp.ufl.edu/rinker/research/students/",
+     "students": 0
+    },
+    {
+     "url": "https://dcp.ufl.edu/students/",
+     "students": 8
+    }
+   ],
+   "faculty_in_database": 43,
+   "faculty_listed_on_site": 44,
+   "with_email": 29,
+   "with_scholar": 1,
+   "with_research": 29,
+   "with_teaching": 0,
+   "students_found": 2,
+   "notes": []
+  },
+  {
+   "college": "College of Design, Construction and Planning",
+   "department": "School of Architecture",
+   "site": "https://dcp.ufl.edu/architecture/",
+   "status": "ok",
+   "faculty_page": "https://dcp.ufl.edu/faculty/architecture/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://dcp.ufl.edu/faculty/architecture/",
+     "people": 33
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://dcp.ufl.edu/architecture/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://dcp.ufl.edu/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://dcp.ufl.edu/architecture/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://dcp.ufl.edu/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://dcp.ufl.edu/architecture/students/",
+     "students": 0
+    },
+    {
+     "url": "https://dcp.ufl.edu/students/",
+     "students": 8
+    }
+   ],
+   "faculty_in_database": 33,
+   "faculty_listed_on_site": 33,
+   "with_email": 29,
+   "with_scholar": 0,
+   "with_research": 29,
+   "with_teaching": 0,
+   "students_found": 2,
+   "notes": []
+  },
+  {
+   "college": "College of Design, Construction and Planning",
+   "department": "Urban and Regional Planning",
+   "site": "https://www.dcp.ufl.edu/urp",
+   "status": "ok",
+   "faculty_page": "https://dcp.ufl.edu/urp/three-urp-faculty-receive-promotions/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://dcp.ufl.edu/urp/three-urp-faculty-receive-promotions/",
+     "people": 14
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://www.dcp.ufl.edu/urp/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://www.dcp.ufl.edu/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://www.dcp.ufl.edu/urp/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://www.dcp.ufl.edu/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://www.dcp.ufl.edu/urp/students/",
+     "students": 31
+    }
+   ],
+   "faculty_in_database": 27,
+   "faculty_listed_on_site": 14,
+   "with_email": 1,
+   "with_scholar": 0,
+   "with_research": 2,
+   "with_teaching": 0,
+   "students_found": 16,
+   "notes": []
+  },
+  {
+   "college": "College of Education",
+   "department": "Human Development and Organizational Studies in Education",
+   "site": "https://education.ufl.edu/hdose",
+   "status": "ok",
+   "faculty_page": "https://education.ufl.edu/contact/directory/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://education.ufl.edu/faculty",
+     "people": 0
+    },
+    {
+     "url": "https://education.ufl.edu/faculty/",
+     "people": 0
+    },
+    {
+     "url": "https://education.ufl.edu/contact/directory/",
+     "people": 19
+    },
+    {
+     "url": "https://education.ufl.edu/contact/directory",
+     "people": 19
+    },
+    {
+     "url": "https://education.ufl.edu/hdose/people/",
+     "people": 0
+    },
+    {
+     "url": "https://education.ufl.edu/people/",
+     "people": 0
+    },
+    {
+     "url": "https://education.ufl.edu/hdose/faculty/",
+     "people": 0
+    },
+    {
+     "url": "https://education.ufl.edu/hdose/people/faculty/",
+     "people": 0
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://education.ufl.edu/hdose/graduate-student-funding/",
+     "students": 2
+    }
+   ],
+   "faculty_in_database": 56,
+   "faculty_listed_on_site": 19,
+   "with_email": 19,
+   "with_scholar": 0,
+   "with_research": 18,
+   "with_teaching": 0,
+   "students_found": 1,
+   "notes": []
+  },
+  {
+   "college": "College of Education",
+   "department": "School of Teaching and Learning",
+   "site": "https://education.ufl.edu/school-teaching-learning",
+   "status": "ok",
+   "faculty_page": "https://education.ufl.edu/school-teaching-learning/faculty-directory/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://education.ufl.edu/faculty",
+     "people": 0
+    },
+    {
+     "url": "https://education.ufl.edu/school-teaching-learning/faculty-directory/",
+     "people": 11
+    },
+    {
+     "url": "https://education.ufl.edu/faculty/",
+     "people": 0
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://education.ufl.edu/school-teaching-learning/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://education.ufl.edu/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://education.ufl.edu/school-teaching-learning/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://education.ufl.edu/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://education.ufl.edu/school-teaching-learning/students/",
+     "students": 0
+    },
+    {
+     "url": "https://education.ufl.edu/students/",
+     "students": 0
+    }
+   ],
+   "faculty_in_database": 11,
+   "faculty_listed_on_site": 11,
+   "with_email": 11,
+   "with_scholar": 0,
+   "with_research": 11,
+   "with_teaching": 0,
+   "students_found": 0,
+   "notes": []
+  },
+  {
+   "college": "College of Education",
+   "department": "Special Education, School Psychology and Early Childhood Studies",
+   "site": "https://education.ufl.edu/special-education/",
+   "status": "ok",
+   "faculty_page": "https://education.ufl.edu/special-education/program-faculty/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://education.ufl.edu/faculty",
+     "people": 0
+    },
+    {
+     "url": "https://education.ufl.edu/special-education/program-faculty/",
+     "people": 40
+    },
+    {
+     "url": "https://education.ufl.edu/faculty/",
+     "people": 0
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://education.ufl.edu/special-education/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://education.ufl.edu/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://education.ufl.edu/special-education/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://education.ufl.edu/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://education.ufl.edu/special-education/students/",
+     "students": 0
+    },
+    {
+     "url": "https://education.ufl.edu/students/",
+     "students": 0
+    }
+   ],
+   "faculty_in_database": 40,
+   "faculty_listed_on_site": 40,
+   "with_email": 40,
+   "with_scholar": 0,
+   "with_research": 0,
+   "with_teaching": 0,
+   "students_found": 0,
+   "notes": []
+  },
+  {
+   "college": "Herbert Wertheim College of Engineering",
+   "department": "Agricultural and Biological Engineering Department",
+   "site": "https://www.abe.ufl.edu/",
+   "status": "ok",
+   "faculty_page": "https://abe.ufl.edu/people/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://abe.ufl.edu/people/faculty/yiannis-ampatzidis/",
+     "people": 0
+    },
+    {
+     "url": "https://abe.ufl.edu/people/faculty/haimanote-bayabil/",
+     "people": 0
+    },
+    {
+     "url": "https://abe.ufl.edu/people/faculty/eban-bean/",
+     "people": 0
+    },
+    {
+     "url": "https://abe.ufl.edu/people/faculty/nikolay-bliznyuk/",
+     "people": 0
+    },
+    {
+     "url": "https://abe.ufl.edu/people/faculty/ziynet-boz/",
+     "people": 0
+    },
+    {
+     "url": "https://abe.ufl.edu/people/",
+     "people": 72
+    },
+    {
+     "url": "https://www.abe.ufl.edu/people/",
+     "people": 72
+    },
+    {
+     "url": "https://www.abe.ufl.edu/faculty/",
+     "people": 0
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://abe.ufl.edu/graduate/abegso/",
+     "students": 2
+    }
+   ],
+   "faculty_in_database": 72,
+   "faculty_listed_on_site": 72,
+   "with_email": 72,
+   "with_scholar": 0,
+   "with_research": 70,
+   "with_teaching": 0,
+   "students_found": 2,
+   "notes": []
+  },
+  {
+   "college": "Herbert Wertheim College of Engineering",
+   "department": "Chemical Engineering Department",
+   "site": "https://che.ufl.edu/",
+   "status": "ok",
+   "faculty_page": "https://che.ufl.edu/people/faculty/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://che.ufl.edu/people/faculty/",
+     "people": 46
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://che.ufl.edu/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://che.ufl.edu/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://che.ufl.edu/students/",
+     "students": 6
+    }
+   ],
+   "faculty_in_database": 46,
+   "faculty_listed_on_site": 46,
+   "with_email": 45,
+   "with_scholar": 0,
+   "with_research": 46,
+   "with_teaching": 0,
+   "students_found": 6,
+   "notes": []
+  },
+  {
+   "college": "Herbert Wertheim College of Engineering",
+   "department": "Civil and Coastal Engineering Department",
+   "site": "https://www.essie.ufl.edu/student_resources/admissions/graduate/",
+   "status": "unreachable",
+   "faculty_page": "",
+   "faculty_pages_tried": [],
+   "student_pages_tried": [],
+   "faculty_in_database": 0,
+   "faculty_listed_on_site": 0,
+   "with_email": 0,
+   "with_scholar": 0,
+   "with_research": 0,
+   "with_teaching": 0,
+   "students_found": 0,
+   "notes": [
+    "department website did not load"
+   ]
+  },
+  {
+   "college": "Herbert Wertheim College of Engineering",
+   "department": "Computer and Information Science and Engineering Department",
+   "site": "https://www.cise.ufl.edu/academics/grad",
+   "status": "unreachable",
+   "faculty_page": "",
+   "faculty_pages_tried": [],
+   "student_pages_tried": [],
+   "faculty_in_database": 0,
+   "faculty_listed_on_site": 0,
+   "with_email": 0,
+   "with_scholar": 0,
+   "with_research": 0,
+   "with_teaching": 0,
+   "students_found": 0,
+   "notes": [
+    "department website did not load"
+   ]
+  },
+  {
+   "college": "Herbert Wertheim College of Engineering",
+   "department": "Electrical and Computer Engineering Department",
+   "site": "https://www.eng.ufl.edu/academics/degree-programs/",
+   "status": "partial",
+   "faculty_page": "https://faculty.eng.ufl.edu/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://www.eng.ufl.edu/intranet/",
+     "people": 0
+    },
+    {
+     "url": "https://faculty.eng.ufl.edu/",
+     "people": 1
+    },
+    {
+     "url": "https://www.eng.ufl.edu/academics/degree-programs/people/",
+     "people": 0
+    },
+    {
+     "url": "https://www.eng.ufl.edu/people/",
+     "people": 0
+    },
+    {
+     "url": "https://www.eng.ufl.edu/academics/degree-programs/faculty/",
+     "people": 16
+    },
+    {
+     "url": "https://www.eng.ufl.edu/faculty/",
+     "people": 0
+    },
+    {
+     "url": "https://www.eng.ufl.edu/academics/degree-programs/people/faculty/",
+     "people": 16
+    },
+    {
+     "url": "https://www.eng.ufl.edu/people/faculty/",
+     "people": 16
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://www.eng.ufl.edu/academics/graduate-student-spotlight/",
+     "students": 0
+    },
+    {
+     "url": "https://www.eng.ufl.edu/academics/degree-programs/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://www.eng.ufl.edu/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://www.eng.ufl.edu/academics/degree-programs/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://www.eng.ufl.edu/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://www.eng.ufl.edu/academics/degree-programs/students/",
+     "students": 0
+    }
+   ],
+   "faculty_in_database": 1,
+   "faculty_listed_on_site": 1,
+   "with_email": 1,
+   "with_scholar": 0,
+   "with_research": 1,
+   "with_teaching": 0,
+   "students_found": 0,
+   "notes": []
+  },
+  {
+   "college": "Herbert Wertheim College of Engineering",
+   "department": "Engineering Education Department",
+   "site": "",
+   "status": "no_site",
+   "faculty_page": "",
+   "faculty_pages_tried": [],
+   "student_pages_tried": [],
+   "faculty_in_database": 0,
+   "faculty_listed_on_site": 0,
+   "with_email": 0,
+   "with_scholar": 0,
+   "with_research": 0,
+   "with_teaching": 0,
+   "students_found": 0,
+   "notes": [
+    "no department website found on the catalog page"
+   ]
+  },
+  {
+   "college": "Herbert Wertheim College of Engineering",
+   "department": "Environmental Engineering Sciences Department",
+   "site": "https://www.essie.ufl.edu/",
+   "status": "ok",
+   "faculty_page": "https://essie.ufl.edu/people/cat/faculty/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://essie.ufl.edu/people/cat/faculty/",
+     "people": 87
+    },
+    {
+     "url": "https://essie.ufl.edu/cce/faculty/",
+     "people": 53
+    },
+    {
+     "url": "https://essie.ufl.edu/ees/faculty/",
+     "people": 31
+    },
+    {
+     "url": "https://faculty.eng.ufl.edu/",
+     "people": 1
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://www.essie.ufl.edu/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://www.essie.ufl.edu/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://www.essie.ufl.edu/students/",
+     "students": 5
+    }
+   ],
+   "faculty_in_database": 91,
+   "faculty_listed_on_site": 172,
+   "with_email": 11,
+   "with_scholar": 4,
+   "with_research": 91,
+   "with_teaching": 0,
+   "students_found": 5,
+   "notes": []
+  },
+  {
+   "college": "Herbert Wertheim College of Engineering",
+   "department": "Industrial and Systems Engineering Department",
+   "site": "",
+   "status": "no_site",
+   "faculty_page": "",
+   "faculty_pages_tried": [],
+   "student_pages_tried": [],
+   "faculty_in_database": 0,
+   "faculty_listed_on_site": 0,
+   "with_email": 0,
+   "with_scholar": 0,
+   "with_research": 0,
+   "with_teaching": 0,
+   "students_found": 0,
+   "notes": [
+    "no department website found on the catalog page"
+   ]
+  },
+  {
+   "college": "Herbert Wertheim College of Engineering",
+   "department": "J. Crayton Pruitt Family Department of Biomedical Engineering",
+   "site": "https://www.bme.ufl.edu/academics/graduate",
+   "status": "ok",
+   "faculty_page": "https://bme.ufl.edu/people/affiliate-faculty/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://bme.ufl.edu/people/faculty/",
+     "people": 0
+    },
+    {
+     "url": "https://bme.ufl.edu/people/affiliate-faculty/",
+     "people": 60
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://www.ufl.edu/current-students/",
+     "students": 2
+    }
+   ],
+   "faculty_in_database": 60,
+   "faculty_listed_on_site": 60,
+   "with_email": 0,
+   "with_scholar": 0,
+   "with_research": 60,
+   "with_teaching": 0,
+   "students_found": 2,
+   "notes": []
+  },
+  {
+   "college": "Herbert Wertheim College of Engineering",
+   "department": "Materials Science and Engineering Department",
+   "site": "",
+   "status": "no_site",
+   "faculty_page": "",
+   "faculty_pages_tried": [],
+   "student_pages_tried": [],
+   "faculty_in_database": 0,
+   "faculty_listed_on_site": 0,
+   "with_email": 0,
+   "with_scholar": 0,
+   "with_research": 0,
+   "with_teaching": 0,
+   "students_found": 0,
+   "notes": [
+    "no department website found on the catalog page"
+   ]
+  },
+  {
+   "college": "Herbert Wertheim College of Engineering",
+   "department": "Mechanical and Aerospace Engineering Department",
+   "site": "https://www.mae.ufl.edu/current/graduate",
+   "status": "ok",
+   "faculty_page": "https://mae.ufl.edu/people/?cn-cat=3",
+   "faculty_pages_tried": [
+    {
+     "url": "https://mae.ufl.edu/people/?cn-cat=5",
+     "people": 66
+    },
+    {
+     "url": "https://mae.ufl.edu/people/?cn-cat=11",
+     "people": 11
+    },
+    {
+     "url": "https://mae.ufl.edu/people/?cn-cat=45",
+     "people": 10
+    },
+    {
+     "url": "https://mae.ufl.edu/people/?cn-cat=3",
+     "people": 123
+    },
+    {
+     "url": "https://mae.ufl.edu/research/matrix/",
+     "people": 1
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://mae.ufl.edu/students/graduate/",
+     "students": 2
+    },
+    {
+     "url": "https://mae.ufl.edu/students/graduate/graduate-student-council/",
+     "students": 0
+    },
+    {
+     "url": "https://mae.ufl.edu/students/",
+     "students": 0
+    }
+   ],
+   "faculty_in_database": 124,
+   "faculty_listed_on_site": 124,
+   "with_email": 116,
+   "with_scholar": 9,
+   "with_research": 124,
+   "with_teaching": 8,
+   "students_found": 2,
+   "notes": []
+  },
+  {
+   "college": "Herbert Wertheim College of Engineering",
+   "department": "Nuclear and Radiological Engineering Department",
+   "site": "",
+   "status": "no_site",
+   "faculty_page": "",
+   "faculty_pages_tried": [],
+   "student_pages_tried": [],
+   "faculty_in_database": 0,
+   "faculty_listed_on_site": 0,
+   "with_email": 0,
+   "with_scholar": 0,
+   "with_research": 0,
+   "with_teaching": 0,
+   "students_found": 0,
+   "notes": [
+    "no department website found on the catalog page"
+   ]
+  },
+  {
+   "college": "College of Health and Human Performance",
+   "department": "Applied Physiology and Kinesiology",
+   "site": "https://hhp.ufl.edu/about/departments/apk/",
+   "status": "ok",
+   "faculty_page": "https://hhp.ufl.edu/research-faculty/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://hhp.ufl.edu/research-faculty/",
+     "people": 48
+    },
+    {
+     "url": "https://hhp.ufl.edu/research-faculty/centers-institutes/",
+     "people": 3
+    },
+    {
+     "url": "https://hhp.ufl.edu/research-faculty/honors-fellowships/",
+     "people": 17
+    },
+    {
+     "url": "https://hhp.ufl.edu/research-faculty/research-office/",
+     "people": 4
+    },
+    {
+     "url": "https://hhp.ufl.edu/research-faculty/artificial-intelligence/",
+     "people": 4
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://hhp.ufl.edu/for-our-students/graduate-students/",
+     "students": 26
+    }
+   ],
+   "faculty_in_database": 87,
+   "faculty_listed_on_site": 55,
+   "with_email": 3,
+   "with_scholar": 0,
+   "with_research": 21,
+   "with_teaching": 1,
+   "students_found": 23,
+   "notes": []
+  },
+  {
+   "college": "College of Health and Human Performance",
+   "department": "Health Education & Behavior",
+   "site": "https://www.heb.hhp.ufl.edu/",
+   "status": "unreachable",
+   "faculty_page": "",
+   "faculty_pages_tried": [],
+   "student_pages_tried": [],
+   "faculty_in_database": 0,
+   "faculty_listed_on_site": 0,
+   "with_email": 0,
+   "with_scholar": 0,
+   "with_research": 0,
+   "with_teaching": 0,
+   "students_found": 0,
+   "notes": [
+    "department website did not load"
+   ]
+  },
+  {
+   "college": "College of Health and Human Performance",
+   "department": "Health and Human Performance",
+   "site": "https://hhp.ufl.edu/about/academics/phd/",
+   "status": "unreachable",
+   "faculty_page": "",
+   "faculty_pages_tried": [],
+   "student_pages_tried": [],
+   "faculty_in_database": 0,
+   "faculty_listed_on_site": 0,
+   "with_email": 0,
+   "with_scholar": 0,
+   "with_research": 0,
+   "with_teaching": 0,
+   "students_found": 0,
+   "notes": [
+    "department website did not load"
+   ]
+  },
+  {
+   "college": "College of Health and Human Performance",
+   "department": "Sport Management",
+   "site": "https://hhp.ufl.edu/about/departments/spm/",
+   "status": "ok",
+   "faculty_page": "https://hhp.ufl.edu/research-faculty/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://hhp.ufl.edu/research-faculty/",
+     "people": 48
+    },
+    {
+     "url": "https://hhp.ufl.edu/research-faculty/centers-institutes/",
+     "people": 3
+    },
+    {
+     "url": "https://hhp.ufl.edu/research-faculty/honors-fellowships/",
+     "people": 17
+    },
+    {
+     "url": "https://hhp.ufl.edu/research-faculty/research-office/",
+     "people": 4
+    },
+    {
+     "url": "https://hhp.ufl.edu/research-faculty/artificial-intelligence/",
+     "people": 4
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://hhp.ufl.edu/for-our-students/graduate-students/",
+     "students": 26
+    }
+   ],
+   "faculty_in_database": 56,
+   "faculty_listed_on_site": 55,
+   "with_email": 0,
+   "with_scholar": 0,
+   "with_research": 8,
+   "with_teaching": 0,
+   "students_found": 23,
+   "notes": []
+  },
+  {
+   "college": "College of Health and Human Performance",
+   "department": "Tourism, Hospitality, and Event Management",
+   "site": "",
+   "status": "no_site",
+   "faculty_page": "",
+   "faculty_pages_tried": [],
+   "student_pages_tried": [],
+   "faculty_in_database": 0,
+   "faculty_listed_on_site": 0,
+   "with_email": 0,
+   "with_scholar": 0,
+   "with_research": 0,
+   "with_teaching": 0,
+   "students_found": 0,
+   "notes": [
+    "no department website found on the catalog page"
+   ]
+  },
+  {
+   "college": "College of Journalism and Communications",
+   "department": "Mass Communication",
+   "site": "https://www.jou.ufl.edu/graduate/research-and-theory/mamc-public-relations/",
+   "status": "ok",
+   "faculty_page": "https://www.jou.ufl.edu/research-masters/research-and-theory-masters-faculty/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://www.jou.ufl.edu/phd-2/doctoral-faculty/",
+     "people": 36
+    },
+    {
+     "url": "https://www.jou.ufl.edu/research-masters/research-and-theory-masters-faculty/",
+     "people": 53
+    },
+    {
+     "url": "https://www.jou.ufl.edu/home/about/faculty-staff-directory/graduate-faculty/",
+     "people": 53
+    },
+    {
+     "url": "https://www.jou.ufl.edu/new-faculty-2026/",
+     "people": 6
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://www.jou.ufl.edu/graduate/graduate-student-directory/",
+     "students": 0
+    },
+    {
+     "url": "https://www.jou.ufl.edu/graduate/research-and-theory/mamc-public-relations/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://www.jou.ufl.edu/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://www.jou.ufl.edu/graduate/research-and-theory/mamc-public-relations/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://www.jou.ufl.edu/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://www.jou.ufl.edu/graduate/research-and-theory/mamc-public-relations/students/",
+     "students": 0
+    }
+   ],
+   "faculty_in_database": 58,
+   "faculty_listed_on_site": 59,
+   "with_email": 52,
+   "with_scholar": 2,
+   "with_research": 51,
+   "with_teaching": 6,
+   "students_found": 0,
+   "notes": []
+  },
+  {
+   "college": "College of Liberal Arts and Sciences",
+   "department": "Anthropology Department",
+   "site": "",
+   "status": "no_site",
+   "faculty_page": "",
+   "faculty_pages_tried": [],
+   "student_pages_tried": [],
+   "faculty_in_database": 0,
+   "faculty_listed_on_site": 0,
+   "with_email": 0,
+   "with_scholar": 0,
+   "with_research": 0,
+   "with_teaching": 0,
+   "students_found": 0,
+   "notes": [
+    "no department website found on the catalog page"
+   ]
+  },
+  {
+   "college": "College of Liberal Arts and Sciences",
+   "department": "Astronomy Department",
+   "site": "https://www.astro.ufl.edu/academics/graduate-studies/",
+   "status": "ok",
+   "faculty_page": "https://astro.ufl.edu/people/faculty/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://astro.ufl.edu/people/faculty/",
+     "people": 18
+    },
+    {
+     "url": "https://clas.ufl.edu/for-faculty-and-staff-footer",
+     "people": 3
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://astro.ufl.edu/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://www.astro.ufl.edu/academics/graduate-studies/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://www.astro.ufl.edu/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://www.astro.ufl.edu/academics/graduate-studies/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://www.astro.ufl.edu/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://www.astro.ufl.edu/academics/graduate-studies/students/",
+     "students": 0
+    }
+   ],
+   "faculty_in_database": 21,
+   "faculty_listed_on_site": 21,
+   "with_email": 17,
+   "with_scholar": 0,
+   "with_research": 18,
+   "with_teaching": 0,
+   "students_found": 0,
+   "notes": []
+  },
+  {
+   "college": "College of Liberal Arts and Sciences",
+   "department": "Biology Department",
+   "site": "https://www.biology.ufl.edu/",
+   "status": "ok",
+   "faculty_page": "https://biology.ufl.edu/people/faculty/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://biology.ufl.edu/people/faculty/",
+     "people": 51
+    },
+    {
+     "url": "https://biology.ufl.edu/people/flmnh-faculty/",
+     "people": 20
+    },
+    {
+     "url": "https://biology.ufl.edu/people/faculty/courtesy-faculty/",
+     "people": 22
+    },
+    {
+     "url": "https://biology.ufl.edu/people/faculty/emeritus_faculty/",
+     "people": 26
+    },
+    {
+     "url": "https://biology.ufl.edu/people/faculty-profile-update/",
+     "people": 0
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://biology.ufl.edu/people/gradstudents/",
+     "students": 1
+    },
+    {
+     "url": "https://bgsa.biology.ufl.edu/",
+     "students": 0
+    },
+    {
+     "url": "https://biology.ufl.edu/graduate-programs/submit-graduate-student-idp/",
+     "students": 0
+    },
+    {
+     "url": "https://biology.ufl.edu/people/gradstudents/new-or-current-grad-student-update/",
+     "students": 2
+    }
+   ],
+   "faculty_in_database": 118,
+   "faculty_listed_on_site": 118,
+   "with_email": 111,
+   "with_scholar": 5,
+   "with_research": 117,
+   "with_teaching": 1,
+   "students_found": 3,
+   "notes": []
+  },
+  {
+   "college": "College of Liberal Arts and Sciences",
+   "department": "Center for Latin American Studies",
+   "site": "https://www.latam.ufl.edu/",
+   "status": "ok",
+   "faculty_page": "https://www.latam.ufl.edu/people/affiliate-faculty/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://www.latam.ufl.edu/people/center-based-faculty/",
+     "people": 25
+    },
+    {
+     "url": "https://www.latam.ufl.edu/people/affiliate-faculty/",
+     "people": 30
+    },
+    {
+     "url": "https://www.latam.ufl.edu/people/faculty-advisory-council/",
+     "people": 5
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://www.latam.ufl.edu/academics/",
+     "students": 0
+    },
+    {
+     "url": "https://www.ufl.edu/current-students/",
+     "students": 2
+    }
+   ],
+   "faculty_in_database": 57,
+   "faculty_listed_on_site": 60,
+   "with_email": 36,
+   "with_scholar": 0,
+   "with_research": 35,
+   "with_teaching": 14,
+   "students_found": 2,
+   "notes": []
+  },
+  {
+   "college": "College of Liberal Arts and Sciences",
+   "department": "Chemistry Department",
+   "site": "https://www.chem.ufl.edu/",
+   "status": "ok",
+   "faculty_page": "https://chem.ufl.edu/people-2/faculty-2/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://chem.ufl.edu/people-2/faculty-2/",
+     "people": 40
+    },
+    {
+     "url": "https://chem.ufl.edu/people-2/instructional-faculty/",
+     "people": 15
+    },
+    {
+     "url": "https://chem.ufl.edu/people-2/associated-faculty/",
+     "people": 5
+    },
+    {
+     "url": "https://chem.ufl.edu/people-2/emeritus-faculty/",
+     "people": 29
+    },
+    {
+     "url": "https://clas.ufl.edu/for-faculty-and-staff-footer",
+     "people": 3
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://www.chem.ufl.edu/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://www.chem.ufl.edu/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://www.chem.ufl.edu/students/",
+     "students": 0
+    },
+    {
+     "url": "https://www.chem.ufl.edu/people/students/",
+     "students": 0
+    },
+    {
+     "url": "https://www.chem.ufl.edu/graduate/students/",
+     "students": 0
+    },
+    {
+     "url": "https://www.chem.ufl.edu/academics/graduate-students/",
+     "students": 0
+    }
+   ],
+   "faculty_in_database": 91,
+   "faculty_listed_on_site": 91,
+   "with_email": 88,
+   "with_scholar": 0,
+   "with_research": 3,
+   "with_teaching": 0,
+   "students_found": 0,
+   "notes": []
+  },
+  {
+   "college": "College of Liberal Arts and Sciences",
+   "department": "Classics Department",
+   "site": "",
+   "status": "no_site",
+   "faculty_page": "",
+   "faculty_pages_tried": [],
+   "student_pages_tried": [],
+   "faculty_in_database": 0,
+   "faculty_listed_on_site": 0,
+   "with_email": 0,
+   "with_scholar": 0,
+   "with_research": 0,
+   "with_teaching": 0,
+   "students_found": 0,
+   "notes": [
+    "no department website found on the catalog page"
+   ]
+  },
+  {
+   "college": "College of Liberal Arts and Sciences",
+   "department": "Computer and Information Science and Engineering Department",
+   "site": "https://www.cise.ufl.edu/academics/grad",
+   "status": "unreachable",
+   "faculty_page": "",
+   "faculty_pages_tried": [],
+   "student_pages_tried": [],
+   "faculty_in_database": 0,
+   "faculty_listed_on_site": 0,
+   "with_email": 0,
+   "with_scholar": 0,
+   "with_research": 0,
+   "with_teaching": 0,
+   "students_found": 0,
+   "notes": [
+    "department website did not load"
+   ]
+  },
+  {
+   "college": "College of Liberal Arts and Sciences",
+   "department": "Department of Languages, Literatures and Cultures",
+   "site": "https://languages.ufl.edu/academics/graduate-studies/",
+   "status": "ok",
+   "faculty_page": "https://languages.ufl.edu/people/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://languages.ufl.edu/people/",
+     "people": 47
+    },
+    {
+     "url": "https://languages.ufl.edu/faculty-alphabetical/",
+     "people": 47
+    },
+    {
+     "url": "https://languages.ufl.edu/faculty-emeriti/",
+     "people": 0
+    },
+    {
+     "url": "https://clas.ufl.edu/for-faculty-and-staff-footer",
+     "people": 3
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://languages.ufl.edu/academics/graduate-studies/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://languages.ufl.edu/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://languages.ufl.edu/academics/graduate-studies/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://languages.ufl.edu/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://languages.ufl.edu/academics/graduate-studies/students/",
+     "students": 0
+    },
+    {
+     "url": "https://languages.ufl.edu/students/",
+     "students": 0
+    }
+   ],
+   "faculty_in_database": 50,
+   "faculty_listed_on_site": 50,
+   "with_email": 47,
+   "with_scholar": 0,
+   "with_research": 13,
+   "with_teaching": 8,
+   "students_found": 0,
+   "notes": []
+  },
+  {
+   "college": "College of Liberal Arts and Sciences",
+   "department": "Economics Department",
+   "site": "https://economics.clas.ufl.edu/",
+   "status": "ok",
+   "faculty_page": "https://economics.clas.ufl.edu/people/faculty/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://economics.clas.ufl.edu/people/faculty/",
+     "people": 31
+    },
+    {
+     "url": "https://economics.clas.ufl.edu/research/",
+     "people": 0
+    },
+    {
+     "url": "https://clas.ufl.edu/for-faculty-and-staff-footer",
+     "people": 3
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://economics.clas.ufl.edu/people/current-phds/",
+     "students": 25
+    }
+   ],
+   "faculty_in_database": 34,
+   "faculty_listed_on_site": 34,
+   "with_email": 32,
+   "with_scholar": 0,
+   "with_research": 3,
+   "with_teaching": 0,
+   "students_found": 25,
+   "notes": []
+  },
+  {
+   "college": "College of Liberal Arts and Sciences",
+   "department": "English Department",
+   "site": "https://english.ufl.edu/graduate-programs/",
+   "status": "ok",
+   "faculty_page": "https://english.ufl.edu/faculty-listing/emeritus-emerita-and-retired-faculty/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://english.ufl.edu/recent-faculty-publications/",
+     "people": 9
+    },
+    {
+     "url": "https://english.ufl.edu/faculty-listing/",
+     "people": 6
+    },
+    {
+     "url": "https://english.ufl.edu/faculty-listing/emeritus-emerita-and-retired-faculty/",
+     "people": 28
+    },
+    {
+     "url": "https://clas.ufl.edu/for-faculty-and-staff-footer",
+     "people": 3
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://english.ufl.edu/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://english.ufl.edu/graduate-programs/recent-phd-student-placements/",
+     "students": 172
+    },
+    {
+     "url": "https://english.ufl.edu/basic-information-for-graduate-students/",
+     "students": 0
+    }
+   ],
+   "faculty_in_database": 46,
+   "faculty_listed_on_site": 46,
+   "with_email": 6,
+   "with_scholar": 0,
+   "with_research": 42,
+   "with_teaching": 0,
+   "students_found": 172,
+   "notes": []
+  },
+  {
+   "college": "College of Liberal Arts and Sciences",
+   "department": "Gender, Sexuality, and Women's Studies Department",
+   "site": "https://wst.ufl.edu/",
+   "status": "ok",
+   "faculty_page": "https://wst.ufl.edu/people/affiliate-faculty/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://wst.ufl.edu/people/core-faculty/",
+     "people": 7
+    },
+    {
+     "url": "https://wst.ufl.edu/people/affiliate-faculty/",
+     "people": 126
+    },
+    {
+     "url": "https://wst.ufl.edu/category/accomplishments/",
+     "people": 0
+    },
+    {
+     "url": "https://clas.ufl.edu/for-faculty-and-staff-footer",
+     "people": 3
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://wst.ufl.edu/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://wst.ufl.edu/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://wst.ufl.edu/students/",
+     "students": 0
+    },
+    {
+     "url": "https://wst.ufl.edu/people/students/",
+     "students": 0
+    },
+    {
+     "url": "https://wst.ufl.edu/graduate/students/",
+     "students": 0
+    },
+    {
+     "url": "https://wst.ufl.edu/academics/graduate-students/",
+     "students": 0
+    }
+   ],
+   "faculty_in_database": 136,
+   "faculty_listed_on_site": 136,
+   "with_email": 51,
+   "with_scholar": 0,
+   "with_research": 37,
+   "with_teaching": 13,
+   "students_found": 0,
+   "notes": []
+  },
+  {
+   "college": "College of Liberal Arts and Sciences",
+   "department": "Geography Department",
+   "site": "https://www.geog.ufl.edu/",
+   "status": "ok",
+   "faculty_page": "https://geog.ufl.edu/faculty/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://geog.ufl.edu/faculty/",
+     "people": 34
+    },
+    {
+     "url": "https://geog.ufl.edu/postdocs/",
+     "people": 2
+    },
+    {
+     "url": "https://clas.ufl.edu/for-faculty-and-staff-footer",
+     "people": 3
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://geog.ufl.edu/grad-students/",
+     "students": 0
+    },
+    {
+     "url": "https://geog.ufl.edu/programs/grad/graduate-student-annual-reporting/",
+     "students": 2
+    },
+    {
+     "url": "https://geog.ufl.edu/programs/grad/information-current-grad-students/",
+     "students": 1
+    }
+   ],
+   "faculty_in_database": 39,
+   "faculty_listed_on_site": 39,
+   "with_email": 34,
+   "with_scholar": 2,
+   "with_research": 14,
+   "with_teaching": 0,
+   "students_found": 3,
+   "notes": []
+  },
+  {
+   "college": "College of Liberal Arts and Sciences",
+   "department": "Geological Sciences Department",
+   "site": "https://geology.ufl.edu/",
+   "status": "ok",
+   "faculty_page": "https://geology.ufl.edu/people/faculty/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://geology.ufl.edu/people/faculty/",
+     "people": 33
+    },
+    {
+     "url": "https://clas.ufl.edu/for-faculty-and-staff-footer",
+     "people": 3
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://geology.ufl.edu/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://geology.ufl.edu/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://geology.ufl.edu/students/",
+     "students": 0
+    },
+    {
+     "url": "https://geology.ufl.edu/people/students/",
+     "students": 0
+    },
+    {
+     "url": "https://geology.ufl.edu/graduate/students/",
+     "students": 0
+    },
+    {
+     "url": "https://geology.ufl.edu/academics/graduate-students/",
+     "students": 0
+    }
+   ],
+   "faculty_in_database": 36,
+   "faculty_listed_on_site": 36,
+   "with_email": 34,
+   "with_scholar": 5,
+   "with_research": 35,
+   "with_teaching": 0,
+   "students_found": 0,
+   "notes": []
+  },
+  {
+   "college": "College of Liberal Arts and Sciences",
+   "department": "History Department",
+   "site": "https://history.ufl.edu/",
+   "status": "ok",
+   "faculty_page": "https://history.ufl.edu/people/current-faculty/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://history.ufl.edu/people/current-faculty/",
+     "people": 35
+    },
+    {
+     "url": "https://history.ufl.edu/people/faculty-by-specialization/",
+     "people": 23
+    },
+    {
+     "url": "https://history.ufl.edu/people/emeritus-faculty/",
+     "people": 21
+    },
+    {
+     "url": "https://clas.ufl.edu/for-faculty-and-staff-footer",
+     "people": 3
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://history.ufl.edu/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://history.ufl.edu/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://history.ufl.edu/students/",
+     "students": 0
+    },
+    {
+     "url": "https://history.ufl.edu/people/students/",
+     "students": 0
+    },
+    {
+     "url": "https://history.ufl.edu/graduate/students/",
+     "students": 0
+    },
+    {
+     "url": "https://history.ufl.edu/academics/graduate-students/",
+     "students": 0
+    }
+   ],
+   "faculty_in_database": 59,
+   "faculty_listed_on_site": 59,
+   "with_email": 56,
+   "with_scholar": 0,
+   "with_research": 40,
+   "with_teaching": 0,
+   "students_found": 0,
+   "notes": []
+  },
+  {
+   "college": "College of Liberal Arts and Sciences",
+   "department": "Interdisciplinary Department",
+   "site": "",
+   "status": "no_site",
+   "faculty_page": "",
+   "faculty_pages_tried": [],
+   "student_pages_tried": [],
+   "faculty_in_database": 0,
+   "faculty_listed_on_site": 0,
+   "with_email": 0,
+   "with_scholar": 0,
+   "with_research": 0,
+   "with_teaching": 0,
+   "students_found": 0,
+   "notes": [
+    "no department website found on the catalog page"
+   ]
+  },
+  {
+   "college": "College of Liberal Arts and Sciences",
+   "department": "Linguistics Department",
+   "site": "https://lin.ufl.edu/",
+   "status": "ok",
+   "faculty_page": "https://lin.ufl.edu/people/faculty/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://lin.ufl.edu/people/faculty/",
+     "people": 18
+    },
+    {
+     "url": "https://clas.ufl.edu/for-faculty-and-staff-footer",
+     "people": 3
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://lin.ufl.edu/people/graduate-students/",
+     "students": 1
+    },
+    {
+     "url": "https://lin.ufl.edu/people/graduate-students/past-phds/",
+     "students": 2
+    },
+    {
+     "url": "https://lin.ufl.edu/people/graduate-students/past-mas/",
+     "students": 8
+    }
+   ],
+   "faculty_in_database": 21,
+   "faculty_listed_on_site": 21,
+   "with_email": 19,
+   "with_scholar": 0,
+   "with_research": 21,
+   "with_teaching": 0,
+   "students_found": 10,
+   "notes": []
+  },
+  {
+   "college": "College of Liberal Arts and Sciences",
+   "department": "Mathematics Department",
+   "site": "https://www.math.ufl.edu/",
+   "status": "ok",
+   "faculty_page": "https://math.ufl.edu/people/faculty/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://math.ufl.edu/people/faculty/",
+     "people": 49
+    },
+    {
+     "url": "https://math.ufl.edu/people/affiliate-faculty/",
+     "people": 10
+    },
+    {
+     "url": "https://math.ufl.edu/people/emeritus-faculty-2/",
+     "people": 24
+    },
+    {
+     "url": "https://clas.ufl.edu/for-faculty-and-staff-footer",
+     "people": 3
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://math.ufl.edu/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://www.math.ufl.edu/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://www.math.ufl.edu/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://www.math.ufl.edu/students/",
+     "students": 0
+    },
+    {
+     "url": "https://www.math.ufl.edu/people/students/",
+     "students": 0
+    },
+    {
+     "url": "https://www.math.ufl.edu/graduate/students/",
+     "students": 0
+    }
+   ],
+   "faculty_in_database": 86,
+   "faculty_listed_on_site": 86,
+   "with_email": 83,
+   "with_scholar": 1,
+   "with_research": 78,
+   "with_teaching": 1,
+   "students_found": 0,
+   "notes": []
+  },
+  {
+   "college": "College of Liberal Arts and Sciences",
+   "department": "Philosophy Department",
+   "site": "https://phil.ufl.edu/",
+   "status": "ok",
+   "faculty_page": "https://phil.ufl.edu/people/faculty/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://phil.ufl.edu/people/faculty/",
+     "people": 24
+    },
+    {
+     "url": "https://clas.ufl.edu/for-faculty-and-staff-footer",
+     "people": 3
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://phil.ufl.edu/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://phil.ufl.edu/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://phil.ufl.edu/students/",
+     "students": 0
+    },
+    {
+     "url": "https://phil.ufl.edu/people/students/",
+     "students": 0
+    },
+    {
+     "url": "https://phil.ufl.edu/graduate/students/",
+     "students": 0
+    },
+    {
+     "url": "https://phil.ufl.edu/academics/graduate-students/",
+     "students": 0
+    }
+   ],
+   "faculty_in_database": 27,
+   "faculty_listed_on_site": 27,
+   "with_email": 25,
+   "with_scholar": 0,
+   "with_research": 18,
+   "with_teaching": 0,
+   "students_found": 0,
+   "notes": []
+  },
+  {
+   "college": "College of Liberal Arts and Sciences",
+   "department": "Physics Department",
+   "site": "https://www.phys.ufl.edu/academics/graduate/degrees.shtml",
+   "status": "unreachable",
+   "faculty_page": "",
+   "faculty_pages_tried": [],
+   "student_pages_tried": [],
+   "faculty_in_database": 0,
+   "faculty_listed_on_site": 0,
+   "with_email": 0,
+   "with_scholar": 0,
+   "with_research": 0,
+   "with_teaching": 0,
+   "students_found": 0,
+   "notes": [
+    "department website did not load"
+   ]
+  },
+  {
+   "college": "College of Liberal Arts and Sciences",
+   "department": "Plant Molecular and Cellular Biology Department",
+   "site": "https://agronomy.ifas.ufl.edu/",
+   "status": "ok",
+   "faculty_page": "https://directory.ifas.ufl.edu/ext/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://directory.ifas.ufl.edu/ext/",
+     "people": 4
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://agronomy.ifas.ufl.edu/students/",
+     "students": 0
+    },
+    {
+     "url": "https://agronomy.ifas.ufl.edu/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://agronomy.ifas.ufl.edu/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://agronomy.ifas.ufl.edu/people/students/",
+     "students": 0
+    },
+    {
+     "url": "https://agronomy.ifas.ufl.edu/graduate/students/",
+     "students": 0
+    },
+    {
+     "url": "https://agronomy.ifas.ufl.edu/academics/graduate-students/",
+     "students": 0
+    }
+   ],
+   "faculty_in_database": 4,
+   "faculty_listed_on_site": 4,
+   "with_email": 4,
+   "with_scholar": 2,
+   "with_research": 0,
+   "with_teaching": 0,
+   "students_found": 0,
+   "notes": []
+  },
+  {
+   "college": "College of Liberal Arts and Sciences",
+   "department": "Political Science Department",
+   "site": "https://polisci.ufl.edu/",
+   "status": "ok",
+   "faculty_page": "https://polisci.ufl.edu/people/faculty/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://polisci.ufl.edu/people/faculty/",
+     "people": 30
+    },
+    {
+     "url": "https://clas.ufl.edu/for-faculty-and-staff-footer",
+     "people": 3
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://polisci.ufl.edu/graduate/graduate-student-conference-travel/",
+     "students": 0
+    },
+    {
+     "url": "https://polisci.ufl.edu/research-grants-to-support-graduate-students/",
+     "students": 5
+    },
+    {
+     "url": "https://polisci.ufl.edu/people/graduate-students/",
+     "students": 2
+    },
+    {
+     "url": "https://polisci.ufl.edu/current-phd-students/",
+     "students": 10
+    }
+   ],
+   "faculty_in_database": 33,
+   "faculty_listed_on_site": 33,
+   "with_email": 31,
+   "with_scholar": 0,
+   "with_research": 33,
+   "with_teaching": 0,
+   "students_found": 15,
+   "notes": []
+  },
+  {
+   "college": "College of Liberal Arts and Sciences",
+   "department": "Psychology Department",
+   "site": "https://www.psych.ufl.edu/",
+   "status": "ok",
+   "faculty_page": "https://psych.ufl.edu/people/faculty/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://psych.ufl.edu/people/faculty/",
+     "people": 45
+    },
+    {
+     "url": "https://psych.ufl.edu/people/research-faculty/",
+     "people": 0
+    },
+    {
+     "url": "https://psych.ufl.edu/people/emeritus-faculty/",
+     "people": 13
+    },
+    {
+     "url": "https://clas.ufl.edu/for-faculty-and-staff-footer",
+     "people": 3
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://psych.ufl.edu/people/graduate-student/",
+     "students": 89
+    },
+    {
+     "url": "https://psych.ufl.edu/graduate/current-grads/graduate-studies/",
+     "students": 0
+    }
+   ],
+   "faculty_in_database": 61,
+   "faculty_listed_on_site": 61,
+   "with_email": 58,
+   "with_scholar": 1,
+   "with_research": 48,
+   "with_teaching": 0,
+   "students_found": 89,
+   "notes": []
+  },
+  {
+   "college": "College of Liberal Arts and Sciences",
+   "department": "Religion Department",
+   "site": "",
+   "status": "no_site",
+   "faculty_page": "",
+   "faculty_pages_tried": [],
+   "student_pages_tried": [],
+   "faculty_in_database": 0,
+   "faculty_listed_on_site": 0,
+   "with_email": 0,
+   "with_scholar": 0,
+   "with_research": 0,
+   "with_teaching": 0,
+   "students_found": 0,
+   "notes": [
+    "no department website found on the catalog page"
+   ]
+  },
+  {
+   "college": "College of Liberal Arts and Sciences",
+   "department": "Sociology and Criminology & Law Department",
+   "site": "https://soccrim.clas.ufl.edu/graduate/criminology/",
+   "status": "ok",
+   "faculty_page": "https://soccrim.clas.ufl.edu/directory/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://soccrim.clas.ufl.edu/directory/",
+     "people": 40
+    },
+    {
+     "url": "https://clas.ufl.edu/for-faculty-and-staff-footer",
+     "people": 3
+    },
+    {
+     "url": "https://www.latam.ufl.edu/people/center-based-faculty/charles-h-wood/",
+     "people": 2
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://soccrim.clas.ufl.edu/graduate/grad-student-orgs/",
+     "students": 9
+    },
+    {
+     "url": "https://soccrim.clas.ufl.edu/graduate-students/",
+     "students": 121
+    }
+   ],
+   "faculty_in_database": 45,
+   "faculty_listed_on_site": 45,
+   "with_email": 33,
+   "with_scholar": 0,
+   "with_research": 42,
+   "with_teaching": 9,
+   "students_found": 127,
+   "notes": []
+  },
+  {
+   "college": "College of Liberal Arts and Sciences",
+   "department": "Spanish and Portuguese Studies Department",
+   "site": "https://www.spanishandportuguese.ufl.edu/spanish/graduate.html",
+   "status": "unreachable",
+   "faculty_page": "",
+   "faculty_pages_tried": [],
+   "student_pages_tried": [],
+   "faculty_in_database": 0,
+   "faculty_listed_on_site": 0,
+   "with_email": 0,
+   "with_scholar": 0,
+   "with_research": 0,
+   "with_teaching": 0,
+   "students_found": 0,
+   "notes": [
+    "department website did not load"
+   ]
+  },
+  {
+   "college": "College of Liberal Arts and Sciences",
+   "department": "Statistics Department",
+   "site": "https://www.stat.ufl.edu/",
+   "status": "ok",
+   "faculty_page": "https://stat.ufl.edu/people/faculty/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://stat.ufl.edu/people/faculty/",
+     "people": 23
+    },
+    {
+     "url": "https://stat.ufl.edu/people/emeritus-faculty/",
+     "people": 6
+    },
+    {
+     "url": "https://stat.ufl.edu/people/affiliatecourtesy-faculty/",
+     "people": 6
+    },
+    {
+     "url": "https://clas.ufl.edu/for-faculty-and-staff-footer",
+     "people": 3
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://stat.ufl.edu/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://www.stat.ufl.edu/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://www.stat.ufl.edu/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://www.stat.ufl.edu/students/",
+     "students": 0
+    },
+    {
+     "url": "https://www.stat.ufl.edu/people/students/",
+     "students": 0
+    },
+    {
+     "url": "https://www.stat.ufl.edu/graduate/students/",
+     "students": 0
+    }
+   ],
+   "faculty_in_database": 38,
+   "faculty_listed_on_site": 38,
+   "with_email": 36,
+   "with_scholar": 1,
+   "with_research": 33,
+   "with_teaching": 1,
+   "students_found": 0,
+   "notes": []
+  },
+  {
+   "college": "College of Medicine",
+   "department": "College of Medicine Interdisciplinary Programs",
+   "site": "",
+   "status": "no_site",
+   "faculty_page": "",
+   "faculty_pages_tried": [],
+   "student_pages_tried": [],
+   "faculty_in_database": 0,
+   "faculty_listed_on_site": 0,
+   "with_email": 0,
+   "with_scholar": 0,
+   "with_research": 0,
+   "with_teaching": 0,
+   "students_found": 0,
+   "notes": [
+    "no department website found on the catalog page"
+   ]
+  },
+  {
+   "college": "College of Medicine",
+   "department": "Biochemistry and Molecular Biology",
+   "site": "https://biochem.med.ufl.edu/",
+   "status": "ok",
+   "faculty_page": "https://biochem.med.ufl.edu/faculty/primary-faculty/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://biochem.med.ufl.edu/faculty/primary-faculty/",
+     "people": 41
+    },
+    {
+     "url": "https://biochem.med.ufl.edu/faculty/research-faculty/",
+     "people": 2
+    },
+    {
+     "url": "https://biochem.med.ufl.edu/faculty/research-staff/",
+     "people": 7
+    },
+    {
+     "url": "https://biochem.med.ufl.edu/faculty/postdoctoral-associates-2/",
+     "people": 13
+    },
+    {
+     "url": "https://biochem.med.ufl.edu/research/interests/",
+     "people": 13
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://biochem.med.ufl.edu/graduate-programs/currentgradstudents/",
+     "students": 19
+    },
+    {
+     "url": "https://biochem.med.ufl.edu/graduate-programs/former-graduate-students/",
+     "students": 43
+    }
+   ],
+   "faculty_in_database": 64,
+   "faculty_listed_on_site": 76,
+   "with_email": 50,
+   "with_scholar": 0,
+   "with_research": 63,
+   "with_teaching": 8,
+   "students_found": 62,
+   "notes": []
+  },
+  {
+   "college": "College of Medicine",
+   "department": "Biostatistics",
+   "site": "https://biostat.ufl.edu/education/phd-in-biostatistics/",
+   "status": "ok",
+   "faculty_page": "https://phhp.ufl.edu/academics/phd-and-professional-programs/rehabilitation-science-doctorate/program-overview/program-faculty/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://phhp.ufl.edu/about/phhp-faculty-and-staff/",
+     "people": 7
+    },
+    {
+     "url": "https://phhp.ufl.edu/academics/phd-and-professional-programs/rehabilitation-science-doctorate/program-overview/program-faculty/",
+     "people": 47
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://phhp.ufl.edu/academics/phd-and-professional-programs/public-health-phd/phd-public-health-environmental-health/meet-our-environmental-health-phd-students/",
+     "students": 0
+    },
+    {
+     "url": "https://phhp.ufl.edu/academics/phd-and-professional-programs/public-health-phd/phd-public-health-one-health/meet-our-one-health-phd-students/",
+     "students": 0
+    },
+    {
+     "url": "https://phhp.ufl.edu/academics/phd-and-professional-programs/public-health-phd/phd-public-health-social-and-behavioral-sciences/meet-our-sbs-phd-students/",
+     "students": 0
+    },
+    {
+     "url": "https://biostat.ufl.edu/education/phd-in-biostatistics/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://biostat.ufl.edu/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://biostat.ufl.edu/education/phd-in-biostatistics/graduate-students/",
+     "students": 0
+    }
+   ],
+   "faculty_in_database": 134,
+   "faculty_listed_on_site": 54,
+   "with_email": 106,
+   "with_scholar": 0,
+   "with_research": 108,
+   "with_teaching": 0,
+   "students_found": 0,
+   "notes": []
+  },
+  {
+   "college": "College of Medicine",
+   "department": "Epidemiology",
+   "site": "https://epidemiology.phhp.ufl.edu/",
+   "status": "ok",
+   "faculty_page": "https://phhp.ufl.edu/about/departments/biostatistics/about/faculty/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://phhp.ufl.edu/about/phhp-faculty-and-staff/",
+     "people": 7
+    },
+    {
+     "url": "https://phhp.ufl.edu/about/departments/biostatistics/about/faculty/",
+     "people": 24
+    },
+    {
+     "url": "https://phhp.ufl.edu/about/departments/environmental-and-global-health/about-egh-department/faculty/",
+     "people": 16
+    },
+    {
+     "url": "https://phhp.ufl.edu/about/departments/epidemiology/about-the-epi-department/faculty/",
+     "people": 23
+    },
+    {
+     "url": "https://phhp.ufl.edu/about/departments/health-services-research-management-and-policy/faculty/",
+     "people": 18
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://epidemiology.phhp.ufl.edu/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://epidemiology.phhp.ufl.edu/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://epidemiology.phhp.ufl.edu/students/",
+     "students": 0
+    },
+    {
+     "url": "https://epidemiology.phhp.ufl.edu/people/students/",
+     "students": 0
+    },
+    {
+     "url": "https://epidemiology.phhp.ufl.edu/graduate/students/",
+     "students": 0
+    },
+    {
+     "url": "https://epidemiology.phhp.ufl.edu/academics/graduate-students/",
+     "students": 0
+    }
+   ],
+   "faculty_in_database": 95,
+   "faculty_listed_on_site": 88,
+   "with_email": 86,
+   "with_scholar": 2,
+   "with_research": 86,
+   "with_teaching": 3,
+   "students_found": 0,
+   "notes": []
+  },
+  {
+   "college": "College of Medicine",
+   "department": "Health Outcomes and Biomedical Informatics",
+   "site": "https://hobi.med.ufl.edu/",
+   "status": "ok",
+   "faculty_page": "https://hobi.med.ufl.edu/about/faculty-directory/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://hobi.med.ufl.edu/about/faculty-directory/",
+     "people": 15
+    },
+    {
+     "url": "https://hobi.med.ufl.edu/research-2/florida-health-policy-leadership-academy/organizing-faculty-for-fhpla/",
+     "people": 6
+    },
+    {
+     "url": "https://news.ufl.edu/2026/09/g-care/",
+     "people": 2
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://hobi.med.ufl.edu/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://hobi.med.ufl.edu/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://hobi.med.ufl.edu/students/",
+     "students": 0
+    },
+    {
+     "url": "https://hobi.med.ufl.edu/people/students/",
+     "students": 0
+    },
+    {
+     "url": "https://hobi.med.ufl.edu/graduate/students/",
+     "students": 0
+    },
+    {
+     "url": "https://hobi.med.ufl.edu/academics/graduate-students/",
+     "students": 0
+    }
+   ],
+   "faculty_in_database": 42,
+   "faculty_listed_on_site": 23,
+   "with_email": 19,
+   "with_scholar": 0,
+   "with_research": 20,
+   "with_teaching": 3,
+   "students_found": 0,
+   "notes": []
+  },
+  {
+   "college": "College of Medicine",
+   "department": "Molecular Genetics and Microbiology",
+   "site": "https://mgm.ufl.edu/",
+   "status": "ok",
+   "faculty_page": "https://mgm.ufl.edu/departments/faculty/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://mgm.ufl.edu/departments/faculty/",
+     "people": 32
+    },
+    {
+     "url": "https://mgm.ufl.edu/departments/joint-faculty/",
+     "people": 10
+    },
+    {
+     "url": "https://mgm.ufl.edu/departments/research-faculty/",
+     "people": 5
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://mgm.ufl.edu/departments/graduate-students/",
+     "students": 15
+    }
+   ],
+   "faculty_in_database": 49,
+   "faculty_listed_on_site": 47,
+   "with_email": 13,
+   "with_scholar": 0,
+   "with_research": 15,
+   "with_teaching": 0,
+   "students_found": 15,
+   "notes": []
+  },
+  {
+   "college": "College of Nursing",
+   "department": "Nursing Sciences",
+   "site": "https://nursing.ufl.edu/admissions/",
+   "status": "ok",
+   "faculty_page": "https://nursing.ufl.edu/faculty/faculty-directory/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://nursing.ufl.edu/research/research-faculty/",
+     "people": 19
+    },
+    {
+     "url": "https://nursing.ufl.edu/faculty/",
+     "people": 0
+    },
+    {
+     "url": "https://nursing.ufl.edu/faculty/faculty-directory/",
+     "people": 79
+    },
+    {
+     "url": "https://nursing.ufl.edu/faculty/staff/",
+     "people": 8
+    },
+    {
+     "url": "https://nursing.ufl.edu/faculty/emeriti-faculty-directory/",
+     "people": 0
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://nursing.ufl.edu/students/",
+     "students": 0
+    },
+    {
+     "url": "https://nursing.ufl.edu/students/current-students/",
+     "students": 0
+    },
+    {
+     "url": "https://nursing.ufl.edu/students/current-students/course-syllabi-textbook-information/",
+     "students": 0
+    },
+    {
+     "url": "https://nursing.ufl.edu/students/current-students/advising-and-class-schedules/",
+     "students": 0
+    },
+    {
+     "url": "https://nursing.ufl.edu/admissions/people/graduate-students/",
+     "students": 4
+    }
+   ],
+   "faculty_in_database": 87,
+   "faculty_listed_on_site": 87,
+   "with_email": 23,
+   "with_scholar": 0,
+   "with_research": 56,
+   "with_teaching": 6,
+   "students_found": 4,
+   "notes": []
+  },
+  {
+   "college": "College of Pharmacy",
+   "department": "Cellular and Systems Pharmacology Department",
+   "site": "https://csp.pharmacy.ufl.edu/",
+   "status": "ok",
+   "faculty_page": "https://csp.pharmacy.ufl.edu/people/faculty/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://csp.pharmacy.ufl.edu/people/faculty/",
+     "people": 15
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://csp.pharmacy.ufl.edu/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://csp.pharmacy.ufl.edu/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://csp.pharmacy.ufl.edu/students/",
+     "students": 0
+    },
+    {
+     "url": "https://csp.pharmacy.ufl.edu/people/students/",
+     "students": 0
+    },
+    {
+     "url": "https://csp.pharmacy.ufl.edu/graduate/students/",
+     "students": 0
+    },
+    {
+     "url": "https://csp.pharmacy.ufl.edu/academics/graduate-students/",
+     "students": 0
+    }
+   ],
+   "faculty_in_database": 15,
+   "faculty_listed_on_site": 15,
+   "with_email": 15,
+   "with_scholar": 0,
+   "with_research": 15,
+   "with_teaching": 5,
+   "students_found": 0,
+   "notes": []
+  },
+  {
+   "college": "College of Pharmacy",
+   "department": "Medicinal Chemistry Department",
+   "site": "https://pharmacy.ufl.edu/mc",
+   "status": "ok",
+   "faculty_page": "https://mc.pharmacy.ufl.edu/people/faculty/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://mc.pharmacy.ufl.edu/research/faculty-research-areas/",
+     "people": 10
+    },
+    {
+     "url": "https://mc.pharmacy.ufl.edu/research/faculty-research-areas/liu-laboratory-2/",
+     "people": 0
+    },
+    {
+     "url": "https://mc.pharmacy.ufl.edu/research/faculty-research-areas/lueschlab/",
+     "people": 1
+    },
+    {
+     "url": "https://mc.pharmacy.ufl.edu/research/faculty-research-areas/xing-laboratory/",
+     "people": 0
+    },
+    {
+     "url": "https://mc.pharmacy.ufl.edu/people/faculty/",
+     "people": 26
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://mc.pharmacy.ufl.edu/people/current-students-postdocs/",
+     "students": 0
+    },
+    {
+     "url": "https://pharmacy.ufl.edu/mc/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://pharmacy.ufl.edu/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://pharmacy.ufl.edu/mc/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://pharmacy.ufl.edu/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://pharmacy.ufl.edu/mc/students/",
+     "students": 0
+    }
+   ],
+   "faculty_in_database": 26,
+   "faculty_listed_on_site": 37,
+   "with_email": 26,
+   "with_scholar": 0,
+   "with_research": 26,
+   "with_teaching": 3,
+   "students_found": 0,
+   "notes": []
+  },
+  {
+   "college": "College of Pharmacy",
+   "department": "Pharmaceutical Outcomes and Policy Department",
+   "site": "https://pop.pharmacy.ufl.edu/",
+   "status": "ok",
+   "faculty_page": "https://pop.pharmacy.ufl.edu/people/affiliate-professors/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://pop.pharmacy.ufl.edu/people/faculty/",
+     "people": 17
+    },
+    {
+     "url": "https://pop.pharmacy.ufl.edu/people/faculty-emeritus/",
+     "people": 5
+    },
+    {
+     "url": "https://pop.pharmacy.ufl.edu/people/affiliate-professors/",
+     "people": 23
+    },
+    {
+     "url": "https://pop.pharmacy.ufl.edu/people/",
+     "people": 0
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://pop.pharmacy.ufl.edu/people/students/",
+     "students": 0
+    },
+    {
+     "url": "https://pop.pharmacy.ufl.edu/people/students/phd-students/",
+     "students": 1
+    }
+   ],
+   "faculty_in_database": 45,
+   "faculty_listed_on_site": 45,
+   "with_email": 44,
+   "with_scholar": 1,
+   "with_research": 45,
+   "with_teaching": 8,
+   "students_found": 1,
+   "notes": []
+  },
+  {
+   "college": "College of Pharmacy",
+   "department": "Pharmaceutics Department",
+   "site": "https://pharmacy.ufl.edu/pc",
+   "status": "unreachable",
+   "faculty_page": "",
+   "faculty_pages_tried": [],
+   "student_pages_tried": [],
+   "faculty_in_database": 0,
+   "faculty_listed_on_site": 0,
+   "with_email": 0,
+   "with_scholar": 0,
+   "with_research": 0,
+   "with_teaching": 0,
+   "students_found": 0,
+   "notes": [
+    "department website did not load"
+   ]
+  },
+  {
+   "college": "College of Pharmacy",
+   "department": "Pharmacotherapy and Translational Research Department",
+   "site": "https://ptr.pharmacy.ufl.edu/",
+   "status": "ok",
+   "faculty_page": "https://ptr.pharmacy.ufl.edu/about/faculty/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://ptr.pharmacy.ufl.edu/about/faculty/",
+     "people": 28
+    },
+    {
+     "url": "https://cancer.ufl.edu/2026/08/03/researchers-develop-new-drug-for-aggressive-leukemias/",
+     "people": 0
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://ptr.pharmacy.ufl.edu/about/post-doctoral-associatesresidents/",
+     "students": 0
+    },
+    {
+     "url": "https://ptr.pharmacy.ufl.edu/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://ptr.pharmacy.ufl.edu/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://ptr.pharmacy.ufl.edu/students/",
+     "students": 0
+    },
+    {
+     "url": "https://ptr.pharmacy.ufl.edu/people/students/",
+     "students": 0
+    },
+    {
+     "url": "https://ptr.pharmacy.ufl.edu/graduate/students/",
+     "students": 0
+    }
+   ],
+   "faculty_in_database": 28,
+   "faculty_listed_on_site": 28,
+   "with_email": 28,
+   "with_scholar": 0,
+   "with_research": 28,
+   "with_teaching": 7,
+   "students_found": 0,
+   "notes": []
+  },
+  {
+   "college": "College of Public Health and Health Professions",
+   "department": "College of PHHP Interdisciplinary Programs",
+   "site": "",
+   "status": "no_site",
+   "faculty_page": "",
+   "faculty_pages_tried": [],
+   "student_pages_tried": [],
+   "faculty_in_database": 0,
+   "faculty_listed_on_site": 0,
+   "with_email": 0,
+   "with_scholar": 0,
+   "with_research": 0,
+   "with_teaching": 0,
+   "students_found": 0,
+   "notes": [
+    "no department website found on the catalog page"
+   ]
+  },
+  {
+   "college": "College of Public Health and Health Professions",
+   "department": "Biostatistics",
+   "site": "https://biostat.ufl.edu/education/phd-in-biostatistics/curriculum-overview/",
+   "status": "ok",
+   "faculty_page": "https://phhp.ufl.edu/academics/phd-and-professional-programs/rehabilitation-science-doctorate/program-overview/program-faculty/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://phhp.ufl.edu/about/phhp-faculty-and-staff/",
+     "people": 7
+    },
+    {
+     "url": "https://phhp.ufl.edu/academics/phd-and-professional-programs/rehabilitation-science-doctorate/program-overview/program-faculty/",
+     "people": 47
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://phhp.ufl.edu/academics/phd-and-professional-programs/public-health-phd/phd-public-health-environmental-health/meet-our-environmental-health-phd-students/",
+     "students": 0
+    },
+    {
+     "url": "https://phhp.ufl.edu/academics/phd-and-professional-programs/public-health-phd/phd-public-health-one-health/meet-our-one-health-phd-students/",
+     "students": 0
+    },
+    {
+     "url": "https://phhp.ufl.edu/academics/phd-and-professional-programs/public-health-phd/phd-public-health-social-and-behavioral-sciences/meet-our-sbs-phd-students/",
+     "students": 0
+    },
+    {
+     "url": "https://biostat.ufl.edu/education/phd-in-biostatistics/curriculum-overview/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://biostat.ufl.edu/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://biostat.ufl.edu/education/phd-in-biostatistics/curriculum-overview/graduate-students/",
+     "students": 0
+    }
+   ],
+   "faculty_in_database": 134,
+   "faculty_listed_on_site": 54,
+   "with_email": 106,
+   "with_scholar": 0,
+   "with_research": 108,
+   "with_teaching": 0,
+   "students_found": 0,
+   "notes": []
+  },
+  {
+   "college": "College of Public Health and Health Professions",
+   "department": "Clinical and Health Psychology",
+   "site": "https://chp.phhp.ufl.edu/",
+   "status": "ok",
+   "faculty_page": "https://phhp.ufl.edu/about/departments/epidemiology/about-the-epi-department/faculty/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://phhp.ufl.edu/about/phhp-faculty-and-staff/",
+     "people": 0
+    },
+    {
+     "url": "https://phhp.ufl.edu/about/departments/biostatistics/about/faculty/",
+     "people": 0
+    },
+    {
+     "url": "https://phhp.ufl.edu/about/departments/environmental-and-global-health/about-egh-department/faculty/",
+     "people": 0
+    },
+    {
+     "url": "https://phhp.ufl.edu/about/departments/epidemiology/about-the-epi-department/faculty/",
+     "people": 23
+    },
+    {
+     "url": "https://phhp.ufl.edu/about/departments/health-services-research-management-and-policy/faculty/",
+     "people": 18
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://chp.phhp.ufl.edu/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://chp.phhp.ufl.edu/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://chp.phhp.ufl.edu/students/",
+     "students": 0
+    },
+    {
+     "url": "https://chp.phhp.ufl.edu/people/students/",
+     "students": 0
+    },
+    {
+     "url": "https://chp.phhp.ufl.edu/graduate/students/",
+     "students": 0
+    },
+    {
+     "url": "https://chp.phhp.ufl.edu/academics/graduate-students/",
+     "students": 0
+    }
+   ],
+   "faculty_in_database": 71,
+   "faculty_listed_on_site": 41,
+   "with_email": 41,
+   "with_scholar": 0,
+   "with_research": 41,
+   "with_teaching": 0,
+   "students_found": 0,
+   "notes": []
+  },
+  {
+   "college": "College of Public Health and Health Professions",
+   "department": "Environmental and Global Health",
+   "site": "https://egh.phhp.ufl.edu/",
+   "status": "unreachable",
+   "faculty_page": "",
+   "faculty_pages_tried": [],
+   "student_pages_tried": [],
+   "faculty_in_database": 13,
+   "faculty_listed_on_site": 0,
+   "with_email": 0,
+   "with_scholar": 0,
+   "with_research": 0,
+   "with_teaching": 0,
+   "students_found": 0,
+   "notes": [
+    "department website did not load"
+   ]
+  },
+  {
+   "college": "College of Public Health and Health Professions",
+   "department": "Epidemiology",
+   "site": "https://epidemiology.phhp.ufl.edu/",
+   "status": "unreachable",
+   "faculty_page": "",
+   "faculty_pages_tried": [],
+   "student_pages_tried": [],
+   "faculty_in_database": 95,
+   "faculty_listed_on_site": 0,
+   "with_email": 86,
+   "with_scholar": 2,
+   "with_research": 86,
+   "with_teaching": 3,
+   "students_found": 0,
+   "notes": [
+    "department website did not load"
+   ]
+  },
+  {
+   "college": "College of Public Health and Health Professions",
+   "department": "Health Services Research, Management and Policy",
+   "site": "https://hsrmp.phhp.ufl.edu/",
+   "status": "unreachable",
+   "faculty_page": "",
+   "faculty_pages_tried": [],
+   "student_pages_tried": [],
+   "faculty_in_database": 0,
+   "faculty_listed_on_site": 0,
+   "with_email": 0,
+   "with_scholar": 0,
+   "with_research": 0,
+   "with_teaching": 0,
+   "students_found": 0,
+   "notes": [
+    "department website did not load"
+   ]
+  },
+  {
+   "college": "College of Public Health and Health Professions",
+   "department": "Speech, Language, and Hearing Sciences",
+   "site": "",
+   "status": "no_site",
+   "faculty_page": "",
+   "faculty_pages_tried": [],
+   "student_pages_tried": [],
+   "faculty_in_database": 0,
+   "faculty_listed_on_site": 0,
+   "with_email": 0,
+   "with_scholar": 0,
+   "with_research": 0,
+   "with_teaching": 0,
+   "students_found": 0,
+   "notes": [
+    "no department website found on the catalog page"
+   ]
+  },
+  {
+   "college": "College of Veterinary Medicine",
+   "department": "Comparative Biomedical Sciences",
+   "site": "",
+   "status": "no_site",
+   "faculty_page": "",
+   "faculty_pages_tried": [],
+   "student_pages_tried": [],
+   "faculty_in_database": 0,
+   "faculty_listed_on_site": 0,
+   "with_email": 0,
+   "with_scholar": 0,
+   "with_research": 0,
+   "with_teaching": 0,
+   "students_found": 0,
+   "notes": [
+    "no department website found on the catalog page"
+   ]
+  },
+  {
+   "college": "College of Veterinary Medicine",
+   "department": "Preventive Veterinary Medicine",
+   "site": "",
+   "status": "no_site",
+   "faculty_page": "",
+   "faculty_pages_tried": [],
+   "student_pages_tried": [],
+   "faculty_in_database": 0,
+   "faculty_listed_on_site": 0,
+   "with_email": 0,
+   "with_scholar": 0,
+   "with_research": 0,
+   "with_teaching": 0,
+   "students_found": 0,
+   "notes": [
+    "no department website found on the catalog page"
+   ]
+  },
+  {
+   "college": "College of Veterinary Medicine",
+   "department": "Veterinary Medical Sciences",
+   "site": "https://www.vetmed.ufl.edu/about-the-college/directory/",
+   "status": "ok",
+   "faculty_page": "https://www.vetmed.ufl.edu/about-the-college/directory/",
+   "faculty_pages_tried": [
+    {
+     "url": "https://facultycouncil.vetmed.ufl.edu/",
+     "people": 0
+    },
+    {
+     "url": "https://www.vetmed.ufl.edu/about-the-college/directory/",
+     "people": 193
+    },
+    {
+     "url": "https://www.vetmed.ufl.edu/about-the-college/directory/people/",
+     "people": 0
+    },
+    {
+     "url": "https://www.vetmed.ufl.edu/people/",
+     "people": 0
+    },
+    {
+     "url": "https://www.vetmed.ufl.edu/about-the-college/directory/faculty/",
+     "people": 0
+    },
+    {
+     "url": "https://www.vetmed.ufl.edu/faculty/",
+     "people": 0
+    },
+    {
+     "url": "https://www.vetmed.ufl.edu/about-the-college/directory/people/faculty/",
+     "people": 0
+    },
+    {
+     "url": "https://www.vetmed.ufl.edu/people/faculty/",
+     "people": 0
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://www.vetmed.ufl.edu/about-the-college/directory/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://www.vetmed.ufl.edu/people/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://www.vetmed.ufl.edu/about-the-college/directory/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://www.vetmed.ufl.edu/graduate-students/",
+     "students": 0
+    },
+    {
+     "url": "https://www.vetmed.ufl.edu/about-the-college/directory/students/",
+     "students": 0
+    },
+    {
+     "url": "https://www.vetmed.ufl.edu/students/",
+     "students": 0
+    }
+   ],
+   "faculty_in_database": 193,
+   "faculty_listed_on_site": 193,
+   "with_email": 193,
+   "with_scholar": 0,
+   "with_research": 193,
+   "with_teaching": 11,
+   "students_found": 0,
+   "notes": []
+  },
+  {
+   "college": "Levin College of Law",
+   "department": "Levin College of Law",
+   "site": "https://www.law.ufl.edu/",
+   "status": "ok",
+   "faculty_page": "https://www.law.ufl.edu/faculty",
+   "faculty_pages_tried": [
+    {
+     "url": "https://www.law.ufl.edu/faculty",
+     "people": 146
+    },
+    {
+     "url": "https://law.ufl.edu/faculty-research/",
+     "people": 1
+    },
+    {
+     "url": "https://law.ufl.edu/faculty/",
+     "people": 146
+    },
+    {
+     "url": "https://law.ufl.edu/faculty-research/new-faculty/",
+     "people": 40
+    }
+   ],
+   "student_pages_tried": [
+    {
+     "url": "https://law.ufl.edu/student-life/",
+     "students": 11
+    }
+   ],
+   "faculty_in_database": 148,
+   "faculty_listed_on_site": 148,
+   "with_email": 140,
+   "with_scholar": 2,
+   "with_research": 52,
+   "with_teaching": 14,
+   "students_found": 11,
+   "notes": []
+  }
+ ],
+ "totals": {
+  "faculty": 5422,
+  "students": 1006,
+  "with_email": 2662,
+  "with_scholar": 215,
+  "with_research": 2566,
+  "with_teaching": 213,
+  "with_students": 145,
+  "with_college": 4497
+ },
+ "errors": [
+  {
+   "url": "https://fycs.ifas.ufl.edu/people/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://agronomy.ifas.ufl.edu/people/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://fycs.ifas.ufl.edu/faculty/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://agronomy.ifas.ufl.edu/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://fycs.ifas.ufl.edu/people/faculty/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://agronomy.ifas.ufl.edu/people/students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://fycs.ifas.ufl.edu/about/people/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://aec.ifas.ufl.edu/faculty/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://hos.ufl.edu/",
+   "error": "SSLError"
+  },
+  {
+   "url": "https://fycs.ifas.ufl.edu/faculty-staff/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://www.fred.ifas.ufl.edu/",
+   "error": "SSLError"
+  },
+  {
+   "url": "https://aec.ifas.ufl.edu/people/faculty/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://agronomy.ifas.ufl.edu/graduate/students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://fycs.ifas.ufl.edu/people/faculty-staff/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://aec.ifas.ufl.edu/people/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://fycs.ifas.ufl.edu/our-people/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://aec.ifas.ufl.edu/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://agronomy.ifas.ufl.edu/academics/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://fycs.ifas.ufl.edu/people/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://aec.ifas.ufl.edu/students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://fycs.ifas.ufl.edu/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://aec.ifas.ufl.edu/people/students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://fycs.ifas.ufl.edu/students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://aec.ifas.ufl.edu/graduate/students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://fycs.ifas.ufl.edu/people/students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://aec.ifas.ufl.edu/academics/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://fycs.ifas.ufl.edu/graduate/students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://snre.ifas.ufl.edu/people/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://fycs.ifas.ufl.edu/academics/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://snre.ifas.ufl.edu/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://snre.ifas.ufl.edu/students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://ffgs.ifas.ufl.edu/people/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://snre.ifas.ufl.edu/people/students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://ffgs.ifas.ufl.edu/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://snre.ifas.ufl.edu/graduate/students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://ffgs.ifas.ufl.edu/students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://ffgs.ifas.ufl.edu/people/students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://warrington.ufl.edu/departments/fire",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://ffgs.ifas.ufl.edu/graduate/students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://ffgs.ifas.ufl.edu/academics/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://admissions.dental.ufl.edu/advanced-graduate-programs/programs-application-process/people/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://warrington.ufl.edu/departments/mgt",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://admissions.dental.ufl.edu/people/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://warrington.ufl.edu/departments/mkt",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://admissions.dental.ufl.edu/advanced-graduate-programs/programs-application-process/faculty/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://www.wec.ufl.edu/",
+   "error": "SSLError"
+  },
+  {
+   "url": "https://admissions.dental.ufl.edu/faculty/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://admissions.dental.ufl.edu/advanced-graduate-programs/programs-application-process/people/faculty/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://dcp.ufl.edu/interior/people/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://dcp.ufl.edu/people/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://dcp.ufl.edu/interior/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://dcp.ufl.edu/rinker/research/people/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://dcp.ufl.edu/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://dcp.ufl.edu/rinker/research/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://dcp.ufl.edu/interior/students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://dcp.ufl.edu/rinker/research/students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://dcp.ufl.edu/architecture/people/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://dcp.ufl.edu/architecture/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://dcp.ufl.edu/architecture/students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://admissions.dental.ufl.edu/people/faculty/",
+   "error": "ConnectionError"
+  },
+  {
+   "url": "https://www.dcp.ufl.edu/urp/people/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://www.dcp.ufl.edu/people/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://education.ufl.edu/special-education/people/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://education.ufl.edu/school-teaching-learning/people/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://education.ufl.edu/hdose/people/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://www.dcp.ufl.edu/urp/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://education.ufl.edu/people/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://education.ufl.edu/people/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://education.ufl.edu/people/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://www.dcp.ufl.edu/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://education.ufl.edu/special-education/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://education.ufl.edu/school-teaching-learning/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://education.ufl.edu/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://education.ufl.edu/hdose/faculty/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://education.ufl.edu/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://education.ufl.edu/special-education/students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://education.ufl.edu/hdose/people/faculty/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://education.ufl.edu/school-teaching-learning/students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://www.cise.ufl.edu/academics/grad",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://www.essie.ufl.edu/student_resources/admissions/graduate/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://www.eng.ufl.edu/people/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://che.ufl.edu/people/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://che.ufl.edu/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://www.eng.ufl.edu/faculty/",
+   "error": "blocked by robots.txt"
+  },
+  {
+   "url": "https://www.eng.ufl.edu/academics/degree-programs/people/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://www.eng.ufl.edu/people/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://www.eng.ufl.edu/academics/degree-programs/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://www.eng.ufl.edu/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://www.eng.ufl.edu/academics/degree-programs/students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://www.dcp.ufl.edu/landscape/people/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://www.dcp.ufl.edu/landscape/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://hhp.ufl.edu/about/academics/phd/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://admissions.dental.ufl.edu/advanced-graduate-programs/programs-application-process/directory/",
+   "error": "ConnectionError"
+  },
+  {
+   "url": "https://www.jou.ufl.edu/graduate/research-and-theory/mamc-public-relations/people/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://www.jou.ufl.edu/people/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://www.jou.ufl.edu/graduate/research-and-theory/mamc-public-relations/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://www.jou.ufl.edu/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://www.astro.ufl.edu/academics/graduate-studies/people/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://www.astro.ufl.edu/academics/graduate-studies/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://www.astro.ufl.edu/academics/graduate-studies/students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://www.essie.ufl.edu/people/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://www.chem.ufl.edu/people/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://www.chem.ufl.edu/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://languages.ufl.edu/academics/graduate-studies/people/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://www.chem.ufl.edu/students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://www.essie.ufl.edu/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://languages.ufl.edu/people/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://www.chem.ufl.edu/people/students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://languages.ufl.edu/academics/graduate-studies/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://www.chem.ufl.edu/graduate/students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://wst.ufl.edu/people/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://languages.ufl.edu/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://www.chem.ufl.edu/academics/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://wst.ufl.edu/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://languages.ufl.edu/academics/graduate-studies/students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://languages.ufl.edu/students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://wst.ufl.edu/students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://wst.ufl.edu/people/students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://wst.ufl.edu/graduate/students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://wst.ufl.edu/academics/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://geology.ufl.edu/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://geology.ufl.edu/students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://geology.ufl.edu/people/students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://geology.ufl.edu/graduate/students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://history.ufl.edu/students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://geology.ufl.edu/academics/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://history.ufl.edu/people/students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://www.phys.ufl.edu/academics/graduate/degrees.shtml",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://admissions.dental.ufl.edu/directory/",
+   "error": "ConnectionError"
+  },
+  {
+   "url": "https://history.ufl.edu/graduate/students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://bme.ufl.edu/people/faculty/",
+   "error": "ReadTimeout"
+  },
+  {
+   "url": "https://www.heb.hhp.ufl.edu/",
+   "error": "ConnectTimeout"
+  },
+  {
+   "url": "https://phil.ufl.edu/students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://www.spanishandportuguese.ufl.edu/spanish/graduate.html",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://phil.ufl.edu/people/students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://phil.ufl.edu/graduate/students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://hobi.med.ufl.edu/people/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://hobi.med.ufl.edu/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://www.stat.ufl.edu/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://hobi.med.ufl.edu/academics/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://www.stat.ufl.edu/students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://www.stat.ufl.edu/people/students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://www.stat.ufl.edu/graduate/students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://pharmacy.ufl.edu/mc/people/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://pharmacy.ufl.edu/people/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://pharmacy.ufl.edu/mc/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://pharmacy.ufl.edu/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://phhp.ufl.edu/academics/phd-and-professional-programs/public-health-phd/phd-public-health-one-health/meet-our-one-health-phd-students/",
+   "error": "ConnectionError"
+  },
+  {
+   "url": "https://epidemiology.phhp.ufl.edu/graduate/students/",
+   "error": "ConnectionError"
+  },
+  {
+   "url": "https://cancer.ufl.edu/2026/08/03/researchers-develop-new-drug-for-aggressive-leukemias/",
+   "error": "ConnectionError"
+  },
+  {
+   "url": "https://pharmacy.ufl.edu/pc",
+   "error": "ConnectionError"
+  },
+  {
+   "url": "https://phhp.ufl.edu/about/departments/occupational-therapy/about-ot-department/faculty-and-staff/",
+   "error": "ConnectionError"
+  },
+  {
+   "url": "https://csp.pharmacy.ufl.edu/students/",
+   "error": "ConnectionError"
+  },
+  {
+   "url": "https://pharmacy.ufl.edu/mc/students/",
+   "error": "ConnectionError"
+  },
+  {
+   "url": "https://www.vetmed.ufl.edu/about-the-college/directory/people/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://www.vetmed.ufl.edu/people/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://www.vetmed.ufl.edu/about-the-college/directory/faculty/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://www.vetmed.ufl.edu/faculty/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://www.vetmed.ufl.edu/about-the-college/directory/people/faculty/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://phhp.ufl.edu/academics/phd-and-professional-programs/public-health-phd/phd-public-health-social-and-behavioral-sciences/meet-our-sbs-phd-students/",
+   "error": "ReadTimeout"
+  },
+  {
+   "url": "https://epidemiology.phhp.ufl.edu/",
+   "error": "ConnectionError"
+  },
+  {
+   "url": "https://epidemiology.phhp.ufl.edu/academics/graduate-students/",
+   "error": "ConnectionError"
+  },
+  {
+   "url": "https://csp.pharmacy.ufl.edu/people/students/",
+   "error": "ConnectionError"
+  },
+  {
+   "url": "https://egh.phhp.ufl.edu/",
+   "error": "ConnectionError"
+  },
+  {
+   "url": "https://ptr.pharmacy.ufl.edu/about/post-doctoral-associatesresidents/",
+   "error": "ConnectionError"
+  },
+  {
+   "url": "https://hsrmp.phhp.ufl.edu/",
+   "error": "ConnectionError"
+  },
+  {
+   "url": "https://www.vetmed.ufl.edu/people/faculty/",
+   "error": "ConnectionError"
+  },
+  {
+   "url": "https://phhp.ufl.edu/about/phhp-faculty-and-staff/",
+   "error": "ConnectionError"
+  },
+  {
+   "url": "https://csp.pharmacy.ufl.edu/graduate/students/",
+   "error": "ReadTimeout"
+  },
+  {
+   "url": "https://biostat.ufl.edu/education/phd-in-biostatistics/curriculum-overview/people/graduate-students/",
+   "error": "ReadTimeout"
+  },
+  {
+   "url": "https://ptr.pharmacy.ufl.edu/people/graduate-students/",
+   "error": "ConnectionError"
+  },
+  {
+   "url": "https://www.vetmed.ufl.edu/about-the-college/directory/people/graduate-students/",
+   "error": "ConnectionError"
+  },
+  {
+   "url": "https://phhp.ufl.edu/about/departments/biostatistics/about/faculty/",
+   "error": "ConnectionError"
+  },
+  {
+   "url": "https://csp.pharmacy.ufl.edu/academics/graduate-students/",
+   "error": "ReadTimeout"
+  },
+  {
+   "url": "https://biostat.ufl.edu/people/graduate-students/",
+   "error": "ConnectionError"
+  },
+  {
+   "url": "https://phhp.ufl.edu/about/departments/environmental-and-global-health/about-egh-department/faculty/",
+   "error": "ConnectionError"
+  },
+  {
+   "url": "https://ptr.pharmacy.ufl.edu/graduate-students/",
+   "error": "ConnectionError"
+  },
+  {
+   "url": "https://www.vetmed.ufl.edu/people/graduate-students/",
+   "error": "ConnectionError"
+  },
+  {
+   "url": "https://www.vetmed.ufl.edu/about-the-college/directory/graduate-students/",
+   "error": "ConnectionError"
+  },
+  {
+   "url": "https://ptr.pharmacy.ufl.edu/students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://ptr.pharmacy.ufl.edu/people/students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://ptr.pharmacy.ufl.edu/graduate/students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://www.vetmed.ufl.edu/graduate-students/",
+   "error": "ConnectionError"
+  },
+  {
+   "url": "https://www.vetmed.ufl.edu/about-the-college/directory/students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://www.vetmed.ufl.edu/students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://aec.ifas.ufl.edu/people/adeyinkaayodele@ufl.edu",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://pfs.tnt.aa.ufl.edu/teaching-and-technology-resources/online-proctoring/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://ncbs.ifas.ufl.edu/our-team/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://edis.ifas.ufl.edu/experts/fchapman",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://hort.ifas.ufl.edu/faculty-profiles/ryan-klein/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://hobi.med.ufl.edu/profile/young-alyson/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://www.ece.ufl.edu/people/faculty/joel-b-harley/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://waterinstitute.ufl.edu/faculty/liebold-mathew/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://teach.ufl.edu/open-consultation-sessions/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://portal.clas.ufl.edu/chem--v1/people-2/associated-faculty/sombers-bio/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://dental.ufl.edu/about/people/faculty/community-dentistry-behavioral-science/roger-fillingim/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://afam.clas.ufl.edu/directory/dr-%ef%bb%bfriche-j-daniel-barnes/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://www.cise.ufl.edu/gilbert-juan/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://addictionresearch.health.ufl.edu/faculty/sarah-d-lynne-landsman-ph-d/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://internationalcenter.ufl.edu/about-ufic/staff/sandra-russo-phd",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://phil.ufl.edu/directory/dr-arina-pismenny/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://www.bme.ufl.edu/dept-member/erika-moore-ph-d/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://www.crec.ifas.ufl.edu/",
+   "error": "SSLError"
+  },
+  {
+   "url": "https://aec.ifas.ufl.edu/people/afoley98@ufl.edu",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://ncbs.ifas.ufl.edu/faculty/david-chagaris/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://africa.ufl.edu/people/faculty/emeritus-faculty/berg-2/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://accstr.ufl.edu/",
+   "error": "SSLError"
+  },
+  {
+   "url": "https://dcp.ufl.edu/faculties/jules-bruck/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://portal.clas.ufl.edu/african-studies--v1/directory/marilyn-mickie-swisher/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://aec.ifas.ufl.edu/people/g.graham@ufl.edu",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://users.clas.ufl.edu/aleslie/index.html",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://ncbs.ifas.ufl.edu/faculty/travis-thomas/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://geology.ufl.edu/people/faculty/dr-oana-alexandra-dumitru/",
+   "error": "parse error ProtocolError at response.py:952: ('Connection broken: IncompleteRead(65069 bytes read)', IncompleteRead(65069 byt"
+  },
+  {
+   "url": "https://geog.ufl.edu/directory/dr-brian-child/",
+   "error": "parse error ProtocolError at response.py:952: ('Connection broken: IncompleteRead(65182 bytes read)', IncompleteRead(65182 byt"
+  },
+  {
+   "url": "https://people.clas.ufl.edu/rdholt/",
+   "error": "parse error ReadTimeoutError at response.py:934: HTTPSConnectionPool(host='people.clas.ufl.edu', port=443): Read timed out."
+  },
+  {
+   "url": "https://polisci.ufl.edu/people/lindsey-a-goldberg/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://afam.clas.ufl.edu/faculty-profiles/hilliard-nunnpage/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://aec.ifas.ufl.edu/people/autumn.jackson@ufl.edu",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://fred.ifas.ufl.edu/about/directory/james-ji/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://people.clas.ufl.edu/rkimball/",
+   "error": "parse error ProtocolError at response.py:952: ('Connection broken: IncompleteRead(69136 bytes read)', IncompleteRead(69136 byt"
+  },
+  {
+   "url": "https://geog.ufl.edu/directory/dr-david-keellings/",
+   "error": "parse error ProtocolError at response.py:952: ('Connection broken: IncompleteRead(65182 bytes read)', IncompleteRead(65182 byt"
+  },
+  {
+   "url": "https://religion.ufl.edu/faculty/core/ali-altaf-mian-assistant-professor/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://aec.ifas.ufl.edu/people/teri2003@ufl.edu",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://history.ufl.edu/directory/current-faculty/elizabeth-dale/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://biology.ufl.edu/keith-choe/",
+   "error": "parse error ReadTimeoutError at response.py:934: HTTPSConnectionPool(host='biology.ufl.edu', port=443): Read timed out."
+  },
+  {
+   "url": "https://geology.ufl.edu/directory/dr-jonathan-martin/",
+   "error": "parse error ProtocolError at response.py:952: ('Connection broken: IncompleteRead(77465 bytes read)', IncompleteRead(77465 byt"
+  },
+  {
+   "url": "https://africa.ufl.edu/petroze/",
+   "error": "parse error ReadTimeoutError at response.py:934: HTTPSConnectionPool(host='africa.ufl.edu', port=443): Read timed out."
+  },
+  {
+   "url": "https://geog.ufl.edu/directory/dr-corene-matyas/",
+   "error": "parse error ProtocolError at response.py:952: ('Connection broken: IncompleteRead(69278 bytes read)', IncompleteRead(69278 byt"
+  },
+  {
+   "url": "https://fycs.ifas.ufl.edu/bios/kim-wiley/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://aec.ifas.ufl.edu/people/jilliankennedy@ufl.edu",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://history.ufl.edu/directory/current-faculty/353-2/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://users.clas.ufl.edu/stkroen/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://www.vetmed.ufl.edu/profile/larkin-iske/",
+   "error": "ConnectionError"
+  },
+  {
+   "url": "https://geog.ufl.edu/directory/dr-joann-mossa/",
+   "error": "parse error ProtocolError at response.py:952: ('Connection broken: IncompleteRead(69278 bytes read)', IncompleteRead(69278 byt"
+  },
+  {
+   "url": "https://people.clas.ufl.edu/krigbaum/",
+   "error": "parse error ProtocolError at response.py:952: ('Connection broken: IncompleteRead(65040 bytes read)', IncompleteRead(65040 byt"
+  },
+  {
+   "url": "https://psych.ufl.edu/directory/dr-laura-shambaugh/",
+   "error": "parse error ProtocolError at response.py:952: ('Connection broken: IncompleteRead(65134 bytes read)', IncompleteRead(65134 byt"
+  },
+  {
+   "url": "https://biology.ufl.edu/mjcohn/",
+   "error": "parse error ProtocolError at response.py:952: ('Connection broken: IncompleteRead(65071 bytes read)', IncompleteRead(65071 byt"
+  },
+  {
+   "url": "https://aec.ifas.ufl.edu/people/sarahmarc@ufl.edu",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://history.ufl.edu/directory/natalia-aleksiun/",
+   "error": "parse error ReadTimeoutError at response.py:934: HTTPSConnectionPool(host='history.ufl.edu', port=443): Read timed out."
+  },
+  {
+   "url": "https://geog.ufl.edu/directory/dr-esther-mullens/",
+   "error": "parse error ProtocolError at response.py:952: ('Connection broken: IncompleteRead(65182 bytes read)', IncompleteRead(65182 byt"
+  },
+  {
+   "url": "https://geology.ufl.edu/directory/dr-john-m-jaeger/",
+   "error": "parse error ProtocolError at response.py:952: ('Connection broken: IncompleteRead(69273 bytes read)', IncompleteRead(69273 byt"
+  },
+  {
+   "url": "https://people.clas.ufl.edu/coverdev/",
+   "error": "parse error ProtocolError at response.py:952: ('Connection broken: IncompleteRead(65040 bytes read)', IncompleteRead(65040 byt"
+  },
+  {
+   "url": "https://biology.ufl.edu/ecdavis/",
+   "error": "parse error ReadTimeoutError at response.py:934: HTTPSConnectionPool(host='biology.ufl.edu', port=443): Read timed out."
+  },
+  {
+   "url": "https://www.jou.ufl.edu/staff/haoran-chris-chu/",
+   "error": "parse error ProtocolError at response.py:952: ('Connection broken: IncompleteRead(72760 bytes read)', IncompleteRead(72760 byt"
+  },
+  {
+   "url": "https://mae.ufl.edu/people/name/cristian-cardenas-lailhacar/",
+   "error": "parse error ProtocolError at response.py:952: ('Connection broken: IncompleteRead(73472 bytes read)', IncompleteRead(73472 byt"
+  },
+  {
+   "url": "https://history.ufl.edu/directory/current-faculty/ben-wise/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://aec.ifas.ufl.edu/people/jessicapastran@ufl.edu",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://geog.ufl.edu/directory/dr-francisca-javiera-rudolph/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://geology.ufl.edu/directory/dr-joseph-meert/",
+   "error": "parse error ProtocolError at response.py:952: ('Connection broken: IncompleteRead(69273 bytes read)', IncompleteRead(69273 byt"
+  },
+  {
+   "url": "https://history.ufl.edu/directory/olivia-barnard/",
+   "error": "parse error ProtocolError at response.py:952: ('Connection broken: IncompleteRead(69272 bytes read)', IncompleteRead(69272 byt"
+  },
+  {
+   "url": "https://people.clas.ufl.edu/pilyugin/",
+   "error": "parse error ProtocolError at response.py:952: ('Connection broken: IncompleteRead(65040 bytes read)', IncompleteRead(65040 byt"
+  },
+  {
+   "url": "https://www.jou.ufl.edu/staff/roxane-coche/",
+   "error": "parse error ProtocolError at response.py:952: ('Connection broken: IncompleteRead(72760 bytes read)', IncompleteRead(72760 byt"
+  },
+  {
+   "url": "https://history.ufl.edu/directory/seth-bernstein/",
+   "error": "parse error ProtocolError at response.py:952: ('Connection broken: IncompleteRead(65177 bytes read)', IncompleteRead(65177 byt"
+  },
+  {
+   "url": "https://people.clas.ufl.edu/josemi/",
+   "error": "parse error ProtocolError at response.py:952: ('Connection broken: IncompleteRead(65046 bytes read)', IncompleteRead(65046 byt"
+  },
+  {
+   "url": "https://geog.ufl.edu/directory/dr-sadie-j-ryan/",
+   "error": "parse error ProtocolError at response.py:952: ('Connection broken: IncompleteRead(65182 bytes read)', IncompleteRead(65182 byt"
+  },
+  {
+   "url": "https://geog.ufl.edu/directory/dr-cynthia-s-simmons/",
+   "error": "parse error ProtocolError at response.py:952: ('Connection broken: IncompleteRead(65182 bytes read)', IncompleteRead(65182 byt"
+  },
+  {
+   "url": "https://history.ufl.edu/directory/fernanda-bretones-lane/",
+   "error": "parse error ReadTimeoutError at response.py:934: HTTPSConnectionPool(host='history.ufl.edu', port=443): Read timed out."
+  },
+  {
+   "url": "https://geology.ufl.edu/directory/dr-mark-brenner/",
+   "error": "parse error ProtocolError at response.py:952: ('Connection broken: IncompleteRead(65177 bytes read)', IncompleteRead(65177 byt"
+  },
+  {
+   "url": "https://biology.ufl.edu/directory/robert-holt/",
+   "error": "parse error ProtocolError at response.py:952: ('Connection broken: IncompleteRead(52888 bytes read)', IncompleteRead(52888 byt"
+  },
+  {
+   "url": "https://mae.ufl.edu/people/name/jacob-chung/",
+   "error": "parse error ProtocolError at response.py:952: ('Connection broken: IncompleteRead(73472 bytes read)', IncompleteRead(73472 byt"
+  },
+  {
+   "url": "https://fmel.ifas.ufl.edu/faculty/l-campbell/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://wec.ifas.ufl.edu/people/wec-faculty/brett-scheffers/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://people.clas.ufl.edu/rserra/",
+   "error": "parse error ProtocolError at response.py:952: ('Connection broken: IncompleteRead(65046 bytes read)', IncompleteRead(65046 byt"
+  },
+  {
+   "url": "https://www.jou.ufl.edu/staff/juliana-fernandes/",
+   "error": "parse error ProtocolError at response.py:952: ('Connection broken: IncompleteRead(72760 bytes read)', IncompleteRead(72760 byt"
+  },
+  {
+   "url": "https://geology.ufl.edu/directory/dr-chelsea-comans/",
+   "error": "parse error ProtocolError at response.py:952: ('Connection broken: IncompleteRead(69272 bytes read)', IncompleteRead(69272 byt"
+  },
+  {
+   "url": "https://mae.ufl.edu/people/name/john-conklin/",
+   "error": "parse error ReadTimeoutError at response.py:934: HTTPSConnectionPool(host='mae.ufl.edu', port=443): Read timed out."
+  },
+  {
+   "url": "https://soccrim.clas.ufl.edu/directory/sociology/borg/",
+   "error": "parse error ReadTimeoutError at response.py:934: HTTPSConnectionPool(host='soccrim.clas.ufl.edu', port=443): Read timed out."
+  },
+  {
+   "url": "https://geog.ufl.edu/directory/dr-jane-southworth/",
+   "error": "parse error ReadTimeoutError at response.py:934: HTTPSConnectionPool(host='geog.ufl.edu', port=443): Read timed out."
+  },
+  {
+   "url": "https://biology.ufl.edu/malcmaden/",
+   "error": "parse error ReadTimeoutError at response.py:934: HTTPSConnectionPool(host='biology.ufl.edu', port=443): Read timed out."
+  },
+  {
+   "url": "https://history.ufl.edu/directory/david-a-canton/",
+   "error": "parse error ReadTimeoutError at response.py:934: HTTPSConnectionPool(host='history.ufl.edu', port=443): Read timed out."
+  },
+  {
+   "url": "https://geog.ufl.edu/faculty/emeritus/mcdade-gordon/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://geology.ufl.edu/directory/dr-jason-h-curtis/",
+   "error": "parse error ReadTimeoutError at response.py:934: HTTPSConnectionPool(host='geology.ufl.edu', port=443): Read timed out."
+  },
+  {
+   "url": "https://people.clas.ufl.edu/dasmith/",
+   "error": "parse error ReadTimeoutError at response.py:934: HTTPSConnectionPool(host='people.clas.ufl.edu', port=443): Read timed out."
+  },
+  {
+   "url": "https://www.jou.ufl.edu/staff/rebecca-frazer/",
+   "error": "parse error ProtocolError at response.py:952: ('Connection broken: IncompleteRead(72760 bytes read)', IncompleteRead(72760 byt"
+  },
+  {
+   "url": "https://people.clas.ufl.edu/thiele/",
+   "error": "parse error ReadTimeoutError at response.py:934: HTTPSConnectionPool(host='people.clas.ufl.edu', port=443): Read timed out."
+  },
+  {
+   "url": "https://biology.ufl.edu/directory/zepeng-yao/",
+   "error": "parse error ProtocolError at response.py:952: ('Connection broken: IncompleteRead(69272 bytes read)', IncompleteRead(69272 byt"
+  },
+  {
+   "url": "https://polisci.ufl.edu/directory/andrew-janusz/",
+   "error": "parse error ProtocolError at response.py:952: ('Connection broken: IncompleteRead(77465 bytes read)', IncompleteRead(77465 byt"
+  },
+  {
+   "url": "https://history.ufl.edu/directory/tyler-c-cline/",
+   "error": "parse error ProtocolError at response.py:952: ('Connection broken: IncompleteRead(48793 bytes read)', IncompleteRead(48793 byt"
+  },
+  {
+   "url": "https://soccrim.clas.ufl.edu/directory/sociology/koropeckyj-cox/",
+   "error": "parse error ProtocolError at response.py:952: ('Connection broken: IncompleteRead(65056 bytes read)', IncompleteRead(65056 byt"
+  },
+  {
+   "url": "https://www.jou.ufl.edu/staff/rachel-grant/",
+   "error": "parse error ProtocolError at response.py:952: ('Connection broken: IncompleteRead(72760 bytes read)', IncompleteRead(72760 byt"
+  },
+  {
+   "url": "https://biology.ufl.edu/juannan-zhou/",
+   "error": "parse error ReadTimeoutError at response.py:934: HTTPSConnectionPool(host='biology.ufl.edu', port=443): Read timed out."
+  },
+  {
+   "url": "https://polisci.ufl.edu/directory/nicholas-kerr/",
+   "error": "parse error ReadTimeoutError at response.py:934: HTTPSConnectionPool(host='polisci.ufl.edu', port=443): Read timed out."
+  },
+  {
+   "url": "https://geog.ufl.edu/directory/dr-kevin-ash/",
+   "error": "parse error ReadTimeoutError at response.py:934: HTTPSConnectionPool(host='geog.ufl.edu', port=443): Read timed out."
+  },
+  {
+   "url": "https://soccrim.clas.ufl.edu/directory/sociology/charles-peek/",
+   "error": "parse error ReadTimeoutError at response.py:934: HTTPSConnectionPool(host='soccrim.clas.ufl.edu', port=443): Read timed out."
+  },
+  {
+   "url": "https://history.ufl.edu/directory/alyssa-p-cole/",
+   "error": "parse error ReadTimeoutError at response.py:934: HTTPSConnectionPool(host='history.ufl.edu', port=443): Read timed out."
+  },
+  {
+   "url": "https://biology.ufl.edu/wp-content/uploads/sites/25/",
+   "error": "HTTP 403"
+  },
+  {
+   "url": "https://hhp.ufl.edu/hhp/directory/james-cauraugh/",
+   "error": "parse error ReadTimeoutError at response.py:934: HTTPSConnectionPool(host='hhp.ufl.edu', port=443): Read timed out."
+  },
+  {
+   "url": "https://www.jou.ufl.edu/staff/jeongmin-ham/",
+   "error": "parse error ReadTimeoutError at response.py:934: HTTPSConnectionPool(host='www.jou.ufl.edu', port=443): Read timed out."
+  },
+  {
+   "url": "https://geology.ufl.edu/directory/dr-oana-dumitru/",
+   "error": "parse error ReadTimeoutError at response.py:934: HTTPSConnectionPool(host='geology.ufl.edu', port=443): Read timed out."
+  },
+  {
+   "url": "https://geog.ufl.edu/directory/dr-david-beilman/",
+   "error": "parse error ReadTimeoutError at response.py:934: HTTPSConnectionPool(host='geog.ufl.edu', port=443): Read timed out."
+  },
+  {
+   "url": "https://law.ufl.edu/faculty/iris-a-burke/",
+   "error": "parse error ReadTimeoutError at response.py:934: HTTPSConnectionPool(host='law.ufl.edu', port=443): Read timed out."
+  },
+  {
+   "url": "https://geology.ufl.edu/directory/dr-stephen-m-elardo/",
+   "error": "parse error ReadTimeoutError at response.py:934: HTTPSConnectionPool(host='geology.ufl.edu', port=443): Read timed out."
+  },
+  {
+   "url": "https://history.ufl.edu/directory/max-deardorff/",
+   "error": "parse error ReadTimeoutError at response.py:934: HTTPSConnectionPool(host='history.ufl.edu', port=443): Read timed out."
+  },
+  {
+   "url": "https://people.clas.ufl.edu/hvz/",
+   "error": "parse error ReadTimeoutError at response.py:934: HTTPSConnectionPool(host='people.clas.ufl.edu', port=443): Read timed out."
+  },
+  {
+   "url": "https://history.ufl.edu/directory/james-gerien-chen/",
+   "error": "parse error ReadTimeoutError at response.py:934: HTTPSConnectionPool(host='history.ufl.edu', port=443): Read timed out."
+  },
+  {
+   "url": "https://soccrim.clas.ufl.edu/justin_burnworth/",
+   "error": "parse error ReadTimeoutError at response.py:934: HTTPSConnectionPool(host='soccrim.clas.ufl.edu', port=443): Read timed out."
+  },
+  {
+   "url": "https://biology.ufl.edu/mlwayne/",
+   "error": "parse error ReadTimeoutError at response.py:934: HTTPSConnectionPool(host='biology.ufl.edu', port=443): Read timed out."
+  },
+  {
+   "url": "https://geology.ufl.edu/directory/dr-alessandro-m-forte/",
+   "error": "parse error ProtocolError at response.py:952: ('Connection broken: IncompleteRead(65177 bytes read)', IncompleteRead(65177 byt"
+  },
+  {
+   "url": "https://polisci.ufl.edu/directory/stacey-liou/",
+   "error": "parse error ReadTimeoutError at response.py:934: HTTPSConnectionPool(host='polisci.ufl.edu', port=443): Read timed out."
+  },
+  {
+   "url": "https://history.ufl.edu/directory/paige-glotzer/",
+   "error": "parse error ProtocolError at response.py:952: ('Connection broken: IncompleteRead(65176 bytes read)', IncompleteRead(65176 byt"
+  }
+ ]
+}
