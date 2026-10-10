@@ -111,6 +111,12 @@ def clean_areas(rec):
             continue
         if f in UNIT_NAMES:
             continue
+        if re.match(r"^(m\.?s\.?|ph\.?d\.?|b\.?s\.?|b\.?a\.?|m\.?a\.?|pharm\.?d\.?|d\.?v\.?m\.?|j\.?d\.?|m\.?b\.?a\.?)\s*[:.,]?(\s|$)", a, re.I):
+            continue  # degree lines from a CV: "M.S.: University of Florida, Animal Sciences"
+        if re.search(r"\b(assistant|associate|emeritus|distinguished|clinical|research|courtesy|adjunct|affiliate)?\s*professors?\b( of| emerit\w+)?", f) and len(f.split()) <= 5:
+            continue
+        if re.fullmatch(r"home ?page|no photo available|courses taught|mentor|mentors|personal website|lab website|lab page", f):
+            continue
         seen.add(f)
         out.append(a)
     return out
@@ -138,6 +144,20 @@ def clean_title(rec):
     if re.search(r"graduate faculty status|dean'?s office$", t, re.I):
         t = ""
     return t
+
+
+NOT_A_PERSON = {
+    "schedule", "consultation", "canvas", "info", "information", "abroad", "assists", "center", "centre", "services", "support",
+    "office", "help", "request", "apply", "contact", "resources", "registration", "scholarship", "scholarships", "calendar", "faq",
+    "faqs", "policy", "policies", "guide", "handbook", "training", "workshop", "workshops", "tutorial", "events", "news",
+    "directory", "portal", "system", "technology", "it", "admissions", "advising", "career", "careers", "internship", "internships",
+    "giving", "donate", "alumni", "study", "login", "welcome", "consulting", "lab", "program", "programs", "department", "institute",
+}
+
+
+def is_not_a_person(rec):
+    toks = set(re.findall(r"[a-z]+", fold(rec["name"])))
+    return bool(toks & NOT_A_PERSON) or len(rec["affiliations"]) >= 8 and not rec.get("title") and not rec.get("email")
 
 
 def is_staff(rec):
@@ -213,6 +233,8 @@ def finalize(records, units):
         r["research_areas"] = clean_areas(r)
         r["teaching"] = clean_teaching(r)
         r["extension"] = [e for e in (unescape(x) for x in r.get("extension", [])) if e and not TEACH_JUNK.search(e) and len(e) < 200]
+        if is_not_a_person(r):
+            continue
         if is_staff(r) and not r["research_areas"] and not r["google_scholar"]:
             continue
         r.pop("_cat_dept", None)
@@ -231,24 +253,10 @@ def _richness(r):
     return (bool(r.get("profile_url")), len(r.get("research_areas", [])) + len(r.get("teaching", [])), bool(r.get("email")))
 
 
-def _poor(r):
-    """A bare listing card or catalog row: no e-mail, no research, nothing to contradict another record of the same name."""
-    return not (r.get("email") or r.get("research_areas") or r.get("teaching") or r.get("google_scholar"))
-
-
 def _same_person(a, b):
-    if _poor(a) or _poor(b):
-        return True
+    """Records are grouped by first+last name already; two different e-mail addresses mean two people."""
     ea, eb = (a.get("email") or "").lower(), (b.get("email") or "").lower()
-    if ea and eb:
-        return ea == eb
-    if not a.get("profile_url") or not b.get("profile_url"):  # a bare listing card or catalog row for a known person
-        depts_a = {_norm_unit(x.get("department", "")) for x in a.get("affiliations", [])} | {_norm_unit(a.get("department", ""))}
-        depts_b = {_norm_unit(x.get("department", "")) for x in b.get("affiliations", [])} | {_norm_unit(b.get("department", ""))}
-        shared = any(x.get("shared") for x in a.get("affiliations", []) + b.get("affiliations", []))
-        return bool((depts_a & depts_b - {""}) or shared or a.get("_cat_dept") or b.get("_cat_dept")) or \
-            (a.get("college") and a.get("college") == b.get("college"))
-    return False
+    return not (ea and eb) or ea == eb
 
 
 def _combine(cluster):
@@ -314,9 +322,13 @@ STUDENT_JUNK = re.compile(
 BUILDING = re.compile(r"\b(hall|building|bldg|center|centre|library|room)\b\s*\d*$", re.I)
 
 
+SENTENCE_WORDS = re.compile(r"\b(this|that|who|welcome|congratulations|joined|joins)\b", re.I)
+
+
 def student_name_ok(name):
     n = squash(name)
-    return bool(n) and not STUDENT_JUNK.search(n) and not BUILDING.search(n)
+    return bool(n) and not STUDENT_JUNK.search(n) and not BUILDING.search(n) and not re.match(r"^(dr|prof|professor)\b\.?", n, re.I) \
+        and not SENTENCE_WORDS.search(n)
 
 
 def clean_students(students):

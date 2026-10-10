@@ -85,3 +85,15 @@ def test_bare_catalog_row_merges_into_the_crawled_profile():
     row = rec("Monika Ardelt", department="Sociology and Criminology & Law", affiliations=[])
     out = finalize([row, full], UNITS)
     assert len(out) == 1 and out[0]["email"] == "ardelt@ufl.edu" and out[0]["research_areas"] == ["Aging"]
+
+
+def test_more_noise_rules():
+    from atlas.clean import student_name_ok
+    r = rec("Jo Park", research_areas=["M.S.: University of Florida, Animal Sciences", "Ph.D.: AMCB Student", "Professor of Law", "Home Page",
+                                       "ecology", "Machine Learning"])
+    assert finalize([r], UNITS)[0]["research_areas"] == ["ecology", "Machine Learning"]
+    assert finalize([rec("Schedule Consultation"), rec("Pat Kay")], UNITS)[0]["name"] == "Pat Kay"
+    assert not student_name_ok("Dr. Jules Bruck This July") and student_name_ok("Will Smith")
+    a = rec("Jessica Allen", email="jessal@ufl.edu", research_areas=["Biomechanics"])
+    b = rec("Jessica Allen", research_areas=["Biomechanics", "Rehabilitation"], profile_url="https://x.ufl.edu/a")
+    assert len(finalize([a, b], UNITS)) == 1

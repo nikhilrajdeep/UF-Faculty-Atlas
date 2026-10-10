@@ -972,7 +972,9 @@ def parse_catalog_roster(html):
         dept = ""
         if pos + 1 < len(cands):
             poss = cands[pos + 1]
-            if len(poss) < 120 and not CATALOG_RANK.match(poss) and "," not in poss:
+            following = lines[i + 1 + pos + 2] if i + 1 + pos + 2 < len(lines) else ""
+            next_is_person = "," in poss and bool(CATALOG_RANK.match(following))  # 'Last, First' then its rank line
+            if len(poss) < 120 and not CATALOG_RANK.match(poss) and not next_is_person:
                 dept = poss
         out[re.sub("[^a-z0-9]", "", name.lower())] = {"name": display_name(name), "catalog_name": name, "title": cands[pos], "department": dept}
     return list(out.values())
