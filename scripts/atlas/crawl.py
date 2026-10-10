@@ -13,6 +13,7 @@ from pathlib import Path
 from urllib.parse import urljoin, urlparse
 
 from . import parsers as P
+from .clean import finalize
 from .fetch import Fetcher
 from .names import display_name, fold, last_name, name_key, squash
 from .publish import push_status, read_json
@@ -425,8 +426,14 @@ def build_records(results, baseline, units):
     college_of = {norm_unit(u["name"]): u["college"] for u in units}
     by_profile, by_key = {}, {}
     records = []
+    page_use = {}
+    for res in results:
+        pg = res["info"].get("chosen_faculty_page")
+        if pg:
+            page_use.setdefault(pg, set()).add(res["unit"]["name"])
+    shared_pages = {pg for pg, names in page_use.items() if len(names) >= 3}  # a college-wide directory, not a department list
 
-    def new_record(name, unit):
+    def new_record(name, unit, shared=False):
         rec = {
             "id": "", "name": display_name(name), "title": "", "college": unit["college"] if unit else "",
             "department": unit["name"] if unit else "", "affiliations": [], "email": "", "research_areas": [],
@@ -435,12 +442,13 @@ def build_records(results, baseline, units):
             "current_students": [], "sources": [], "verified_at": "",
         }
         if unit:
-            rec["affiliations"].append({"college": unit["college"], "department": unit["name"]})
+            rec["affiliations"].append({"college": unit["college"], "department": unit["name"], **({"shared": True} if shared else {})})
         records.append(rec)
         return rec
 
     for res in results:
         unit = res["unit"]
+        shared = res["info"].get("chosen_faculty_page") in shared_pages
         for p in res["people"]:
             prof = p.get("profile") or {}
             purl = prof.get("profile_url") or p.get("profile_url") or ""
@@ -449,10 +457,10 @@ def build_records(results, baseline, units):
             if rec is None:
                 rec = by_key.get((key, unit["id"]))
             if rec is None:
-                rec = new_record(prof.get("name") or p["name"], unit)
+                rec = new_record(prof.get("name") or p["name"], unit, shared)
                 by_key[(key, unit["id"])] = rec
             elif unit["name"] != rec["department"] and not any(a["department"] == unit["name"] for a in rec["affiliations"]):
-                rec["affiliations"].append({"college": unit["college"], "department": unit["name"]})
+                rec["affiliations"].append({"college": unit["college"], "department": unit["name"], **({"shared": True} if shared else {})})
             if purl:
                 by_profile[purl] = rec
                 rec["profile_url"] = rec["profile_url"] or purl
@@ -491,6 +499,7 @@ def build_records(results, baseline, units):
         if match is None and len(crawled_by_key.get(key, [])) == 1 and not dept_norm:
             match = crawled_by_key[key][0]
         if match:
+            match["_cat_dept"] = match.get("_cat_dept") or b.get("department", "")
             if b.get("title") and not match["title"]:
                 match["title"] = b["title"]
             if "https://gradcatalog.ufl.edu/graduate/faculty/" not in match["sources"]:
@@ -505,6 +514,7 @@ def build_records(results, baseline, units):
         rec["sources"] = ["https://gradcatalog.ufl.edu/graduate/faculty/"]
         crawled_by_key.setdefault(key, []).append(rec)
 
+    records = finalize(records, units)
     for r in records:
         r["id"] = uid(r["profile_url"] or (name_key(r["name"]) + "|" + r["department"]))
     return records
