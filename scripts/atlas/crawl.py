@@ -13,7 +13,7 @@ from pathlib import Path
 from urllib.parse import urljoin, urlparse
 
 from . import parsers as P
-from .clean import finalize, student_name_ok
+from .clean import finalize, strip_dept, student_name_ok
 from .fetch import Fetcher
 from .names import display_name, fold, last_name, name_key, squash
 from .publish import push_status, read_json
@@ -180,8 +180,10 @@ def discover_units(F, progress, only):
     if len(units) < 60:
         raise RuntimeError(f"Only {len(units)} units parsed from the catalog; the page layout may have changed")
     for u in units:
+        u["catalog_name"] = u["name"]
+        u["name"] = strip_dept(u["name"])  # 'Anthropology Department' -> 'Anthropology'
         u["id"] = uid(u["college"], u["name"])
-        u["site_candidates"] = list(SITE_OVERRIDES.get(u["name"], []))
+        u["site_candidates"] = list(SITE_OVERRIDES.get(u["catalog_name"], []))
         u["site"] = ""
         u["hints"] = []
     units += [{**e, "id": uid(e["college"], e["name"]), "catalog_url": ""} for e in EXTRA_UNITS]

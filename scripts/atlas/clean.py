@@ -71,6 +71,73 @@ TEACH_JUNK = re.compile(
     r"privacy|cookie|skip to|copyright|all rights|login|menu|subscribe|follow us", re.I)
 
 
+# Labels the graduate catalog uses for a whole college, not for a department.
+COLLEGE_LABELS = {
+    "veterinary medicine", "journalism and communications", "nursing", "medicine", "dentistry", "pharmacy", "law", "business",
+    "engineering", "arts", "education", "liberal arts and sciences", "agricultural and life sciences",
+    "public health and health professions",
+}
+
+
+def strip_dept(name):
+    """'Anthropology Department' / 'Department of Anthropology' / 'Tourism, Hospitality & Event Management' -> common name."""
+    n = squash(html.unescape(name or ""))
+    n = re.sub(r"\s*&\s*", " and ", n)
+    n = re.sub(r"^(the\s+)?department of\s+", "", n, flags=re.I)
+    n = re.sub(r"[\s,]+department$", "", n, flags=re.I)
+    return squash(n)
+
+
+def dept_key(name):
+    s = fold(strip_dept(name))
+    return re.sub(r"[^a-z0-9]+", " ", s).strip()
+
+
+class DeptNames:
+    """One display name per department, however its label is spelled ('X', 'X Department', '&' vs 'and', serial comma)."""
+
+    def __init__(self, unit_names=()):
+        self.canon = {}
+        for n in unit_names:
+            self.canon.setdefault(dept_key(n), strip_dept(n))
+
+    def add_label(self, label):
+        self.canon.setdefault(dept_key(label), strip_dept(label))
+
+    def __call__(self, label):
+        if not label:
+            return ""
+        return self.canon.get(dept_key(label)) or strip_dept(label)
+
+
+def canonicalize_records(records, canon):
+    """Apply common department names to department + affiliations and collapse duplicate affiliations."""
+    for r in records:
+        for a in r.get("affiliations", []):
+            a["department"] = canon(a.get("department", ""))
+        r["department"] = canon(r.get("department", ""))
+        seen, affs = set(), []
+        for a in r.get("affiliations", []):
+            k = (a.get("college", ""), dept_key(a.get("department", "")))
+            if k in seen:
+                continue
+            seen.add(k)
+            affs.append(a)
+        # an affiliation without a college adopts the college of the same department elsewhere in the list
+        by_dept = {dept_key(a["department"]): a["college"] for a in affs if a.get("college") and a.get("department")}
+        for a in affs:
+            if not a.get("college") and dept_key(a.get("department", "")) in by_dept:
+                a["college"] = by_dept[dept_key(a["department"])]
+        merged, seen = [], set()
+        for a in affs:
+            k = (a.get("college", ""), dept_key(a.get("department", "")))
+            if k not in seen:
+                seen.add(k)
+                merged.append(a)
+        r["affiliations"] = merged
+    return records
+
+
 def unescape(s):
     return squash(html.unescape(s or "")) if isinstance(s, str) else s
 
@@ -204,6 +271,12 @@ def finalize(records, units):
     for u in units:
         UNIT_NAMES.update({fold(u["name"]), _norm_unit(u["name"]), fold(u["college"])})
         UNIT_NAMES.add(re.sub(r"\s+department$", "", fold(u["name"])))
+    canon = DeptNames(u["name"] for u in units)
+    for r in records:
+        canon.add_label(r.get("department", ""))
+        for a in r.get("affiliations", []):
+            canon.add_label(a.get("department", ""))
+    canonicalize_records(records, canon)
     records = merge_duplicates(records)
     dept_college = {}
     for u in units:
@@ -232,6 +305,13 @@ def finalize(records, units):
                             a["college"] = col
         if len(r["department"]) <= 2:  # truncated label such as "L"
             r["department"] = ""
+        if fold(r["department"]) in COLLEGE_LABELS:  # the catalog named a college here, not a department
+            r["department"] = ""
+        r["affiliations"] = [a for a in r["affiliations"] if a.get("college") or a.get("department")]
+        for a in r["affiliations"]:
+            if fold(a.get("department", "")) in COLLEGE_LABELS:
+                a["department"] = ""
+        r["affiliations"] = list({(a.get("college", ""), a.get("department", "")): a for a in r["affiliations"]}.values())
         courses = [re.sub(r"^teaching[:\s]+", "", a, flags=re.I) for a in r.get("research_areas", []) if COURSE_CODE.search(a)]
         r["research_areas"] = clean_areas({**r, "research_areas": [a for a in r.get("research_areas", []) if not COURSE_CODE.search(a)]})
         r["teaching"] = clean_teaching(r, courses)

@@ -36,7 +36,7 @@ def test_shared_department_email_is_kept_only_for_matching_person():
 def test_college_inferred_for_catalog_only_labels_and_entities_fixed():
     r = rec("Jo Park", department="Sociology and Criminology &amp; Law")
     out = finalize([r], UNITS)[0]
-    assert out["department"] == "Sociology and Criminology & Law"
+    assert out["department"] == "Sociology and Criminology and Law"
     assert out["college"] == "College of Liberal Arts and Sciences"
 
 
@@ -106,3 +106,17 @@ def test_courses_in_research_move_to_teaching_and_titles_trimmed():
     assert out["research_areas"] == ["Soil physics"]
     assert out["teaching"] == ["SWS 4602C/5605C Environmental Soil Physics"]
     assert out["title"].endswith("Education Center")
+
+
+def test_department_name_variants_become_one_name():
+    units = [{"name": "Anthropology Department", "college": "College of Liberal Arts and Sciences"},
+             {"name": "Finance, Insurance, and Real Estate", "college": "Warrington College of Business"}]
+    a = rec("Ann Smith", department="Anthropology Department", college="College of Liberal Arts and Sciences", email="a@ufl.edu",
+            affiliations=[{"college": "College of Liberal Arts and Sciences", "department": "Anthropology Department"},
+                          {"college": "College of Liberal Arts and Sciences", "department": "Anthropology"}])
+    b = rec("Bob Jones", department="Finance, Insurance and Real Estate", college="Warrington College of Business", email="b@ufl.edu")
+    c = rec("Cy Lee", department="Veterinary Medicine", email="c@ufl.edu")
+    out = {r["name"]: r for r in finalize([a, b, c], units)}
+    assert out["Ann Smith"]["department"] == "Anthropology" and len(out["Ann Smith"]["affiliations"]) == 1
+    assert out["Bob Jones"]["department"] == "Finance, Insurance, and Real Estate"
+    assert out["Cy Lee"]["department"] == "" and out["Cy Lee"]["college"] == "College of Veterinary Medicine"
