@@ -21,16 +21,6 @@ GitHub Actions (refresh.yml)                          GitHub Pages (docs/ on mai
 
 The database refreshes itself about **every four months**. A workflow wakes up monthly and runs the crawl only when the last update is at least 110 days old; in other months it just makes a tiny keep-alive commit so GitHub doesn't pause the schedule. To refresh immediately: Actions → *Refresh UF faculty database* → Run workflow.
 
-## Everyday commands
-
-```bash
-npm install
-npm run dev        # local app, reads docs/data
-npm run build      # builds the app into docs/ (commit the result); docs/data is left untouched
-python -m pip install -r requirements.txt
-PYTHONPATH=scripts ATLAS_ONLY="soil" ATLAS_OUT=data/dev-run python -m atlas.crawl   # test crawl of matching departments
-```
-
 ## Files
 
 | Path | Purpose |
