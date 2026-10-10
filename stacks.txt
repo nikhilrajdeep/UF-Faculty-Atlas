@@ -1,0 +1,198 @@
+Sat Oct 10 08:48:33 UTC 2026
+Process 2375: python -m atlas.crawl
+Python v3.12.15 (/opt/hostedtoolcache/Python/3.12.15/x64/bin/python3.12)
+
+Thread 2375 (idle): "MainThread"
+    wait (threading.py:355)
+    result (concurrent/futures/_base.py:451)
+    _result_or_cancel (concurrent/futures/_base.py:317)
+    result_iterator (concurrent/futures/_base.py:619)
+    run (atlas/crawl.py:550)
+    <module> (atlas/crawl.py:619)
+    _run_code (<frozen runpy>:88)
+    _run_module_as_main (<frozen runpy>:198)
+Thread 2378 (idle): "Thread-1 (loop)"
+    open (pathlib.py:1013)
+    write_text (pathlib.py:1047)
+    push_status (atlas/publish.py:31)
+    write (atlas/crawl.py:115)
+    loop (atlas/crawl.py:130)
+    run (threading.py:1012)
+    _bootstrap_inner (threading.py:1075)
+    _bootstrap (threading.py:1032)
+Thread 3184 (idle): "ThreadPoolExecutor-2_0"
+    create_connection (urllib3/util/connection.py:73)
+    _new_conn (urllib3/connection.py:239)
+    connect (urllib3/connection.py:827)
+    _validate_conn (urllib3/connectionpool.py:1125)
+    _make_request (urllib3/connectionpool.py:470)
+    urlopen (urllib3/connectionpool.py:793)
+    send (requests/adapters.py:696)
+    send (requests/sessions.py:784)
+    request (requests/sessions.py:651)
+    get (requests/sessions.py:671)
+    get (atlas/fetch.py:89)
+    fetch_profile (atlas/crawl.py:336)
+    do_profile (atlas/crawl.py:537)
+    run (concurrent/futures/thread.py:59)
+    _worker (concurrent/futures/thread.py:93)
+    run (threading.py:1012)
+    _bootstrap_inner (threading.py:1075)
+    _bootstrap (threading.py:1032)
+Thread 3185 (idle): "ThreadPoolExecutor-2_1"
+    _worker (concurrent/futures/thread.py:90)
+    run (threading.py:1012)
+    _bootstrap_inner (threading.py:1075)
+    _bootstrap (threading.py:1032)
+Thread 3186 (idle): "ThreadPoolExecutor-2_2"
+    _worker (concurrent/futures/thread.py:90)
+    run (threading.py:1012)
+    _bootstrap_inner (threading.py:1075)
+    _bootstrap (threading.py:1032)
+Thread 3187 (idle): "ThreadPoolExecutor-2_3"
+    __init__ (socket.py:233)
+    create_connection (urllib3/util/connection.py:64)
+    _new_conn (urllib3/connection.py:239)
+    connect (urllib3/connection.py:827)
+    _validate_conn (urllib3/connectionpool.py:1125)
+    _make_request (urllib3/connectionpool.py:470)
+    urlopen (urllib3/connectionpool.py:793)
+    send (requests/adapters.py:696)
+    send (requests/sessions.py:784)
+    request (requests/sessions.py:651)
+    get (requests/sessions.py:671)
+    get (atlas/fetch.py:89)
+    fetch_profile (atlas/crawl.py:336)
+    do_profile (atlas/crawl.py:537)
+    run (concurrent/futures/thread.py:59)
+    _worker (concurrent/futures/thread.py:93)
+    run (threading.py:1012)
+    _bootstrap_inner (threading.py:1075)
+    _bootstrap (threading.py:1032)
+Thread 3188 (idle): "ThreadPoolExecutor-2_4"
+    _worker (concurrent/futures/thread.py:90)
+    run (threading.py:1012)
+    _bootstrap_inner (threading.py:1075)
+    _bootstrap (threading.py:1032)
+Thread 3189 (idle): "ThreadPoolExecutor-2_5"
+    _worker (concurrent/futures/thread.py:90)
+    run (threading.py:1012)
+    _bootstrap_inner (threading.py:1075)
+    _bootstrap (threading.py:1032)
+Thread 3190 (idle): "ThreadPoolExecutor-2_6"
+    _real_close (socket.py:499)
+    _real_close (ssl.py:1323)
+    close (socket.py:505)
+    _create (ssl.py:1057)
+    wrap_socket (ssl.py:455)
+    _ssl_wrap_socket_impl (urllib3/util/ssl_.py:481)
+    ssl_wrap_socket (urllib3/util/ssl_.py:437)
+    _ssl_wrap_socket_and_match_hostname (urllib3/connection.py:1080)
+    connect (urllib3/connection.py:894)
+    _validate_conn (urllib3/connectionpool.py:1125)
+    _make_request (urllib3/connectionpool.py:470)
+    urlopen (urllib3/connectionpool.py:793)
+    send (requests/adapters.py:696)
+    send (requests/sessions.py:784)
+    resolve_redirects (requests/sessions.py:292)
+    send (requests/sessions.py:805)
+    request (requests/sessions.py:651)
+    get (requests/sessions.py:671)
+    get (atlas/fetch.py:89)
+    fetch_profile (atlas/crawl.py:336)
+    do_profile (atlas/crawl.py:537)
+    run (concurrent/futures/thread.py:59)
+    _worker (concurrent/futures/thread.py:93)
+    run (threading.py:1012)
+    _bootstrap_inner (threading.py:1075)
+    _bootstrap (threading.py:1032)
+Thread 3191 (idle): "ThreadPoolExecutor-2_7"
+    read (ssl.py:1116)
+    recv_into (ssl.py:1264)
+    readinto (socket.py:720)
+    _safe_read (http/client.py:667)
+    _read_chunked (http/client.py:627)
+    read (http/client.py:488)
+    _fp_read (urllib3/response.py:1029)
+    _raw_read (urllib3/response.py:1046)
+    read (urllib3/response.py:1134)
+    get (atlas/fetch.py:106)
+    fetch_profile (atlas/crawl.py:336)
+    do_profile (atlas/crawl.py:537)
+    run (concurrent/futures/thread.py:59)
+    _worker (concurrent/futures/thread.py:93)
+    run (threading.py:1012)
+    _bootstrap_inner (threading.py:1075)
+    _bootstrap (threading.py:1032)
+Thread 3192 (active+gil): "ThreadPoolExecutor-2_8"
+    find_emails (atlas/parsers.py:398)
+    _parse_profile (atlas/parsers.py:523)
+    parse_profile (atlas/parsers.py:445)
+    fetch_profile (atlas/crawl.py:338)
+    do_profile (atlas/crawl.py:537)
+    run (concurrent/futures/thread.py:59)
+    _worker (concurrent/futures/thread.py:93)
+    run (threading.py:1012)
+    _bootstrap_inner (threading.py:1075)
+    _bootstrap (threading.py:1032)
+Thread 3193 (idle): "ThreadPoolExecutor-2_9"
+    __new__ (ssl.py:438)
+    create_urllib3_context (urllib3/util/ssl_.py:256)
+    _ssl_wrap_socket_and_match_hostname (urllib3/connection.py:1033)
+    connect (urllib3/connection.py:894)
+    _validate_conn (urllib3/connectionpool.py:1125)
+    _make_request (urllib3/connectionpool.py:470)
+    urlopen (urllib3/connectionpool.py:793)
+    send (requests/adapters.py:696)
+    send (requests/sessions.py:784)
+    request (requests/sessions.py:651)
+    get (requests/sessions.py:671)
+    get (atlas/fetch.py:89)
+    fetch_profile (atlas/crawl.py:336)
+
+    PID %CPU %MEM   RSS     ELAPSED CMD
+   2375 99.8  1.4 236960   05:14:56 python -m atlas.crawl
+               total        used        free      shared  buff/cache   available
+Mem:           15989        1189       12523          50        2649       14799
+Swap:           3071           0        3071
+--- crawl.log tail
+[03:42:13] departments 19.3% units=100 profiles=0/0 requests=0
+[03:42:23] departments 19.3% units=100 profiles=0/0 requests=0
+[03:42:34] departments 19.3% units=100 profiles=0/0 requests=0
+[03:42:44] departments 19.3% units=100 profiles=0/0 requests=0
+[03:42:54] departments 19.3% units=100 profiles=0/0 requests=0
+[03:43:05] departments 19.3% units=100 profiles=0/0 requests=0
+[03:43:15] departments 19.3% units=100 profiles=0/0 requests=0
+[03:43:25] departments 19.3% units=100 profiles=0/0 requests=0
+[03:43:36] departments 19.3% units=100 profiles=0/0 requests=0
+[03:43:46] departments 19.3% units=101 profiles=0/0 requests=0
+[03:43:56] departments 19.4% units=101 profiles=0/0 requests=0
+[03:44:07] departments 19.4% units=101 profiles=0/0 requests=0
+[03:44:17] departments 19.4% units=101 profiles=0/0 requests=0
+[03:44:27] departments 19.4% units=101 profiles=0/0 requests=0
+[03:44:38] departments 19.4% units=101 profiles=0/0 requests=0
+[03:44:48] departments 19.4% units=103 profiles=0/0 requests=0
+[03:44:58] departments 19.7% units=104 profiles=0/0 requests=0
+[03:45:09] departments 19.9% units=104 profiles=0/0 requests=0
+[03:45:19] departments 19.9% units=104 profiles=0/0 requests=0
+[03:45:29] departments 19.9% units=104 profiles=0/0 requests=0
+[03:45:40] departments 19.9% units=104 profiles=0/0 requests=0
+[03:45:50] profiles 19.9% units=105 profiles=7/2956 requests=1102
+[03:46:00] profiles 20.2% units=105 profiles=89/2956 requests=1188
+[03:46:11] profiles 22.2% units=105 profiles=202/2956 requests=1303
+[03:53:40] profiles 24.9% units=105 profiles=251/2956 requests=1352
+[04:15:46] profiles 26.1% units=105 profiles=326/2956 requests=1430
+[04:37:50] profiles 27.9% units=105 profiles=390/2956 requests=1496
+[04:59:53] profiles 29.5% units=105 profiles=453/2956 requests=1564
+[05:15:06] profiles 31.0% units=105 profiles=510/2956 requests=1626
+[05:37:11] profiles 32.4% units=105 profiles=563/2956 requests=1681
+[05:59:02] profiles 33.7% units=105 profiles=613/2956 requests=1734
+[06:05:04] profiles 34.9% units=105 profiles=663/2956 requests=1783
+[06:34:01] profiles 36.1% units=105 profiles=709/2956 requests=1834
+[06:41:28] profiles 37.3% units=105 profiles=757/2956 requests=1882
+[06:56:37] profiles 38.4% units=105 profiles=805/2956 requests=1937
+[07:32:52] profiles 39.6% units=105 profiles=850/2956 requests=1985
+[07:47:36] profiles 40.7% units=105 profiles=891/2956 requests=2028
+[07:48:11] profiles 41.7% units=105 profiles=933/2956 requests=2072
+[08:15:24] profiles 42.7% units=105 profiles=972/2956 requests=2114
+[08:34:12] profiles 43.7% units=105 profiles=1008/2956 requests=2163
