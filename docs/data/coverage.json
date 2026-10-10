@@ -1,11 +1,12 @@
 {
- "updated_at": "2026-10-10T02:12:12+00:00",
- "elapsed_seconds": 2183,
- "pages_requested": 6059,
+ "updated_at": "2026-10-10T02:48:30+00:00",
+ "elapsed_seconds": 2079,
+ "pages_requested": 5761,
  "status_counts": {
-  "ok": 96,
+  "ok": 94,
   "no_site": 7,
-  "partial": 1,
+  "no_people_page": 1,
+  "partial": 2,
   "unreachable": 1
  },
  "profiles_skipped_for_time": 0,
@@ -13,8 +14,8 @@
   {
    "name": "College of Agricultural and Life Sciences",
    "departments": 17,
-   "faculty": 1064,
-   "departments_ok": 16
+   "faculty": 1047,
+   "departments_ok": 15
   },
   {
    "name": "College of the Arts",
@@ -67,13 +68,13 @@
   {
    "name": "College of Liberal Arts and Sciences",
    "departments": 26,
-   "faculty": 1092,
+   "faculty": 1091,
    "departments_ok": 25
   },
   {
    "name": "College of Medicine",
    "departments": 6,
-   "faculty": 323,
+   "faculty": 320,
    "departments_ok": 5
   },
   {
@@ -97,8 +98,8 @@
   {
    "name": "College of Veterinary Medicine",
    "departments": 3,
-   "faculty": 214,
-   "departments_ok": 3
+   "faculty": 219,
+   "departments_ok": 2
   },
   {
    "name": "Levin College of Law",
@@ -356,11 +357,11 @@
    "department": "Entomology and Nematology",
    "site": "https://entnemdept.ufl.edu/academic-programs/graduate-studies/",
    "status": "ok",
-   "faculty_page": "https://entnemdept.ufl.edu/people-directory/all-faculty/",
+   "faculty_page": "https://entnemdept.ufl.edu/people-directory/courtesy-and-affiliate-faculty/",
    "faculty_pages_tried": [
     {
      "url": "https://entnemdept.ufl.edu/people-directory/all-faculty/",
-     "people": 65
+     "people": 7
     },
     {
      "url": "https://entnemdept.ufl.edu/people-directory/gainesville-faculty/",
@@ -389,11 +390,11 @@
      "students": 9
     }
    ],
-   "faculty_in_database": 118,
-   "faculty_listed_on_site": 110,
-   "with_email": 109,
-   "with_scholar": 48,
-   "with_research": 104,
+   "faculty_in_database": 114,
+   "faculty_listed_on_site": 98,
+   "with_email": 99,
+   "with_scholar": 41,
+   "with_research": 91,
    "with_teaching": 14,
    "students_found": 105,
    "notes": []
@@ -402,12 +403,40 @@
    "college": "College of Agricultural and Life Sciences",
    "department": "Family, Youth and Community Sciences",
    "site": "https://fycs.ifas.ufl.edu/",
-   "status": "ok",
-   "faculty_page": "https://fycs.ifas.ufl.edu/directory/",
+   "status": "no_people_page",
+   "faculty_page": "",
    "faculty_pages_tried": [
     {
      "url": "https://fycs.ifas.ufl.edu/directory/",
-     "people": 30
+     "people": 0
+    },
+    {
+     "url": "https://fycs.ifas.ufl.edu/people/",
+     "people": 0
+    },
+    {
+     "url": "https://fycs.ifas.ufl.edu/faculty/",
+     "people": 0
+    },
+    {
+     "url": "https://fycs.ifas.ufl.edu/people/faculty/",
+     "people": 0
+    },
+    {
+     "url": "https://fycs.ifas.ufl.edu/about/people/",
+     "people": 0
+    },
+    {
+     "url": "https://fycs.ifas.ufl.edu/faculty-staff/",
+     "people": 0
+    },
+    {
+     "url": "https://fycs.ifas.ufl.edu/people/faculty-staff/",
+     "people": 0
+    },
+    {
+     "url": "https://fycs.ifas.ufl.edu/our-people/",
+     "people": 0
     }
    ],
    "student_pages_tried": [
@@ -436,14 +465,16 @@
      "students": 0
     }
    ],
-   "faculty_in_database": 34,
-   "faculty_listed_on_site": 30,
-   "with_email": 30,
-   "with_scholar": 7,
-   "with_research": 23,
-   "with_teaching": 9,
+   "faculty_in_database": 26,
+   "faculty_listed_on_site": 0,
+   "with_email": 4,
+   "with_scholar": 0,
+   "with_research": 4,
+   "with_teaching": 0,
    "students_found": 0,
-   "notes": []
+   "notes": [
+    "no faculty list with individual profile links was recognised; graduate-catalog roster only"
+   ]
   },
   {
    "college": "College of Agricultural and Life Sciences",
@@ -585,7 +616,7 @@
    "faculty_listed_on_site": 108,
    "with_email": 105,
    "with_scholar": 50,
-   "with_research": 72,
+   "with_research": 71,
    "with_teaching": 25,
    "students_found": 0,
    "notes": []
@@ -819,7 +850,7 @@
    "faculty_pages_tried": [
     {
      "url": "https://snre.ifas.ufl.edu/people/faculty-staff-and-administration/",
-     "people": 9
+     "people": 4
     },
     {
      "url": "https://snre.ifas.ufl.edu/people/affiliate-faculty/",
@@ -827,7 +858,7 @@
     },
     {
      "url": "https://snre.ifas.ufl.edu/people/faculty-advisory-council/",
-     "people": 15
+     "people": 6
     }
    ],
    "student_pages_tried": [
@@ -856,11 +887,11 @@
      "students": 0
     }
    ],
-   "faculty_in_database": 314,
-   "faculty_listed_on_site": 318,
-   "with_email": 310,
+   "faculty_in_database": 308,
+   "faculty_listed_on_site": 308,
+   "with_email": 304,
    "with_scholar": 164,
-   "with_research": 277,
+   "with_research": 271,
    "with_teaching": 86,
    "students_found": 0,
    "notes": []
@@ -3160,7 +3191,7 @@
     },
     {
      "url": "https://english.ufl.edu/faculty-listing/",
-     "people": 6
+     "people": 13
     },
     {
      "url": "https://english.ufl.edu/faculty-listing/emeritus-emerita-and-retired-faculty/",
@@ -3185,11 +3216,11 @@
      "students": 0
     }
    ],
-   "faculty_in_database": 43,
-   "faculty_listed_on_site": 46,
-   "with_email": 12,
+   "faculty_in_database": 48,
+   "faculty_listed_on_site": 53,
+   "with_email": 19,
    "with_scholar": 0,
-   "with_research": 38,
+   "with_research": 44,
    "with_teaching": 0,
    "students_found": 172,
    "notes": []
@@ -3203,7 +3234,7 @@
    "faculty_pages_tried": [
     {
      "url": "https://wst.ufl.edu/people/core-faculty/",
-     "people": 4
+     "people": 7
     },
     {
      "url": "https://wst.ufl.edu/people/affiliate-faculty/",
@@ -3244,12 +3275,12 @@
      "students": 0
     }
    ],
-   "faculty_in_database": 124,
-   "faculty_listed_on_site": 133,
-   "with_email": 91,
+   "faculty_in_database": 127,
+   "faculty_listed_on_site": 136,
+   "with_email": 92,
    "with_scholar": 5,
-   "with_research": 50,
-   "with_teaching": 18,
+   "with_research": 54,
+   "with_teaching": 19,
    "students_found": 0,
    "notes": []
   },
@@ -3801,7 +3832,7 @@
    "with_email": 14,
    "with_scholar": 1,
    "with_research": 2,
-   "with_teaching": 1,
+   "with_teaching": 2,
    "students_found": 0,
    "notes": []
   },
@@ -4109,11 +4140,11 @@
      "students": 0
     }
    ],
-   "faculty_in_database": 46,
+   "faculty_in_database": 44,
    "faculty_listed_on_site": 88,
-   "with_email": 39,
+   "with_email": 37,
    "with_scholar": 1,
-   "with_research": 7,
+   "with_research": 6,
    "with_teaching": 3,
    "students_found": 0,
    "notes": []
@@ -4365,7 +4396,7 @@
     },
     {
      "url": "https://pharmacy.ufl.edu/mc/students/",
-     "students": 0
+     "students": 3
     }
    ],
    "faculty_in_database": 26,
@@ -4374,7 +4405,7 @@
    "with_scholar": 0,
    "with_research": 9,
    "with_teaching": 9,
-   "students_found": 0,
+   "students_found": 3,
    "notes": []
   },
   {
@@ -4772,11 +4803,11 @@
      "students": 0
     }
    ],
-   "faculty_in_database": 46,
+   "faculty_in_database": 44,
    "faculty_listed_on_site": 88,
-   "with_email": 39,
+   "with_email": 37,
    "with_scholar": 1,
-   "with_research": 7,
+   "with_research": 6,
    "with_teaching": 3,
    "students_found": 0,
    "notes": []
@@ -4847,7 +4878,7 @@
   {
    "college": "College of Public Health and Health Professions",
    "department": "Speech, Language, and Hearing Sciences",
-   "site": "https://www.slhs.phhp.ufl.edu/",
+   "site": "https://slhs.phhp.ufl.edu/",
    "status": "ok",
    "faculty_page": "https://phhp.ufl.edu/about/departments/biostatistics/about/faculty/",
    "faculty_pages_tried": [
@@ -4874,27 +4905,27 @@
    ],
    "student_pages_tried": [
     {
-     "url": "https://www.slhs.phhp.ufl.edu/people/graduate-students/",
+     "url": "https://slhs.phhp.ufl.edu/people/graduate-students/",
      "students": 0
     },
     {
-     "url": "https://www.slhs.phhp.ufl.edu/graduate-students/",
+     "url": "https://slhs.phhp.ufl.edu/graduate-students/",
      "students": 0
     },
     {
-     "url": "https://www.slhs.phhp.ufl.edu/students/",
+     "url": "https://slhs.phhp.ufl.edu/students/",
      "students": 0
     },
     {
-     "url": "https://www.slhs.phhp.ufl.edu/people/students/",
+     "url": "https://slhs.phhp.ufl.edu/people/students/",
      "students": 0
     },
     {
-     "url": "https://www.slhs.phhp.ufl.edu/graduate/students/",
+     "url": "https://slhs.phhp.ufl.edu/graduate/students/",
      "students": 0
     },
     {
-     "url": "https://www.slhs.phhp.ufl.edu/academics/graduate-students/",
+     "url": "https://slhs.phhp.ufl.edu/academics/graduate-students/",
      "students": 0
     }
    ],
@@ -4910,9 +4941,9 @@
   {
    "college": "College of Veterinary Medicine",
    "department": "Comparative Biomedical Sciences",
-   "site": "https://vetmed.ufl.edu/",
-   "status": "ok",
-   "faculty_page": "https://www.vetmed.ufl.edu/about-the-college/directory/",
+   "site": "https://www.vetmed.ufl.edu/",
+   "status": "partial",
+   "faculty_page": "https://www.vetmed.ufl.edu/faculty-staff/",
    "faculty_pages_tried": [
     {
      "url": "https://facultycouncil.vetmed.ufl.edu/",
@@ -4920,30 +4951,30 @@
     },
     {
      "url": "https://www.vetmed.ufl.edu/about-the-college/directory/",
-     "people": 193
-    },
-    {
-     "url": "https://vetmed.ufl.edu/people/",
      "people": 0
     },
     {
-     "url": "https://vetmed.ufl.edu/faculty/",
+     "url": "https://www.vetmed.ufl.edu/people/",
      "people": 0
     },
     {
-     "url": "https://vetmed.ufl.edu/people/faculty/",
+     "url": "https://www.vetmed.ufl.edu/faculty/",
      "people": 0
     },
     {
-     "url": "https://vetmed.ufl.edu/directory/",
-     "people": 193
-    },
-    {
-     "url": "https://vetmed.ufl.edu/about/people/",
+     "url": "https://www.vetmed.ufl.edu/people/faculty/",
      "people": 0
     },
     {
-     "url": "https://vetmed.ufl.edu/faculty-staff/",
+     "url": "https://www.vetmed.ufl.edu/directory/",
+     "people": 0
+    },
+    {
+     "url": "https://www.vetmed.ufl.edu/about/people/",
+     "people": 0
+    },
+    {
+     "url": "https://www.vetmed.ufl.edu/faculty-staff/",
      "people": 1
     }
    ],
@@ -4953,31 +4984,31 @@
      "students": 0
     },
     {
-     "url": "https://vetmed.ufl.edu/people/graduate-students/",
+     "url": "https://www.vetmed.ufl.edu/people/graduate-students/",
      "students": 0
     },
     {
-     "url": "https://vetmed.ufl.edu/graduate-students/",
+     "url": "https://www.vetmed.ufl.edu/graduate-students/",
      "students": 0
     },
     {
-     "url": "https://vetmed.ufl.edu/students/",
+     "url": "https://www.vetmed.ufl.edu/students/",
      "students": 0
     },
     {
-     "url": "https://vetmed.ufl.edu/people/students/",
+     "url": "https://www.vetmed.ufl.edu/people/students/",
      "students": 0
     },
     {
-     "url": "https://vetmed.ufl.edu/graduate/students/",
+     "url": "https://www.vetmed.ufl.edu/graduate/students/",
      "students": 0
     }
    ],
-   "faculty_in_database": 0,
-   "faculty_listed_on_site": 193,
-   "with_email": 0,
+   "faculty_in_database": 1,
+   "faculty_listed_on_site": 1,
+   "with_email": 1,
    "with_scholar": 0,
-   "with_research": 0,
+   "with_research": 1,
    "with_teaching": 0,
    "students_found": 0,
    "notes": []
@@ -5048,12 +5079,12 @@
      "students": 0
     }
    ],
-   "faculty_in_database": 0,
+   "faculty_in_database": 193,
    "faculty_listed_on_site": 193,
-   "with_email": 0,
-   "with_scholar": 0,
-   "with_research": 0,
-   "with_teaching": 0,
+   "with_email": 192,
+   "with_scholar": 2,
+   "with_research": 75,
+   "with_teaching": 133,
    "students_found": 0,
    "notes": []
   },
@@ -5123,12 +5154,12 @@
      "students": 0
     }
    ],
-   "faculty_in_database": 0,
+   "faculty_in_database": 193,
    "faculty_listed_on_site": 193,
-   "with_email": 0,
-   "with_scholar": 0,
-   "with_research": 0,
-   "with_teaching": 0,
+   "with_email": 192,
+   "with_scholar": 2,
+   "with_research": 75,
+   "with_teaching": 133,
    "students_found": 0,
    "notes": []
   },
@@ -5173,14 +5204,14 @@
   }
  ],
  "totals": {
-  "faculty": 4877,
-  "students": 1288,
-  "with_email": 3083,
-  "with_scholar": 605,
-  "with_research": 2036,
-  "with_teaching": 684,
-  "with_students": 221,
-  "with_college": 4548
+  "faculty": 4860,
+  "students": 1291,
+  "with_email": 3049,
+  "with_scholar": 592,
+  "with_research": 2008,
+  "with_teaching": 676,
+  "with_students": 220,
+  "with_college": 4532
  },
  "errors": [
   {
@@ -5204,19 +5235,7 @@
    "error": "HTTP 404"
   },
   {
-   "url": "https://agronomy.ifas.ufl.edu/people/graduate-students/",
-   "error": "HTTP 404"
-  },
-  {
    "url": "https://hos.ifas.ufl.edu/graduate/students/",
-   "error": "HTTP 404"
-  },
-  {
-   "url": "https://agronomy.ifas.ufl.edu/graduate-students/",
-   "error": "HTTP 404"
-  },
-  {
-   "url": "https://fycs.ifas.ufl.edu/people/graduate-students/",
    "error": "HTTP 404"
   },
   {
@@ -5224,31 +5243,15 @@
    "error": "HTTP 404"
   },
   {
-   "url": "https://fycs.ifas.ufl.edu/graduate-students/",
+   "url": "https://agronomy.ifas.ufl.edu/people/graduate-students/",
    "error": "HTTP 404"
   },
   {
-   "url": "https://agronomy.ifas.ufl.edu/people/students/",
+   "url": "https://fycs.ifas.ufl.edu/faculty/",
    "error": "HTTP 404"
   },
   {
-   "url": "https://fycs.ifas.ufl.edu/students/",
-   "error": "HTTP 404"
-  },
-  {
-   "url": "https://fycs.ifas.ufl.edu/people/students/",
-   "error": "HTTP 404"
-  },
-  {
-   "url": "https://aec.ifas.ufl.edu/faculty/",
-   "error": "HTTP 404"
-  },
-  {
-   "url": "https://agronomy.ifas.ufl.edu/graduate/students/",
-   "error": "HTTP 404"
-  },
-  {
-   "url": "https://fycs.ifas.ufl.edu/graduate/students/",
+   "url": "https://agronomy.ifas.ufl.edu/graduate-students/",
    "error": "HTTP 404"
   },
   {
@@ -5256,15 +5259,31 @@
    "error": "HTTP 404"
   },
   {
+   "url": "https://fycs.ifas.ufl.edu/people/faculty/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://agronomy.ifas.ufl.edu/people/students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://aec.ifas.ufl.edu/faculty/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://fycs.ifas.ufl.edu/about/people/",
+   "error": "HTTP 404"
+  },
+  {
    "url": "https://aec.ifas.ufl.edu/people/faculty/",
    "error": "HTTP 404"
   },
   {
-   "url": "https://agronomy.ifas.ufl.edu/academics/graduate-students/",
+   "url": "https://agronomy.ifas.ufl.edu/graduate/students/",
    "error": "HTTP 404"
   },
   {
-   "url": "https://fycs.ifas.ufl.edu/academics/graduate-students/",
+   "url": "https://fycs.ifas.ufl.edu/faculty-staff/",
    "error": "HTTP 404"
   },
   {
@@ -5272,7 +5291,23 @@
    "error": "HTTP 404"
   },
   {
+   "url": "https://fycs.ifas.ufl.edu/people/faculty-staff/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://agronomy.ifas.ufl.edu/academics/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://fycs.ifas.ufl.edu/our-people/",
+   "error": "HTTP 404"
+  },
+  {
    "url": "https://aec.ifas.ufl.edu/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://fycs.ifas.ufl.edu/people/graduate-students/",
    "error": "HTTP 404"
   },
   {
@@ -5284,11 +5319,31 @@
    "error": "HTTP 404"
   },
   {
+   "url": "https://fycs.ifas.ufl.edu/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
    "url": "https://aec.ifas.ufl.edu/graduate/students/",
    "error": "HTTP 404"
   },
   {
+   "url": "https://fycs.ifas.ufl.edu/students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://fycs.ifas.ufl.edu/people/students/",
+   "error": "HTTP 404"
+  },
+  {
    "url": "https://aec.ifas.ufl.edu/academics/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://fycs.ifas.ufl.edu/graduate/students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://fycs.ifas.ufl.edu/academics/graduate-students/",
    "error": "HTTP 404"
   },
   {
@@ -5308,19 +5363,19 @@
    "error": "HTTP 404"
   },
   {
-   "url": "https://snre.ifas.ufl.edu/people/students/",
-   "error": "HTTP 404"
-  },
-  {
    "url": "https://ffgs.ifas.ufl.edu/graduate-students/",
    "error": "HTTP 404"
   },
   {
-   "url": "https://snre.ifas.ufl.edu/graduate/students/",
+   "url": "https://snre.ifas.ufl.edu/people/students/",
    "error": "HTTP 404"
   },
   {
    "url": "https://ffgs.ifas.ufl.edu/students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://snre.ifas.ufl.edu/graduate/students/",
    "error": "HTTP 404"
   },
   {
@@ -5334,6 +5389,10 @@
   {
    "url": "https://ffgs.ifas.ufl.edu/academics/graduate-students/",
    "error": "HTTP 404"
+  },
+  {
+   "url": "https://www.fycs.ifas.ufl.edu/",
+   "error": "ConnectionError"
   },
   {
    "url": "https://dental.ufl.edu/people/graduate-students/",
@@ -5376,10 +5435,6 @@
    "error": "HTTP 404"
   },
   {
-   "url": "https://dcp.ufl.edu/rinker/research/people/graduate-students/",
-   "error": "HTTP 404"
-  },
-  {
    "url": "https://dcp.ufl.edu/architecture/graduate-students/",
    "error": "HTTP 404"
   },
@@ -5388,7 +5443,7 @@
    "error": "HTTP 404"
   },
   {
-   "url": "https://dcp.ufl.edu/rinker/research/graduate-students/",
+   "url": "https://dcp.ufl.edu/architecture/students/",
    "error": "HTTP 404"
   },
   {
@@ -5396,11 +5451,15 @@
    "error": "HTTP 404"
   },
   {
-   "url": "https://dcp.ufl.edu/architecture/students/",
+   "url": "https://che.ufl.edu/graduate-students/",
    "error": "HTTP 404"
   },
   {
-   "url": "https://che.ufl.edu/graduate-students/",
+   "url": "https://dcp.ufl.edu/rinker/research/people/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://dcp.ufl.edu/rinker/research/graduate-students/",
    "error": "HTTP 404"
   },
   {
@@ -5412,11 +5471,15 @@
    "error": "HTTP 404"
   },
   {
+   "url": "https://education.ufl.edu/hdose/people/",
+   "error": "HTTP 404"
+  },
+  {
    "url": "https://www.dcp.ufl.edu/people/graduate-students/",
    "error": "HTTP 404"
   },
   {
-   "url": "https://education.ufl.edu/hdose/people/",
+   "url": "https://education.ufl.edu/people/",
    "error": "HTTP 404"
   },
   {
@@ -5432,18 +5495,6 @@
    "error": "HTTP 404"
   },
   {
-   "url": "https://education.ufl.edu/people/",
-   "error": "HTTP 404"
-  },
-  {
-   "url": "https://education.ufl.edu/special-education/people/graduate-students/",
-   "error": "HTTP 404"
-  },
-  {
-   "url": "https://education.ufl.edu/people/graduate-students/",
-   "error": "HTTP 404"
-  },
-  {
    "url": "https://education.ufl.edu/hdose/faculty/",
    "error": "HTTP 404"
   },
@@ -5452,11 +5503,23 @@
    "error": "HTTP 404"
   },
   {
-   "url": "https://education.ufl.edu/school-teaching-learning/graduate-students/",
+   "url": "https://education.ufl.edu/special-education/people/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://www.essie.ufl.edu/people/graduate-students/",
    "error": "HTTP 404"
   },
   {
    "url": "https://education.ufl.edu/hdose/people/faculty/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://www.essie.ufl.edu/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://education.ufl.edu/school-teaching-learning/graduate-students/",
    "error": "HTTP 404"
   },
   {
@@ -5472,27 +5535,15 @@
    "error": "HTTP 404"
   },
   {
+   "url": "https://www.eng.ufl.edu/engineering-education/",
+   "error": "HTTP 404"
+  },
+  {
    "url": "https://education.ufl.edu/school-teaching-learning/students/",
    "error": "HTTP 404"
   },
   {
-   "url": "https://www.essie.ufl.edu/people/graduate-students/",
-   "error": "HTTP 404"
-  },
-  {
    "url": "https://education.ufl.edu/special-education/students/",
-   "error": "HTTP 404"
-  },
-  {
-   "url": "https://www.essie.ufl.edu/graduate-students/",
-   "error": "HTTP 404"
-  },
-  {
-   "url": "https://dental.ufl.edu/academics/graduate-students/",
-   "error": "ConnectionError"
-  },
-  {
-   "url": "https://www.eng.ufl.edu/engineering-education/",
    "error": "HTTP 404"
   },
   {
@@ -5508,6 +5559,10 @@
    "error": "HTTP 404"
   },
   {
+   "url": "https://www.dcp.ufl.edu/landscape/people/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
    "url": "https://www.ise.ufl.edu/people/students/",
    "error": "HTTP 404"
   },
@@ -5516,20 +5571,20 @@
    "error": "HTTP 404"
   },
   {
-   "url": "https://www.ise.ufl.edu/academics/graduate-students/",
-   "error": "HTTP 404"
-  },
-  {
-   "url": "https://www.dcp.ufl.edu/landscape/people/graduate-students/",
-   "error": "HTTP 404"
-  },
-  {
    "url": "https://www.dcp.ufl.edu/landscape/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://www.ise.ufl.edu/academics/graduate-students/",
    "error": "HTTP 404"
   },
   {
    "url": "https://engineeringeducation.ufl.edu/",
    "error": "ConnectionError"
+  },
+  {
+   "url": "https://www.ece.ufl.edu/people/graduate-students/",
+   "error": "HTTP 404"
   },
   {
    "url": "https://www.eng.ufl.edu/people/",
@@ -5540,15 +5595,7 @@
    "error": "blocked by robots.txt"
   },
   {
-   "url": "https://www.ece.ufl.edu/people/graduate-students/",
-   "error": "HTTP 404"
-  },
-  {
    "url": "https://www.ece.ufl.edu/graduate-students/",
-   "error": "HTTP 404"
-  },
-  {
-   "url": "https://www.eng.ufl.edu/directory/",
    "error": "HTTP 404"
   },
   {
@@ -5560,7 +5607,7 @@
    "error": "HTTP 404"
   },
   {
-   "url": "https://www.eng.ufl.edu/faculty-staff/",
+   "url": "https://www.eng.ufl.edu/directory/",
    "error": "HTTP 404"
   },
   {
@@ -5570,6 +5617,14 @@
   {
    "url": "https://www.ece.ufl.edu/academics/graduate-students/",
    "error": "HTTP 404"
+  },
+  {
+   "url": "https://www.eng.ufl.edu/faculty-staff/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://dental.ufl.edu/academics/graduate-students/",
+   "error": "ConnectionError"
   },
   {
    "url": "https://www.eng.ufl.edu/people/graduate-students/",
@@ -5640,11 +5695,11 @@
    "error": "HTTP 404"
   },
   {
-   "url": "https://www.astro.ufl.edu/academics/graduate-studies/people/graduate-students/",
+   "url": "https://www.jou.ufl.edu/graduate-students/",
    "error": "HTTP 404"
   },
   {
-   "url": "https://www.jou.ufl.edu/graduate-students/",
+   "url": "https://www.astro.ufl.edu/academics/graduate-studies/people/graduate-students/",
    "error": "HTTP 404"
   },
   {
@@ -5664,11 +5719,19 @@
    "error": "HTTP 404"
   },
   {
+   "url": "https://www.engineeringeducation.ufl.edu/",
+   "error": "ConnectionError"
+  },
+  {
+   "url": "https://languages.ufl.edu/academics/graduate-studies/people/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
    "url": "https://www.chem.ufl.edu/students/",
    "error": "HTTP 404"
   },
   {
-   "url": "https://languages.ufl.edu/academics/graduate-studies/people/graduate-students/",
+   "url": "https://languages.ufl.edu/people/graduate-students/",
    "error": "HTTP 404"
   },
   {
@@ -5680,11 +5743,11 @@
    "error": "HTTP 404"
   },
   {
-   "url": "https://languages.ufl.edu/people/graduate-students/",
+   "url": "https://www.chem.ufl.edu/graduate/students/",
    "error": "HTTP 404"
   },
   {
-   "url": "https://www.chem.ufl.edu/graduate/students/",
+   "url": "https://geology.ufl.edu/graduate-students/",
    "error": "HTTP 404"
   },
   {
@@ -5696,19 +5759,7 @@
    "error": "HTTP 404"
   },
   {
-   "url": "https://www.engineeringeducation.ufl.edu/",
-   "error": "ConnectionError"
-  },
-  {
-   "url": "https://wst.ufl.edu/students/",
-   "error": "HTTP 404"
-  },
-  {
    "url": "https://www.chem.ufl.edu/academics/graduate-students/",
-   "error": "HTTP 404"
-  },
-  {
-   "url": "https://geology.ufl.edu/graduate-students/",
    "error": "HTTP 404"
   },
   {
@@ -5716,7 +5767,7 @@
    "error": "HTTP 404"
   },
   {
-   "url": "https://wst.ufl.edu/people/students/",
+   "url": "https://wst.ufl.edu/students/",
    "error": "HTTP 404"
   },
   {
@@ -5724,19 +5775,23 @@
    "error": "HTTP 404"
   },
   {
-   "url": "https://languages.ufl.edu/academics/graduate-studies/students/",
-   "error": "HTTP 404"
-  },
-  {
-   "url": "https://wst.ufl.edu/graduate/students/",
-   "error": "HTTP 404"
-  },
-  {
    "url": "https://geology.ufl.edu/people/students/",
    "error": "HTTP 404"
   },
   {
+   "url": "https://languages.ufl.edu/academics/graduate-studies/students/",
+   "error": "HTTP 404"
+  },
+  {
    "url": "https://languages.ufl.edu/students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://wst.ufl.edu/people/students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://wst.ufl.edu/graduate/students/",
    "error": "HTTP 404"
   },
   {
@@ -5748,15 +5803,7 @@
    "error": "HTTP 404"
   },
   {
-   "url": "https://history.ufl.edu/students/",
-   "error": "HTTP 404"
-  },
-  {
    "url": "https://geology.ufl.edu/academics/graduate-students/",
-   "error": "HTTP 404"
-  },
-  {
-   "url": "https://history.ufl.edu/people/students/",
    "error": "HTTP 404"
   },
   {
@@ -5764,7 +5811,7 @@
    "error": "HTTP 404"
   },
   {
-   "url": "https://history.ufl.edu/graduate/students/",
+   "url": "https://history.ufl.edu/students/",
    "error": "HTTP 404"
   },
   {
@@ -5772,19 +5819,19 @@
    "error": "HTTP 404"
   },
   {
+   "url": "https://www.nre.ufl.edu/",
+   "error": "ConnectTimeout"
+  },
+  {
+   "url": "https://history.ufl.edu/people/students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://history.ufl.edu/graduate/students/",
+   "error": "HTTP 404"
+  },
+  {
    "url": "https://phil.ufl.edu/graduate/students/",
-   "error": "HTTP 404"
-  },
-  {
-   "url": "https://religion.ufl.edu/people/graduate-students/",
-   "error": "HTTP 404"
-  },
-  {
-   "url": "https://pharmacy.ufl.edu/departments/pharmaceutics/",
-   "error": "HTTP 404"
-  },
-  {
-   "url": "https://religion.ufl.edu/graduate-students/",
    "error": "HTTP 404"
   },
   {
@@ -5792,27 +5839,19 @@
    "error": "HTTP 404"
   },
   {
-   "url": "https://csp.pharmacy.ufl.edu/students/",
-   "error": "HTTP 404"
-  },
-  {
    "url": "https://hobi.med.ufl.edu/graduate-students/",
    "error": "HTTP 404"
   },
   {
-   "url": "https://csp.pharmacy.ufl.edu/people/students/",
+   "url": "https://religion.ufl.edu/people/graduate-students/",
    "error": "HTTP 404"
   },
   {
-   "url": "https://religion.ufl.edu/people/students/",
+   "url": "https://hobi.med.ufl.edu/academics/graduate-students/",
    "error": "HTTP 404"
   },
   {
-   "url": "https://csp.pharmacy.ufl.edu/graduate/students/",
-   "error": "HTTP 404"
-  },
-  {
-   "url": "https://pharmacy.ufl.edu/people/graduate-students/",
+   "url": "https://religion.ufl.edu/graduate-students/",
    "error": "HTTP 404"
   },
   {
@@ -5820,7 +5859,11 @@
    "error": "HTTP 404"
   },
   {
-   "url": "https://pharmacy.ufl.edu/graduate-students/",
+   "url": "https://religion.ufl.edu/people/students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://csp.pharmacy.ufl.edu/students/",
    "error": "HTTP 404"
   },
   {
@@ -5828,15 +5871,15 @@
    "error": "HTTP 404"
   },
   {
+   "url": "https://csp.pharmacy.ufl.edu/people/students/",
+   "error": "HTTP 404"
+  },
+  {
    "url": "https://www.stat.ufl.edu/students/",
    "error": "HTTP 404"
   },
   {
-   "url": "https://pharmacy.ufl.edu/mc/people/graduate-students/",
-   "error": "HTTP 404"
-  },
-  {
-   "url": "https://pharmacy.ufl.edu/mc/graduate-students/",
+   "url": "https://csp.pharmacy.ufl.edu/graduate/students/",
    "error": "HTTP 404"
   },
   {
@@ -5848,152 +5891,8 @@
    "error": "HTTP 404"
   },
   {
-   "url": "https://www.nre.ufl.edu/",
-   "error": "ConnectTimeout"
-  },
-  {
-   "url": "https://epidemiology.phhp.ufl.edu/academics/graduate-students/",
-   "error": "ConnectionError"
-  },
-  {
-   "url": "https://egh.phhp.ufl.edu/",
-   "error": "ConnectionError"
-  },
-  {
-   "url": "https://chp.phhp.ufl.edu/",
-   "error": "ConnectionError"
-  },
-  {
-   "url": "https://hobi.med.ufl.edu/graduate/students/",
-   "error": "ConnectionError"
-  },
-  {
-   "url": "https://biostat.ufl.edu/education/phd-in-biostatistics/curriculum-overview/",
-   "error": "ConnectionError"
-  },
-  {
-   "url": "https://nursing.ufl.edu/faculty/emeriti-faculty-directory/",
-   "error": "ConnectionError"
-  },
-  {
-   "url": "https://cancer.ufl.edu/2026/08/03/researchers-develop-new-drug-for-aggressive-leukemias/",
-   "error": "ReadTimeout"
-  },
-  {
-   "url": "https://www.egh.phhp.ufl.edu/",
-   "error": "ConnectionError"
-  },
-  {
-   "url": "https://pharmacy.ufl.edu/mc/students/",
-   "error": "ReadTimeout"
-  },
-  {
-   "url": "https://csp.pharmacy.ufl.edu/academics/graduate-students/",
-   "error": "ConnectionError"
-  },
-  {
-   "url": "https://cbs.vetmed.ufl.edu/",
-   "error": "ConnectionError"
-  },
-  {
-   "url": "https://biostat.ufl.edu/",
-   "error": "ConnectionError"
-  },
-  {
-   "url": "https://nursing.ufl.edu/students/",
-   "error": "ConnectionError"
-  },
-  {
-   "url": "https://epidemiology.phhp.ufl.edu/",
-   "error": "ReadTimeout"
-  },
-  {
-   "url": "https://vetmed.ufl.edu/people/",
-   "error": "HTTP 404"
-  },
-  {
-   "url": "https://vetmed.ufl.edu/faculty/",
-   "error": "HTTP 404"
-  },
-  {
-   "url": "https://vetmed.ufl.edu/people/faculty/",
-   "error": "HTTP 404"
-  },
-  {
-   "url": "https://hobi.med.ufl.edu/academics/graduate-students/",
-   "error": "ConnectionError"
-  },
-  {
-   "url": "https://vetmed.ufl.edu/about/people/",
-   "error": "HTTP 404"
-  },
-  {
-   "url": "https://vetmed.ufl.edu/people/graduate-students/",
-   "error": "HTTP 404"
-  },
-  {
-   "url": "https://nre.ufl.edu/",
-   "error": "ConnectTimeout"
-  },
-  {
-   "url": "https://slhs.phhp.ufl.edu/",
-   "error": "ConnectionError"
-  },
-  {
-   "url": "https://ptr.pharmacy.ufl.edu/about/post-doctoral-associatesresidents/",
-   "error": "ConnectionError"
-  },
-  {
-   "url": "https://www.chp.phhp.ufl.edu/",
-   "error": "ConnectionError"
-  },
-  {
-   "url": "https://hsrmp.phhp.ufl.edu/",
-   "error": "ConnectionError"
-  },
-  {
-   "url": "https://www.epidemiology.phhp.ufl.edu/",
-   "error": "ConnectionError"
-  },
-  {
-   "url": "https://vetmed.ufl.edu/people/graduate-students/",
-   "error": "ConnectionError"
-  },
-  {
-   "url": "https://vetmed.ufl.edu/graduate-students/",
-   "error": "ConnectionError"
-  },
-  {
-   "url": "https://nursing.ufl.edu/students/current-students/",
-   "error": "ConnectionError"
-  },
-  {
-   "url": "https://www.hsrmp.phhp.ufl.edu/",
-   "error": "SSLError"
-  },
-  {
-   "url": "https://www.vetmed.ufl.edu/about-the-college/directory/",
-   "error": "ConnectionError"
-  },
-  {
-   "url": "https://phhp.ufl.edu/about/departments/speech-language-and-hearing-sciences/",
-   "error": "ConnectionError"
-  },
-  {
-   "url": "https://www.biostat.ufl.edu/",
-   "error": "ConnectionError"
-  },
-  {
-   "url": "https://vetmed.ufl.edu/graduate-students/",
-   "error": "ConnectionError"
-  },
-  {
    "url": "https://ptr.pharmacy.ufl.edu/people/graduate-students/",
-   "error": "ReadTimeout"
-  },
-  {
-   "url": "https://vetmed.ufl.edu/students/",
-   "error": "ReadTimeout"
+   "error": "HTTP 404"
   },
   {
    "url": "https://ptr.pharmacy.ufl.edu/graduate-students/",
@@ -6008,35 +5907,27 @@
    "error": "HTTP 404"
   },
   {
-   "url": "https://ptr.pharmacy.ufl.edu/graduate/students/",
+   "url": "https://pharmacy.ufl.edu/departments/pharmaceutics/",
    "error": "HTTP 404"
   },
   {
-   "url": "https://www.vetmed.ufl.edu/",
-   "error": "ConnectionError"
-  },
-  {
-   "url": "https://vetmed.ufl.edu/students/",
-   "error": "ConnectionError"
-  },
-  {
-   "url": "https://vetmed.ufl.edu/people/students/",
-   "error": "ConnectionError"
-  },
-  {
-   "url": "https://vetmed.ufl.edu/people/students/",
-   "error": "ConnectionError"
-  },
-  {
-   "url": "https://vetmed.ufl.edu/",
-   "error": "ConnectionError"
-  },
-  {
-   "url": "https://vetmed.ufl.edu/graduate/students/",
+   "url": "https://pharmacy.ufl.edu/mc/people/graduate-students/",
    "error": "HTTP 404"
   },
   {
-   "url": "https://vetmed.ufl.edu/graduate/students/",
+   "url": "https://pharmacy.ufl.edu/people/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://pharmacy.ufl.edu/mc/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://pharmacy.ufl.edu/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://pharmacy.ufl.edu/graduate-students/",
    "error": "HTTP 404"
   },
   {
@@ -6044,12 +5935,40 @@
    "error": "HTTP 404"
   },
   {
+   "url": "https://cbs.vetmed.ufl.edu/",
+   "error": "ConnectionError"
+  },
+  {
+   "url": "https://vetmed.ufl.edu/",
+   "error": "ConnectionError"
+  },
+  {
    "url": "https://www.vetmed.ufl.edu/people/",
-   "error": "HTTP 404"
+   "error": "ConnectionError"
+  },
+  {
+   "url": "https://ptr.pharmacy.ufl.edu/graduate/students/",
+   "error": "ReadTimeout"
+  },
+  {
+   "url": "https://nre.ufl.edu/",
+   "error": "ConnectTimeout"
+  },
+  {
+   "url": "https://vetmed.ufl.edu/",
+   "error": "ReadTimeout"
+  },
+  {
+   "url": "https://www.cbs.vetmed.ufl.edu/",
+   "error": "ConnectionError"
+  },
+  {
+   "url": "https://www.vetmed.ufl.edu/",
+   "error": "ReadTimeout"
   },
   {
    "url": "https://www.vetmed.ufl.edu/about-the-college/directory/faculty/",
-   "error": "HTTP 404"
+   "error": "ConnectionError"
   },
   {
    "url": "https://www.vetmed.ufl.edu/faculty/",
@@ -6061,38 +5980,94 @@
   },
   {
    "url": "https://www.vetmed.ufl.edu/people/faculty/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://www.vetmed.ufl.edu/about-the-college/directory/people/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://www.vetmed.ufl.edu/people/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://www.vetmed.ufl.edu/about-the-college/directory/",
    "error": "ConnectionError"
+  },
+  {
+   "url": "https://www.vetmed.ufl.edu/about-the-college/directory/graduate-students/",
+   "error": "ReadTimeout"
+  },
+  {
+   "url": "https://www.vetmed.ufl.edu/directory/",
+   "error": "ConnectionError"
+  },
+  {
+   "url": "https://www.vetmed.ufl.edu/graduate-students/",
+   "error": "ConnectionError"
+  },
+  {
+   "url": "https://www.vetmed.ufl.edu/about/people/",
+   "error": "ConnectionError"
+  },
+  {
+   "url": "https://www.vetmed.ufl.edu/about-the-college/directory/students/",
+   "error": "ReadTimeout"
+  },
+  {
+   "url": "https://www.vetmed.ufl.edu/students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://www.vetmed.ufl.edu/people/students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://www.vetmed.ufl.edu/graduate/students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://vetmed.ufl.edu/people/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://vetmed.ufl.edu/faculty/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://vetmed.ufl.edu/people/faculty/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://vetmed.ufl.edu/about/people/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://vetmed.ufl.edu/people/graduate-students/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://vetmed.ufl.edu/graduate-students/",
+   "error": "ReadTimeout"
   },
   {
    "url": "https://www.nre.ufl.edu/",
    "error": "ConnectTimeout"
   },
   {
-   "url": "https://www.vetmed.ufl.edu/about-the-college/directory/people/graduate-students/",
+   "url": "https://vetmed.ufl.edu/students/",
    "error": "ReadTimeout"
+  },
+  {
+   "url": "https://vetmed.ufl.edu/people/students/",
+   "error": "ConnectionError"
   },
   {
    "url": "https://nre.ufl.edu/",
    "error": "ConnectTimeout"
   },
   {
-   "url": "https://www.vetmed.ufl.edu/people/graduate-students/",
-   "error": "ConnectionError"
-  },
-  {
-   "url": "https://www.vetmed.ufl.edu/about-the-college/directory/graduate-students/",
-   "error": "HTTP 404"
-  },
-  {
-   "url": "https://www.vetmed.ufl.edu/graduate-students/",
-   "error": "HTTP 404"
-  },
-  {
-   "url": "https://www.vetmed.ufl.edu/about-the-college/directory/students/",
-   "error": "HTTP 404"
-  },
-  {
-   "url": "https://www.vetmed.ufl.edu/students/",
+   "url": "https://vetmed.ufl.edu/graduate/students/",
    "error": "HTTP 404"
   },
   {
@@ -6140,15 +6115,15 @@
    "error": "HTTP 404"
   },
   {
+   "url": "https://addictionresearch.health.ufl.edu/faculty/sarah-d-lynne-landsman-ph-d/",
+   "error": "HTTP 404"
+  },
+  {
    "url": "https://afam.clas.ufl.edu/directory/dr-%ef%bb%bfriche-j-daniel-barnes/",
    "error": "HTTP 404"
   },
   {
    "url": "https://www.bme.ufl.edu/dept-member/erika-moore-ph-d/",
-   "error": "HTTP 404"
-  },
-  {
-   "url": "https://addictionresearch.health.ufl.edu/faculty/sarah-d-lynne-landsman-ph-d/",
    "error": "HTTP 404"
   },
   {
@@ -6188,15 +6163,15 @@
    "error": "HTTP 404"
   },
   {
+   "url": "https://waterinstitute.ufl.edu/faculty/liebold-mathew/",
+   "error": "HTTP 404"
+  },
+  {
    "url": "https://www.crec.ifas.ufl.edu/",
    "error": "SSLError"
   },
   {
    "url": "https://ncbs.ifas.ufl.edu/faculty/travis-thomas/",
-   "error": "HTTP 404"
-  },
-  {
-   "url": "https://history.ufl.edu/directory/current-faculty/elizabeth-dale/",
    "error": "HTTP 404"
   },
   {
@@ -6220,7 +6195,7 @@
    "error": "HTTP 404"
   },
   {
-   "url": "https://history.ufl.edu/directory/current-faculty/353-2/",
+   "url": "https://history.ufl.edu/directory/current-faculty/elizabeth-dale/",
    "error": "HTTP 404"
   },
   {
@@ -6232,7 +6207,11 @@
    "error": "HTTP 404"
   },
   {
-   "url": "https://history.ufl.edu/directory/current-faculty/ben-wise/",
+   "url": "https://fycs.ifas.ufl.edu/bios/kim-wiley/",
+   "error": "HTTP 404"
+  },
+  {
+   "url": "https://history.ufl.edu/directory/current-faculty/353-2/",
    "error": "HTTP 404"
   },
   {
@@ -6248,6 +6227,10 @@
    "error": "HTTP 404"
   },
   {
+   "url": "https://history.ufl.edu/directory/current-faculty/ben-wise/",
+   "error": "HTTP 404"
+  },
+  {
    "url": "https://aec.ifas.ufl.edu/people/sarahmarc@ufl.edu",
    "error": "HTTP 404"
   },
@@ -6256,19 +6239,15 @@
    "error": "HTTP 404"
   },
   {
-   "url": "https://waterinstitute.ufl.edu/faculty/liebold-mathew/",
-   "error": "HTTP 404"
-  },
-  {
    "url": "https://geog.ufl.edu/directory/dr-francisca-javiera-rudolph/",
    "error": "HTTP 404"
   },
   {
-   "url": "https://wec.ifas.ufl.edu/people/wec-faculty/brett-scheffers/",
+   "url": "https://fmel.ifas.ufl.edu/faculty/l-campbell/",
    "error": "HTTP 404"
   },
   {
-   "url": "https://fmel.ifas.ufl.edu/faculty/l-campbell/",
+   "url": "https://wec.ifas.ufl.edu/people/wec-faculty/brett-scheffers/",
    "error": "HTTP 404"
   },
   {
@@ -6294,10 +6273,6 @@
   {
    "url": "https://bioinformatics.cise.ufl.edu/",
    "error": "ConnectTimeout"
-  },
-  {
-   "url": "https://fycs.ifas.ufl.edu/bios/kim-wiley/",
-   "error": "HTTP 404"
   },
   {
    "url": "https://fred.ifas.ufl.edu/about/directory/james-ji/",
