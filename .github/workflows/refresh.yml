@@ -12,9 +12,6 @@ on:
         default: ""
   schedule:
     - cron: "17 8 * * 0"
-  push:
-    branches: [claude/crawler-setup, main]
-    paths: ["data/refresh-request.json"]
 
 permissions:
   contents: write
@@ -65,7 +62,6 @@ jobs:
           ATLAS_MAX_MINUTES: "300"
           ATLAS_PUBLISH_DATA: ${{ github.event_name == 'push' && github.ref_name != 'main' && '1' || '' }}
         run: |
-          if [ "${{ github.event_name }}" = "push" ] && [ "${{ github.ref_name }}" != "main" ]; then nohup bash scripts/watchdog.sh >/dev/null 2>&1 & fi
           set -o pipefail
           python -m atlas.crawl 2>&1 | tee /tmp/crawl.log
 
